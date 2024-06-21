@@ -9,7 +9,7 @@ name: Boyi Fu
 description: Currently a junior student of M.U.S.T. in Computer Scinece.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/BoyiFu.jpg
+avatar: /images/BoyiFu.jpg
 
 #
 # Flags below are optional
