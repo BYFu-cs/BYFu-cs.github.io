@@ -11,6 +11,18 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    nav a {
+    position: relative;
+    padding-right: 10px; 
+}
+    nav a::after {
+    content: "|"; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #777777; 
+}
   </head>
 
   <body>
