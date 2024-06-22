@@ -6,7 +6,7 @@ permalink: /AboutMe/
 
 English name: Fredy              中文姓名: 付博亦
 
-## Personal profile  個人簡述
+## Personal Profile  個人簡述
 
 I am now a junior student majoring in C.S. in Macau University of Science and Technology. My academic interests lie in exploring various network technologies, software engineering, and numerical computing. I possess a strong passion for artificial intelligence development and aspire to contribute significantly to the field in the future.
 I aspire to advance through tackling complex challenges in computer science, and I aim to leverage my technical expertise for international career progression.
