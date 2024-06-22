@@ -30,9 +30,7 @@ You can visit my undergraduate Alma mater's home page by clicking the following 
 I will be applying for master’s programs abroad in the 25fall. I hope to meet like-minded peers during the application season. My target regions for applications include, but are not limited to: Hong Kong SAR, Singapore, and the United Kingdom.
 
 我將在25fall進行面嚮海外的碩士研究生申請。希望能在申請季結識更多志同道合的夥伴。我的申請目標地區包括但不限於：中國香港、新加坡與英國。
-<p align="center">
-  <a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a>
-</p>
+
 
 ## More Information
 
