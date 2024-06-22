@@ -4,7 +4,7 @@ title: About Me
 permalink: /AboutMe/
 ---
 
-English name: Fredy  中文姓名: 付博亦
+English name: Fredy              中文姓名: 付博亦
 
 ## Personal profile  個人簡述
 
