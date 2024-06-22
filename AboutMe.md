@@ -20,6 +20,7 @@ My undergraduate alma mater is situated in Macau SAR, China. M.U.S.T., a globall
 我的本科大學位於中國澳門，M.U.S.T.是一所國際化的教育機構，亦進入世界大學排行榜(QS ranking)前500名。通過優質的國際化教育與雙語教學，我於此地積纍並取得了良好的綜合質素和良善的職業發展觀。
 
 You can visit my undergraduate Alma mater's home page by clicking via this link: [Macau University of Science and Technology](https://www.must.edu.mo/index.html?locale=en_US)
+![MUST](images/FunBlog/M.U.S.T..jpg)
 ### Postgraduate University:
 
 
