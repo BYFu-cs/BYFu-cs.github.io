@@ -24,6 +24,7 @@ layout: default
       border: 1px solid #ccc;
       border-radius: 4px;
       transition: border-color 0.3s ease-in-out; 
+      max-width: 600px; 
     }
 
     #search-input:focus {
@@ -33,10 +34,12 @@ layout: default
     #results-container {
       list-style-type: none;
       padding: 0;
+      margin-top: 10px;
     }
 
     #results-container li {
       margin: 5px 0;
+      animation: fadeIn 0.3s ease-in-out;
     }
 
 
