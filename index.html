@@ -54,6 +54,37 @@ layout: default
   </style>
 </head>
 
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search Blog Posts...">
+    <ul id="results-container"></ul>
+  </div>
+
+  <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
+
+<script>
+    // 从博客文章中动态生成搜索数据
+    const posts = [
+      {% for post in site.posts %}
+        {
+          title: "{{ post.title }}",
+          url: "{{ post.url }}",
+          desc: "{{ post.excerpt | strip_html | strip_newlines | replace: '"', '\"' }}"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: posts,
+      searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+      noResultsText: 'No Result!',
+      limit: 10,
+      fuzzy: false,
+      exclude: ['Welcome']
+    });
+  </script>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -68,23 +99,3 @@ layout: default
     </article>
   {% endfor %}
 </div>
-
-  <div class="search-container">
-    <input type="text" id="search-input" placeholder="Search Blog Posts...">
-    <ul id="results-container"></ul>
-  </div>
-
-  <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
-
-  <script>
-    window.simpleJekyllSearch = new SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-      noResultsText: 'No results found',
-      limit: 10,
-      fuzzy: false,
-      exclude: ['Welcome']
-    });
-  </script>
