@@ -70,9 +70,14 @@ layout: default
       margin: 5px 0;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px; 
-      list-style-type: disc; 
+      list-style-type: none; 
       animation: fadeIn 0.3s ease-in-out;
     }
+
+    #results-container li::before {
+      content: "\2022"; 
+      margin-right: 5px; 
+}
 
     @keyframes fadeIn {
       from { opacity: 0; }
