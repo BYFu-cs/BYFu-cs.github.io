@@ -21,9 +21,9 @@ My undergraduate alma mater is situated in Macau SAR, China. M.U.S.T., a globall
 
 You can visit my undergraduate Alma mater's home page by clicking via following link: 
 [Macau University of Science and Technology](https://www.must.edu.mo/index.html?locale=en_US)
-<center>
-![MUST](images/FunBlog/M.U.S.T..jpg)
-</center>
+<p align="center">
+<img src="images/FunBlog/M.U.S.T..jpg" alt="MUST">
+</p>
 
 ### Postgraduate University:
 
