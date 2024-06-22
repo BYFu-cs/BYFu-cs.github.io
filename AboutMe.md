@@ -13,7 +13,7 @@ I aspire to advance through tackling complex challenges in computer science, and
 
 我是一名澳門科技大學大三計算機專業的學生。我熱衷於鑽研各種網絡技術、軟件工程以及數值計算。我對人工智能的發展抱有極大興趣，亦希冀未來能在有關領域擁有建樹。我志於通過學習計算機專業中富有挑戰性的任務得到成長，並希冀以專業技術技能在海外謀求職業發展。
 
-——————
+---
 
 ## University 關於大學
 ### Undergraduate University:
@@ -33,7 +33,7 @@ I will be applying for master’s programs abroad in the 25fall. I hope to meet 
 
 我將在25fall進行面嚮海外的碩士研究生申請。希望能在申請季結識更多志同道合的夥伴。我的申請目標地區包括但不限於：中國香港、新加坡與英國。
 
-——————
+---
 
 ## More Information
 
