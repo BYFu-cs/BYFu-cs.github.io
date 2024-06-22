@@ -283,10 +283,15 @@ footer {
   text-align: center;
 }
 
+nav {
+    text-align: center;
+  }
+
 nav a {
   position: relative;
-  padding-right: 32.5px; 
+  padding-right: 32.5px;
 }
+
 nav a::after {
   content: "|"; 
   position: absolute;
