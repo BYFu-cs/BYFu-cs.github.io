@@ -86,7 +86,6 @@ layout: default
 
   </style>
 </head>
-
   <div class="search-container">
     <div class="search-icon" onclick="performSearch()">
       <img src="/images/istockphoto-icon.jpg" alt="Search">
@@ -94,9 +93,7 @@ layout: default
     <input type="text" id="search-input" placeholder="Search Blog Posts...">
     <ul id="results-container"></ul>
   </div>
-
   <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
-
 <script>
     const posts = [
       {% for post in site.posts %}
