@@ -1,6 +1,51 @@
 ---
 layout: default
 ---
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美化搜索框</title>
+  <style>
+    .search-container {
+      position: relative;
+      max-width: 400px; 
+      margin: 20px auto; 
+    }
+
+    #search-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s ease-in-out; 
+    }
+
+    #search-input:focus {
+      outline: none;
+      border-color: dodgerblue; 
+
+    #results-container {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #results-container li {
+      margin: 5px 0;
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+
+    #results-container li {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  </style>
+</head>
 
 <div class="posts">
   {% for post in site.posts %}
@@ -17,22 +62,22 @@ layout: default
   {% endfor %}
 </div>
 
-<div class="search-container">
-  <input type="text" id="search-input" placeholder="search blog posts...">
-  <ul id="results-container"></ul>
-</div>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search Blog Posts...">
+    <ul id="results-container"></ul>
+  </div>
 
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
+  <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
 
-<script>
-	window.simpleJekyllSearch = new SimpleJekyllSearch({
-	searchInput: document.getElementById('search-input'),
-	resultsContainer: document.getElementById('results-container'),
-	json: '/search.json',
-	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-	noResultsText: 'No results found',
-	limit: 10,
-	fuzzy: false,
-	exclude: ['Welcome']
-  })
-</script>
+  <script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+      noResultsText: 'No results found',
+      limit: 10,
+      fuzzy: false,
+      exclude: ['Welcome']
+    });
+  </script>
