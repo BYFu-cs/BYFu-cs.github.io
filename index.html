@@ -24,11 +24,31 @@ layout: default
       border-radius: 4px;
       transition: border-color 0.3s ease-in-out; 
       max-width: 600px; 
+      display: flex;
+      align-items: center; 
     }
 
     #search-input:focus {
       outline: none;
       border-color: dodgerblue; 
+    }
+
+    .search-icon {
+      padding: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .search-icon:hover {
+      background-color: #ddd;
+      border-radius: 50%;
+    }
+
+    .search-icon img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
 
     #results-container {
       list-style-type: none;
@@ -55,6 +75,9 @@ layout: default
 </head>
 
   <div class="search-container">
+    <div class="search-icon" onclick="performSearch()">
+      <img src="search-icon.png" alt="Search">
+    </div>
     <input type="text" id="search-input" placeholder="Search Blog Posts...">
     <ul id="results-container"></ul>
   </div>
@@ -62,7 +85,6 @@ layout: default
   <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
 
 <script>
-    // 从博客文章中动态生成搜索数据
     const posts = [
       {% for post in site.posts %}
         {
