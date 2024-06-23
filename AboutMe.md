@@ -5,7 +5,7 @@ permalink: /AboutMe/
 ---
 
 English name: Fredy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender: Male              
-中文姓名: 付博亦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性別: 男              
+中文姓名: 付博亦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性別: 男              
 
 ---
 
