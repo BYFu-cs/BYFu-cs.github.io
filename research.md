@@ -36,7 +36,8 @@ The file is not empty.
 </head>
 <body>
     <p class="collapsible">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
+        ### Lorem ipsum dolor sit amet
+        consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
     </p>
     <button class="fancy-button" onclick="toggleText()">Read More</button>
 
