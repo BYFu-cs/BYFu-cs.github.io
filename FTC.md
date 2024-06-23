@@ -1,5 +1,5 @@
 ---
 layout: page
-title: About Me  基本信息
+title: FTC 免責聲明
 permalink: /FTC/
 ---
