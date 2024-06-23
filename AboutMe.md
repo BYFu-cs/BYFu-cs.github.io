@@ -4,8 +4,10 @@ title: About Me  基本信息
 permalink: /AboutMe/
 ---
 
-English name: Fredy              中文姓名: 付博亦
-Gender: Male              性別: 男
+English name: Fredy              Gender: Male              
+中文姓名: 付博亦              性別: 男              
+
+---
 
 ## Personal Profile  個人簡述
 
