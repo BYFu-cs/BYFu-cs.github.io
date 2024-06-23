@@ -12,6 +12,14 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	
+    .nav a {
+        display: inline-block;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: white;
+    }
   </head>
 
   <body>
@@ -24,14 +32,14 @@
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-<div>
+
           <nav>
             <a href="{{ site.baseurl }}/"><b><i>Blog</i></b></a>
             <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
 	    <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
 	    <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
           </nav>
-</div>	
+
         </header>
       </div>
     </div>
