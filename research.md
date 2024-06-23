@@ -20,7 +20,7 @@ The file is not empty.
             max-height: none;
         }
         .fancy-button {
-            background: linear-gradient(to bottom, #B3E0FF, #FFFFFF);
+            background: conic-gradient(from 135deg, #FFFFFF 25%, #B3E0FF 25% 75%, #0074D9 75%);
             color: #0074D9;
             border: none;
             padding: 8px 16px;
@@ -30,7 +30,7 @@ The file is not empty.
             transition: background 0.3s ease;
         }
         .fancy-button:hover {
-            background: linear-gradient(to bottom, #99C2FF, #E6F0FF);
+            background: conic-gradient(from 135deg, #FFFFFF 25%, #99C2FF 25% 75%, #E6F0FF 75%);
         }
     </style>
 </head>
@@ -45,11 +45,12 @@ The file is not empty.
             const paragraph = document.querySelector('.collapsible');
             paragraph.classList.toggle('expanded');
             const button = document.querySelector('.fancy-button');
-            button.textContent = paragraph.classList.contains('expanded') ? 'Callapse' : 'Read More';
+            button.textContent = paragraph.classList.contains('expanded') ? 'Collapse' : 'Read More';
         }
     </script>
 </body>
 </html>
+
 
 
 
