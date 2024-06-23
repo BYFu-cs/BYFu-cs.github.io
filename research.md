@@ -10,7 +10,7 @@ permalink: /research/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .collapsible {
-            max-height: 80px;
+            max-height: 50px;
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
