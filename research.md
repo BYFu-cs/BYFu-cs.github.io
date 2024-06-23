@@ -42,7 +42,7 @@ permalink: /research/
         <br/> 
             &nbsp;&nbsp;&nbsp;&nbsp;Below are some of the thesis results:
         <br/> 
-            <img src="images/favicon.jpg" alt="favicon">
+            <img src="images/first-post.jpg" alt="fp">
         <br/>
         <br/> 
 (Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)<br/> 
