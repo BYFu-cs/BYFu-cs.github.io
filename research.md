@@ -10,7 +10,7 @@ permalink: /research/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .collapsible {
-            max-height: 0px;
+            max-height: 80px;
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
@@ -39,7 +39,9 @@ permalink: /research/
             &nbsp;&nbsp; &nbsp;&nbsp;我目前参与的整个科研基于Allen-Cahn(AC)方程與Crank-Nicolson(CN)方法。根據不同的點雲模型，我們提出了一種修正後的融合改良算法(如leap-fog algorithm)可以在前人的研究上更加精進我們的擬合模型，從而擁有更快的或更精確的模型。
 課題組的研究論文將會對模型的能量穩定性、數值魯棒性以及代碼實操性提出要求。<br/> 
             &nbsp;&nbsp;&nbsp;&nbsp;Below are some of the thesis results:
-            
+        <br/> 
+            <img src=favicon.jpg" alt="favicon">
+        <br/>
 (Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)
 (警告:請注意，目前論文尚未公開！閣下請勿未經允許私自傳播此結果！本人保留依法追究責任之權利。)
     </p>
