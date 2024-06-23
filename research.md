@@ -5,3 +5,41 @@ permalink: /research/
 ---
 
 The file is not empty.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .collapsible {
+            max-height: 50px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .expanded {
+            max-height: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="collapsible">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
+    </p>
+    <button onclick="toggleText()">閱讀更多</button>
+
+    <script>
+        function toggleText() {
+            const paragraph = document.querySelector('.collapsible');
+            paragraph.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
+
+<details>
+  <summary>點擊這裡閱讀更多</summary>
+  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
+</details>
+
