@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Research 研究合作
+title: Research Cooperation 研究合作
 permalink: /research/
+---
+
 ---
 
 <html lang="en">
@@ -40,7 +42,7 @@ permalink: /research/
             我目前参与之科研基于Allen-Cahn(AC)方程與Crank-Nicolson(CN)方法。根據不同的點雲模型，我們提出了一種修正後的融合改良算法(如leap-fog algorithm)可以在前人的研究上更加精進我們的擬合模型，從而擁有更快的或更精確的模型。
 課題組的研究論文將會對模型的能量穩定性、數值魯棒性以及代碼實操性提出要求。<br/> 
         <br/> 
-            &nbsp;&nbsp;&nbsp;&nbsp;Below are some of the thesis results:
+            Below are some of the thesis results:
         <br/> 
             <img src="/images/first-post.png" alt="fp">
         <br/>
