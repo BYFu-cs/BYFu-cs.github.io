@@ -20,13 +20,26 @@ The file is not empty.
         .expanded {
             max-height: none;
         }
+        .fancy-button {
+            background-color: #0074D9;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .fancy-button:hover {
+            background-color: #0056A0;
+        }
     </style>
 </head>
 <body>
     <p class="collapsible">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
     </p>
-    <button onclick="toggleText()">閱讀更多</button>
+    <button class="fancy-button" onclick="toggleText()">閱讀更多</button>
 
     <script>
         function toggleText() {
@@ -37,9 +50,4 @@ The file is not empty.
 </body>
 </html>
 
-<details>
-  <summary>點擊這裡閱讀更多</summary>
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
-</details>
 
