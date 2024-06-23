@@ -20,18 +20,18 @@ The file is not empty.
             max-height: none;
         }
         .fancy-button {
-            background: conic-gradient(from 135deg, #FFFFFF 25%, #B3E0FF 25% 75%, #0074D9 75%);
-            color: #0074D9;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .fancy-button:hover {
-            background: conic-gradient(from 135deg, #FFFFFF 25%, #99C2FF 25% 75%, #E6F0FF 75%);
-        }
+        background-color: #0074D9; 
+        color: #FFFFFF;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-size: 14px; 
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .fancy-button:hover {
+        background-color: #0056A0; 
+    }
     </style>
 </head>
 <body>
