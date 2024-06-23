@@ -6,6 +6,7 @@ permalink: /research/
 
 The file is not empty.
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,15 +39,18 @@ The file is not empty.
     <p class="collapsible">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec nunc tincidunt tincidunt. Vivamus auctor, libero vel aliquam tincidunt, nunc elit tincidunt turpis, eu facilisis odio odio eu elit.
     </p>
-    <button class="fancy-button" onclick="toggleText()">Read More</button>
+    <button class="fancy-button" onclick="toggleText()">閱讀更多</button>
 
     <script>
         function toggleText() {
             const paragraph = document.querySelector('.collapsible');
             paragraph.classList.toggle('expanded');
+            const button = document.querySelector('.fancy-button');
+            button.textContent = paragraph.classList.contains('expanded') ? '收回' : '閱讀更多';
         }
     </script>
 </body>
 </html>
+
 
 
