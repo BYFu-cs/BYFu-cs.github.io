@@ -215,7 +215,6 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-}
 
   @include mobile {
     float: none;
@@ -230,12 +229,13 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-}
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
+  }
+}
 
 //
 // .main
@@ -284,15 +284,12 @@ footer {
 }
 
 nav {
-    display: flex;
+    text-align: center;
   }
 
 nav a {
-  display: inline-block;
-  text-decoration: none;
   position: relative;
   padding-right: 32.5px;
-  color: white;
 }
 
 nav a::after {
@@ -308,14 +305,6 @@ nav a::after {
 nav a:last-child::after {
   content: none; /* Last element of nav does not show the vertical line. */
 }
-
-//@media (max-width: 768px) {
-//    .nav {
-//        display: flex;
-//        flex-direction: column;
-//       align-items: center;
-//   }
-//}	
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
