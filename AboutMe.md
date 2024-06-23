@@ -1,10 +1,11 @@
 ---
 layout: page
-title: About Me
+title: About Me  基本信息
 permalink: /AboutMe/
 ---
 
 English name: Fredy              中文姓名: 付博亦
+Gender: Male              性別: 男
 
 ## Personal Profile  個人簡述
 
@@ -15,7 +16,7 @@ I aspire to advance through tackling complex challenges in computer science, and
 
 ---
 
-## University 關於大學
+## University  關於大學
 ### Undergraduate University:
 My undergraduate alma mater is situated in Macau SAR, China. M.U.S.T., a globally recognized educational institution, has also secured a position within the top 500 of the QS ranking. Through high-quality international education and bilingual instruction, I have cultivated strong comprehensive abilities and developed a robust career mindset here.
 
