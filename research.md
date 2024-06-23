@@ -40,7 +40,7 @@ permalink: /research/
 課題組的研究論文將會對模型的能量穩定性、數值魯棒性以及代碼實操性提出要求。<br/> 
             &nbsp;&nbsp;&nbsp;&nbsp;Below are some of the thesis results:
         <br/> 
-            <img src=favicon.jpg" alt="favicon">
+            <img src="images/favicon.jpg" alt="favicon">
         <br/>
 (Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)
 (警告:請注意，目前論文尚未公開！閣下請勿未經允許私自傳播此結果！本人保留依法追究責任之權利。)
