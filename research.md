@@ -42,7 +42,7 @@ permalink: /research/
         <br/> 
             <img src="images/favicon.jpg" alt="favicon">
         <br/>
-(Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)
+(Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)<br/> 
 (警告:請注意，目前論文尚未公開！閣下請勿未經允許私自傳播此結果！本人保留依法追究責任之權利。)
     </p>
     <button class="fancy-button" onclick="toggleText()">Read More</button>
