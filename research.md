@@ -48,31 +48,31 @@ permalink: /research/
         </p>
         <br/> 
             <p style="text-align: center;">
-            <img src="/images/research/point_disk3.png" alt="pointcloud_disk">
+            <img src="/images/research/point_disk3.png" alt="pointcloud_disk"><br/>
             [1] The point cloud of a Disk.
             </p>
         <br/>
         <br/>
             <p style="text-align: center;">
-            <img src="/images/research/point_tea.png" alt="pointcloud_tea">
+            <img src="/images/research/point_tea.png" alt="pointcloud_tea"><br/>
             [2] The point cloud of a Teapot.
             </p>
         <br/>
         <br/>
             <p style="text-align: center;">
-            <img src="/images/research/disk1.png" alt="disk">
+            <img src="/images/research/disk1.png" alt="disk"><br/>
             [3] The reconstruction of Disk we obtained.
             </p>
         <br/>
         <br/>
             <p style="text-align: center;">
-            <img src="/images/research/tea.png" alt="tea">
+            <img src="/images/research/tea.png" alt="tea"><br/>
             [4] The reconstruction of Teapot we obtained.
             </p>
         <br/>
         <br/>
             <p style="text-align: center;">
-            <img src="/images/research/GoldenDragon.png" alt="GD">
+            <img src="/images/research/GoldenDragon.png" alt="GD"><br/>
             [5] The reconstruction of a Golden Dragon we obtained.
             </p>
         <br/>
