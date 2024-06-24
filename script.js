@@ -1,7 +1,5 @@
 // script.js
 
-// script.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const popupBox = document.getElementById('popupBox');
     const agreeBtn = document.getElementById('agreeBtn');
