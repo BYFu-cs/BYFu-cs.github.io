@@ -5,7 +5,8 @@ permalink: /research/
 ---
 
 <p>
-If you are interested in establishing academic collaboration with me, please feel free to explore my research group via the link provided below:</br>
+If you are interested in establishing academic collaboration with me, please feel free to explore my research group via the link provided below:
+<br/>
 <a href="https://cfdyang521.github.io/year-archive/">Prof.Yang's Group.</a>
 </p>
 
