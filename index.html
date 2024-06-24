@@ -107,36 +107,43 @@ layout: default
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* 平滑的角 */
+    border-radius: 10px; 
     z-index: 1000;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+      
+    #popupBox.active {
+    display: block;
+    opacity: 1; /* 弹窗显示时透明度变为 1 */
 }
 
 #agreeBtn {
-    background-color: #87CEEB; /* 浅蓝色 */
+    background-color: #87CEEB; /* light blue */
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s; /* 添加过渡效果 */
+    transition: background-color 0.3s; 
 }
 
 #agreeBtn:hover,
 #agreeBtn:active {
-    background-color: #4682B4; /* 深蓝色 */
+    background-color: #4682B4; /* dark blue */
 }
 
 #disagreeBtn {
-    background-color: #d3d3d3; /* 不鲜艳的颜色 */
+    background-color: #d3d3d3;
     color: #333;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s; /* 添加过渡效果 */
+    transition: background-color 0.3s; 
 }
 
 #disagreeBtn:hover,
 #disagreeBtn:active {
-    background-color: #f9f9f9; /* 弹窗背景颜色 */
+    background-color: #f9f9f9; 
 }
     </style>
 </head>
@@ -193,8 +200,8 @@ layout: default
 
 <div id="popupBox">
         <p>这是一些重要信息。</p>
-        <button id="agreeBtn">同意</button>
-        <button id="disagreeBtn">不同意</button>
+        <button id="agreeBtn">Agree</button>
+        <button id="disagreeBtn">Disagree</button>
     </div>
 
     <!-- 引入 JavaScript 文件 -->
