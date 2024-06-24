@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Research Cooperation 研究合作
+title: Research 研究合作
 permalink: /research/
 ---
+
+<p>
+You can find me with my team via the link: <a herf="https://cfdyang521.github.io/year-archive/">Prof.Yang's Group.</a>
+</p>
 
 ---
 
