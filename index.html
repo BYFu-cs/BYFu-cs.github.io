@@ -97,18 +97,35 @@ layout: default
   </style>
   <title>PopupBox</title>
     <style>
-        /* 弹窗样式 */
+
         #popupBox {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* 平滑的角 */
+}
+
+#agreeBtn {
+    background-color: #87CEEB; /* 浅蓝色 */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#disagreeBtn {
+    background-color: #d3d3d3; /* 不鲜艳的颜色 */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
     </style>
 </head>
   <div class="search-container">
