@@ -12,7 +12,7 @@ permalink: /research/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .collapsible {
-            max-height: 80px;
+            max-height: 90px;
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
@@ -49,20 +49,32 @@ permalink: /research/
         <br/> 
             <p style="text-align: center;">
             <img src="/images/research/point_disk3.png" alt="pointcloud_disk">
-            The point cloud of a disk.
+            [1] The point cloud of a Disk.
             </p>
         <br/>
         <br/>
+            <p style="text-align: center;">
             <img src="/images/research/point_tea.png" alt="pointcloud_tea">
+            [2] The point cloud of a Teapot.
+            </p>
         <br/>
         <br/>
+            <p style="text-align: center;">
             <img src="/images/research/disk1.png" alt="disk">
+            [3] The reconstruction of Disk we obtained.
+            </p>
         <br/>
         <br/>
+            <p style="text-align: center;">
             <img src="/images/research/tea.png" alt="tea">
+            [4] The reconstruction of Teapot we obtained.
+            </p>
         <br/>
         <br/>
+            <p style="text-align: center;">
             <img src="/images/research/GoldenDragon.png" alt="GD">
+            [4] The reconstruction of a Golden Dragon we obtained.
+            </p>
         <br/>
 <br/> 
 (Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)<br/> 
