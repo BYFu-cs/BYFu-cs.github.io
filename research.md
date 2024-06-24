@@ -73,7 +73,7 @@ permalink: /research/
         <br/>
             <p style="text-align: center;">
             <img src="/images/research/GoldenDragon.png" alt="GD">
-            [4] The reconstruction of a Golden Dragon we obtained.
+            [5] The reconstruction of a Golden Dragon we obtained.
             </p>
         <br/>
 <br/> 
