@@ -4,7 +4,7 @@ title:
 permalink: /FTC/
 ---
 
-<h1 style="text-align: center;>
+<h1 style="text-align: center;">
 FTC 免責聲明
 </h1>
   
