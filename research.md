@@ -36,6 +36,7 @@ permalink: /research/
 </head>
 <body>
     <h2>Numerical computing: 3D narrow volume reconstruction utilizing leap-fog algorithm.</h2>
+    <div style="text-align: center;">
     <p class="collapsible">
             The whole Scientific research I participated is based on Allen-Cahn(AC) equation and Crank-Nicolson(CN) Method.The proposed modified fusion algorithm, such as the leap-fog algorithm, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a faster or more accurate model. The research papers by our group will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
         <br/> 
@@ -45,10 +46,8 @@ permalink: /research/
             Below are some of the thesis results:
         <br/> 
         <br/> 
-        <div style="text-align: center;">
             <img src="/images/research/point_disk3.png" alt="pointcloud_disk">
-            <p>The point cloud of a disk.</p>
-        </div>
+            The point cloud of a disk.
         <br/>
         <br/>
             <img src="/images/research/point_tea.png" alt="pointcloud_tea">
@@ -67,6 +66,7 @@ permalink: /research/
 <br/> 
 (警告:請注意，目前論文尚未公開！閣下請勿未經允許私自傳播此結果！本人保留依法追究責任之權利。)
     </p>
+</div>
     <button class="fancy-button" onclick="toggleText()">Read More</button>
 
     <script>
