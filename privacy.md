@@ -13,14 +13,16 @@ Privacy-Policy
 <div>
 Welcome to https://byfu-cs.github.io/ (hereinafter referred to as 'the Website'). To ensure that you can comfortably utilize our services and access information on our platform with confidence, we would like to elucidate our privacy protection policy aimed at safeguarding your rights and interests.Kindly review the content below.<br/>
 <br/>
-歡迎您訪問「https://byfu-cs.github.io/」，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障閣下之權益，請您詳閱下列內容。
+歡迎您訪問「https://byfu-cs.github.io/」，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障閣下之權益，請您詳閱下列內容。<br/>
+<br/>
 </div>
 
 ---
 
 ## I. Scope of application of the Privacy Protection policy
 <div>
-The content of the privacy protection policy, including how this website handles the personally identifiable information collected when you use the website services. The Privacy policy does not apply to related linked websites outside of this website, nor does it apply to persons who are not entrusted or involved in the management of this website.
+The content of the privacy protection policy, including how this website handles the personally identifiable information collected when you use the website services. The Privacy policy does not apply to related linked websites outside of this website, nor does it apply to persons who are not entrusted or involved in the management of this website.<br/>
+<br/>
 </div>
 
 ---
@@ -36,6 +38,7 @@ III. During general browsing, the server will record the relevant behavior, incl
 IV. In order to provide accurate services, we will collect statistics and analysis of the survey content, and present statistical data or explanatory text of the analysis results, except for internal research, we will publish statistical data and explanatory text as necessary, but do not involve specific personal information.<br/>
 <br/>
 V. You may at any time make a request to us to correct or delete incorrect or incomplete personal data collected by this website.<br/>
+<br/>
 </div>
 
 ---
@@ -45,13 +48,15 @@ V. You may at any time make a request to us to correct or delete incorrect or in
 I. The host of this website is equipped with firewalls, anti-virus systems and other related information security equipment and necessary security measures to protect the website and your personal data using strict protection measures, only authorized personnel can access your personal data, the relevant processing personnel have signed a confidentiality contract, if there is a breach of confidentiality obligations, will be subject to relevant legal sanctions.<br/>
 <br/>
 II. If it is necessary to entrust other units to provide services due to business needs, this website will also strictly require them to comply with the confidentiality obligation, and take the necessary inspection procedures to ensure that they will indeed comply.<br/>
+<br/>
 </div> 
 
 ---
 
 ## IV. External links of the website
 <div>
-The pages of this website provide Internet links to other websites. You may also click on the links provided on this website to access other websites. However, the linked website does not apply to the privacy policy of this website, you must refer to the privacy policy of the linked website.
+The pages of this website provide Internet links to other websites. You may also click on the links provided on this website to access other websites. However, the linked website does not apply to the privacy policy of this website, you must refer to the privacy policy of the linked website.<br/>
+<br/>
 </div> 
 
 ---
@@ -80,6 +85,7 @@ VI. Benefit your interests.<br/>
 <br/>
 <div>
 VII. When this website entrusts manufacturers to help collect, process or use your personal data, it will do its best to supervise and manage the outsourced manufacturers or individuals.<br/>
+<br/>
 </div>
 </div>
 
@@ -88,6 +94,7 @@ VII. When this website entrusts manufacturers to help collect, process or use yo
 ## VI. Use of cookies
 <div>
 In order to provide you with the best service, this website will place and access our cookies on your computer. If you do not want to accept the writing of cookies, you can set the privacy level of the browser function item you use to high, you can refuse the writing of cookies, but it may cause some functions of the website to be unable to perform normally.<br/>
+<br/>
 </div>
 
 ---
@@ -95,6 +102,7 @@ In order to provide you with the best service, this website will place and acces
 ## Vii. Amendment of Privacy Protection Policy
 <div>
 The privacy policy of this website will be amended at any time as required, and the amended terms will be posted on the website.<br/>
+<br/>
 </div>
 
 ---
