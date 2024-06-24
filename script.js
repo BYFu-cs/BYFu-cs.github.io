@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sessionStorage.setItem('hasShownPopup', 'true');
         // 隐藏弹窗
         popupBox.style.display = 'none';
-        document.getElementById("popupBox").classList.remove("active");
+        //document.getElementById("popupBox").classList.remove("active");
     });
 
     // 处理“不同意”按钮点击
