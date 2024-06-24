@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!hasShownPopup) {
         // 显示弹窗
         popupBox.style.display = 'block';
+        document.getElementById("popupBox").classList.add("active");
     }
 
     // 处理“同意”按钮点击
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sessionStorage.setItem('hasShownPopup', 'true');
         // 隐藏弹窗
         popupBox.style.display = 'none';
+        document.getElementById("popupBox").classList.remove("active");
     });
 
     // 处理“不同意”按钮点击
@@ -32,5 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         sessionStorage.setItem('hasShownPopup', 'true');
         // 隐藏弹窗
         popupBox.style.display = 'none';
+        document.getElementById("popupBox").classList.remove("active");
     });
 });
