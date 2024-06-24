@@ -38,7 +38,8 @@ FTC 免責聲明
 
 ## Accessibility Statement 無障礙聲明
 <div>
-為了使所有用戶 - 包括殘障人士，可瀏覽本網站內容，本網站致力符合萬維網聯盟(World Wide Web Consortium - W3C)網頁內容易讀指引2.0(Web Content Accessibility Guidelines 2.0)之 AA 級要求。由於本網站載有一些版權由第三方擁有的內容，如果任何人士在瀏覽本網站上遇到問題，請隨時向我們提出。
+為了使所有用戶 - 包括殘障人士，可瀏覽本網站內容，本網站致力符合萬維網聯盟(World Wide Web Consortium - W3C)網頁內容易讀指引2.0(Web Content Accessibility Guidelines 2.0)之 AA 級要求。由於本網站載有一些版權由第三方擁有的內容，如果任何人士在瀏覽本網站上遇到問題，請隨時向我們提出。<br/>
+<br/>
 </div>
 
 ---
