@@ -97,8 +97,7 @@ layout: default
   </style>
   <title>PopupBox</title>
     <style>
-
-        #popupBox {
+    #popupBox {
     display: none;
     position: fixed;
     top: 50%;
@@ -117,6 +116,12 @@ layout: default
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+#agreeBtn:hover,
+#agreeBtn:active {
+    background-color: #4682B4; /* 深蓝色 */
 }
 
 #disagreeBtn {
@@ -125,6 +130,12 @@ layout: default
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+#disagreeBtn:hover,
+#disagreeBtn:active {
+    background-color: #f9f9f9; /* 弹窗背景颜色 */
 }
     </style>
 </head>
