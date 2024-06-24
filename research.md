@@ -55,27 +55,27 @@ If you are interested in establishing academic collaboration with me, please fee
         </p>
             <p style="text-align: center;">
             <img src="/images/research/point_disk3.png" alt="pointcloud_disk"><br/>
-            (I) The point cloud of a Disk.
+            I. The point cloud of a Disk.
             </p>
         <br/>
             <p style="text-align: center;">
             <img src="/images/research/point_tea.png" alt="pointcloud_tea"><br/>
-            (II) The point cloud of a Teapot.
+            II. The point cloud of a Teapot.
             </p>
         <br/>
             <p style="text-align: center;">
             <img src="/images/research/disk1.png" alt="disk"><br/>
-            (III) The reconstruction of Disk we obtained.
+            III. The reconstruction of Disk we obtained.
             </p>
         <br/>            
             <p style="text-align: center;">
             <img src="/images/research/tea.png" alt="tea"><br/>
-            (IV) The reconstruction of Teapot we obtained.
+            IV. The reconstruction of Teapot we obtained.
             </p>
         <br/>
             <p style="text-align: center;">
             <img src="/images/research/GoldenDragon.png" alt="GD"><br/>
-            (V) The reconstruction of a Golden Dragon we obtained.
+            V. The reconstruction of a Golden Dragon we obtained.
             </p>
         <br/>
 <br/> 
