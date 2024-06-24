@@ -43,4 +43,4 @@ FTC 免責聲明
 
 ---
 
-技術人員電郵 : @fboyoffice@qq.com
+技術人員電郵 : fboyoffice@qq.com
