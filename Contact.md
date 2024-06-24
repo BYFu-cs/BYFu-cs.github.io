@@ -19,5 +19,5 @@ My e-mail box abroad: [Currently unavailable!](mailto:fboyoffice@qq.com)<br/>
 Phone number 1: (+853) 68590830<br/>
 Phone number 2: (+86) 19358590830<br/>
 <br/>
-<em>Last Modified: 24, June, 2024.</em><br/>
+<em>Last Modified: June 24, 2024.</em><br/>
 <br/>
