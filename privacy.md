@@ -19,7 +19,7 @@ Welcome to https://byfu-cs.github.io/ (hereinafter referred to as 'the Website')
 ## I. Scope of application of the Privacy Protection policy
 <div>
 The content of the privacy protection policy, including how this website handles the personally identifiable information collected when you use the website services. The Privacy policy does not apply to related linked websites outside of this website, nor does it apply to persons who are not entrusted or involved in the management of this website.
-
+<br/>
 隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。
 </div>
 
