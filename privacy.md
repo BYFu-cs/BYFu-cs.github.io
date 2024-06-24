@@ -61,12 +61,19 @@ The pages of this website provide Internet links to other websites. You may also
 This website will never provide, exchange, rent or sell any of your personal information to other individuals, groups, private enterprises or public authorities, except for legal basis or contractual obligations.<br/>
 <br/>
 The circumstances of the proviso to the preceding paragraph include but are not limited to:<br/>
+<br/>
 I. With your written consent.<br/>
+<br/>
 II. The law is clear.<br/>
+<br/>
 III. To protect your life, body, liberty or property from danger.<br/>
+<br/>
 IV. Cooperation with public authorities or academic research institutions where it is necessary for statistical or academic research in the public interest and where the data has been processed by the provider or the collector cannot be identified by the manner in which it was disclosed.<br/>
+<br/>
 V. When your behavior on the website violates the terms of service or may damage or interfere with the rights and interests of the website and other users or cause any person to suffer damage, the website management unit has analyzed and disclosed your personal data is necessary for identification, contact or legal action.<br/>
+<br/>
 VI. Benefit your interests.<br/>
+<br/>
 VII. When this website entrusts manufacturers to help collect, process or use your personal data, it will do its best to supervise and manage the outsourced manufacturers or individuals.<br/>
 </div>
 
