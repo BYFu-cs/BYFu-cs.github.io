@@ -45,7 +45,10 @@ permalink: /research/
             Below are some of the thesis results:
         <br/> 
         <br/> 
+        <div style="text-align: center;">
             <img src="/images/research/point_disk3.png" alt="pointcloud_disk">
+            <p>The point cloud of a disk.</p>
+        </div>
         <br/>
         <br/>
             <img src="/images/research/point_tea.png" alt="pointcloud_tea">
