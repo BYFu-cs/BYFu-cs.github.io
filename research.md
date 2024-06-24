@@ -44,7 +44,20 @@ permalink: /research/
         <br/> 
             Below are some of the thesis results:
         <br/> 
-            <img src="/images/first-post.png" alt="fp">
+        <br/> 
+            <img src="/images/research/point_disk3.png" alt="pointcloud_disk">
+        <br/>
+        <br/>
+            <img src="/images/research/point_tea.png" alt="pointcloud_tea">
+        <br/>
+        <br/>
+            <img src="/images/research/disk1.png" alt="disk">
+        <br/>
+        <br/>
+            <img src="/images/research/tea.png" alt="tea">
+        <br/>
+        <br/>
+            <img src="/images/research/GoldenDragon.png" alt="GD">
         <br/>
 <br/> 
 (Warning: Please note that our papers are not yet public! Please do not distribute these results without permission! I reserve the right to pursue legal action.)<br/> 
