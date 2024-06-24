@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const disagreeBtn = document.getElementById('disagreeBtn');
 
     // 检查是否已显示过弹窗
-    const hasShownPopup = localStorage.getItem('hasShownPopup');
+    const hasShownPopup = sessionStorage.getItem('hasShownPopup');
     if (!hasShownPopup) {
         // 显示弹窗
         popupBox.style.display = 'block';
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 例如继续浏览页面或执行其他操作
         console.log('用户同意继续浏览页面');
         // 设置标记，表示已显示过弹窗
-        localStorage.setItem('hasShownPopup', 'true');
+        sessionStorage.setItem('hasShownPopup', 'true');
         // 隐藏弹窗
         popupBox.style.display = 'none';
     });
@@ -29,9 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // 例如关闭弹窗或执行其他操作
         console.log('用户不同意继续浏览页面');
         // 设置标记，表示已显示过弹窗
-        localStorage.setItem('hasShownPopup', 'true');
+        sessionStorage.setItem('hasShownPopup', 'true');
         // 隐藏弹窗
         popupBox.style.display = 'none';
     });
 });
-
