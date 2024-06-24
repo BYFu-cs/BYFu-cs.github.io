@@ -95,6 +95,21 @@ layout: default
     }
 
   </style>
+  <title>PopupBox</title>
+    <style>
+        /* 弹窗样式 */
+        #popupBox {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
   <div class="search-container">
     <div class="search-icon" onclick="performSearch()">
@@ -147,3 +162,11 @@ layout: default
   {% endfor %}
 </div>
 
+<div id="popupBox">
+        <p>这是一些重要信息。</p>
+        <button id="agreeBtn">同意</button>
+        <button id="disagreeBtn">不同意</button>
+    </div>
+
+    <!-- 引入 JavaScript 文件 -->
+    <script src="/script.js"></script>
