@@ -42,7 +42,7 @@ III. During general browsing, the server will record the relevant behavior, incl
 
 IV. In order to provide accurate services, we will collect statistics and analysis of the survey content, and present statistical data or explanatory text of the analysis results, except for internal research, we will publish statistical data and explanatory text as necessary, but do not involve specific personal information.<br/>
 <br/>
-條例肆 為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。<br/>
+條例肆 為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視乎需要公佈統計數據及說明文字，但不涉及特定個人之資料。<br/>
 
 V. You may at any time make a request to us to correct or delete incorrect or incomplete personal data collected by this website.<br/>
 <br/>
