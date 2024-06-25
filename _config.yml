@@ -78,9 +78,9 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Gitalk settings
-comment_gitalk_clientId: 'Ov23ctryzdChSl8iq4Pj'
-comment_gitalk_clientSecret: '78c901647fefe12e412e2283c7d7e6516cffd976'
-comment_gitalk_repo: 'BYFu-cs.github.io'
+comment_gitalk_clientId: Ov23ctryzdChSl8iq4Pj
+comment_gitalk_clientSecret: 78c901647fefe12e412e2283c7d7e6516cffd976
+comment_gitalk_repo: BYFu-cs.github.io
 github_username: 'BYFu-cs'
 #labels: ['Gitalk'] #GitHub issues的标签
 #perPage: 10 #每页多少个评论
