@@ -82,10 +82,10 @@ comment_gitalk_clientId: Ov23ctryzdChSl8iq4Pj
 comment_gitalk_clientSecret: 78c901647fefe12e412e2283c7d7e6516cffd976
 comment_gitalk_repo: BYFu-cs.github.io
 github_username: BYFu-cs
-# labels: ['Gitalk'] #GitHub issues的标签
-# perPage: 10 #每页多少个评论
-# pagerDirection: last #排序方式是从旧到新（first），还是从新到旧（last）
-# createIssueManually: true #是否自动创建isssue，自动创建需要当前登录的用户为adminuser
+labels: ['Gitalk'] #GitHub issues的标签
+perPage: 10 #每页多少个评论
+pagerDirection: last #排序方式是从旧到新（first），还是从新到旧（last）
+createIssueManually: true #是否自动创建isssue，自动创建需要当前登录的用户为adminuser
 
 # Exclude these files from your production _site
 exclude:
