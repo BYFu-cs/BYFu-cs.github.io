@@ -40,6 +40,6 @@ I will be applying for master’s programs abroad in the 25fall. I hope to meet 
 
 ## More Information 更多
 
-More information about me will be presented in a subsequent update, so stay tuned!
+More information regarding me will be presented in a subsequent update, so stay tuned!
 
 關於我的更多信息將會在後續的更新中呈現，敬請期待！
