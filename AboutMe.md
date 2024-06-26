@@ -38,6 +38,8 @@ I will be applying for master’s programs abroad in the 25fall. I hope to meet 
 
 ---
 
-## More Information
+## More Information 更多
 
-A place to include any other types of information that you'd like to include about yourself.
+More information about me will be presented in a subsequent update, so stay tuned!
+
+關於我的更多信息將會在後續的更新中呈現，敬請期待！
