@@ -5,41 +5,6 @@ layout: default
 <article class="post">
 	
 <!-- return to the top -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Back to the top</title>
-    <style>
-        #backToTop {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #f5f5f5;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-
-        function showBackToTopButton() {
-            var backToTop = document.getElementById("backToTop");
-            if (window.pageYOffset > 100) {
-                backToTop.style.display = "block";
-            } else {
-                backToTop.style.display = "none";
-            }
-        }
-
-        window.onscroll = function() {
-            showBackToTopButton();
-        };
-    </script>
-</head>
 	
   <h1>{{ page.title }}</h1>
 
