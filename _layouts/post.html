@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<head><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></head>
-
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -16,55 +14,6 @@ layout: default
   </div>
 	
 <!-- return to the top -->
-<div id="return-top" class="top_e">
-  <img src="imgages/top.png.webp" width="60" id="img" >
-    <div style="width:60px;margin:auto;">
-        <p id='font' style="font-size:20px;margin-left:10px;display:none;">Back to<br>the Top</p>
-    </div>
-</div>
-
- <style type="text/css">
-        
-       .top_e{
-            position:fixed;right:10px;bottom:40px;
-            background:rgba(204,200,255,0.6);
-            border-radius:15px;
-            cursor:pointer;
-            display:none;
-            width:60px;
-            height:60px;
-            }
-       .top_e:hover
-       {
-         color:white;
-         background:#1296DB;
-       }
-    </style>
-<script>
-$(document).ready(function(){
- $(window).scroll(function(){
-            if($(window).scrollTop()>300){
-                $('#return-top').fadeIn(300);
-                }
-             else{$('#return-top').fadeOut(200);}
-                 })
-
-
-$("#return-top").click(function(){
-scrollTo(0,0);
-});
-
-$(".top_e").mouseover(function(){
-    $("#img").hide();
-    $("#font").show();
-})
-
-$(".top_e").mouseout(function(){
-    $("#font").hide();
-    $("#img").show();
-})
-}
-</script>
 
 <!-- Gitalk start -->
 <div id="gitalk-container"></div> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
