@@ -55,6 +55,7 @@ Then You can return to Google Analytics and refresh the page to make Google Anal
 This is the whole tutorial regarding "How to count the traffic on your own website". If you like it, please offer me a comment support!<br/>
 <br/>
 
+<!--
 <!-- return to the top -->
 <head>
     <title>Back to Top</title>
@@ -98,3 +99,4 @@ function topFunction() {
   <body>
       <button onclick="topFunction()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
   </body>
+-->
