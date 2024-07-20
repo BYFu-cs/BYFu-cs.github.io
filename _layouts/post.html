@@ -12,6 +12,32 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+	
+<!-- return to the top -->
+<div id="return-top" class="top_e">
+  <img src="imgages/top.png" width="60" id="img" >
+    <div style="width:60px;margin:auto;">
+        <p id='font' style="font-size:20px;margin-left:10px;display:none;">Back to<br>the Top</p>
+    </div>
+</div>
+
+ <style type="text/css">
+        
+       .top_e{
+            position:fixed;right:10px;bottom:40px;
+            background:rgba(204,200,255,0.6);
+            border-radius:15px;
+            cursor:pointer;
+            display:none;
+            width:60px;
+            height:60px;
+            }
+       .top_e:hover
+       {
+         color:white;
+         background:#1296DB;
+       }
+    </style>
 
 <!-- Gitalk start -->
 <div id="gitalk-container"></div> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
