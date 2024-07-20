@@ -42,7 +42,7 @@ If you're interested in my research work, please feel free to explore my researc
     </style>
 </head>
 <body>
-    <h2>Numerical computing: 3D narrow volume reconstruction utilizing leap-fog algorithm.</h2>
+    <h2>Numerical computing: 3D narrow volume reconstruction utilizing leap-frog algorithm.</h2>
     <div class="collapsible">
         <p>
             The whole Scientific research I participated is based on Allen-Cahn(AC) equation and Crank-Nicolson(CN) Method.The proposed modified fusion algorithm, such as the leap-frog algorithm, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a faster or more accurate model. The research papers by our group will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
