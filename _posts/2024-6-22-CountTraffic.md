@@ -54,3 +54,32 @@ Then You can return to Google Analytics and refresh the page to make Google Anal
 
 This is the whole tutorial regarding "How to count the traffic on your own website". If you like it, please offer me a comment support!<br/>
 <br/>
+
+<!-- return to the top -->
+<head>
+    <title>Back to Top</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(249, 249, 249, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px; 
+    font-size: 18px; 
+    cursor: pointer;
+  }
+      .fas {
+    font-size: 24px;
+  }
+    </style>
+    <script src="_layout/scripts.js"></script>
+  </head>	
+  
+  <body>
+<button onclick="topFunction()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+<script src="_layout/scripts.js"></script>
+  </body>
