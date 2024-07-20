@@ -26,7 +26,7 @@ excerpt:
     font-size: 24px;
   }
     </style>
-    <script src="_layout/scripts.js"></script>
+    <script src="script.js"></script>
   </head>	
   
   <body>
