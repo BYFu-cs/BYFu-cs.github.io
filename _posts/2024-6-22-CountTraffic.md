@@ -27,7 +27,22 @@ excerpt:
   }
     </style>
     <script>
-        
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("backToTop").style.display = "block";
+  } else {
+    document.getElementById("backToTop").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+}
     </script>
   </head>	
   
@@ -82,4 +97,3 @@ This is the whole tutorial regarding "How to count the traffic on your own websi
 <br/>
 
 <button onclick="topFunction()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
-<script src="script.js"></script>
