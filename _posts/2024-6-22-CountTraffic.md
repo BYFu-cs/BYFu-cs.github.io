@@ -4,47 +4,6 @@ title: How to count traffic on your own website?
 tags: tech
 excerpt:
 ---
-
-<!-- return to the top -->
-<head>
-    <title>Back to Top</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-      #backToTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(249, 249, 249, 0.5);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px; 
-    font-size: 18px; 
-    cursor: pointer;
-  }
-      .fas {
-    font-size: 24px;
-  }
-    </style>
-    <script>
-window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("backToTop").style.display = "block";
-  } else {
-    document.getElementById("backToTop").style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
-}
-    </script>
-  </head>	
   
 Many people want to see the behavior of the client when building their own web pages. There is no doubt that client-facing analytics can always help web administrators run their web pages better. Here's how to count traffic for your website.<br/>
 <br/>
@@ -96,4 +55,46 @@ Then You can return to Google Analytics and refresh the page to make Google Anal
 This is the whole tutorial regarding "How to count the traffic on your own website". If you like it, please offer me a comment support!<br/>
 <br/>
 
-<button onclick="topFunction()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+<!-- return to the top -->
+<head>
+    <title>Back to Top</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(249, 249, 249, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px; 
+    font-size: 18px; 
+    cursor: pointer;
+  }
+      .fas {
+    font-size: 24px;
+  }
+    </style>
+    <script>
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("backToTop").style.display = "block";
+  } else {
+    document.getElementById("backToTop").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+  </head>	
+  <body>
+      <button onclick="topFunction()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+  </body>
