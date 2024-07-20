@@ -4,6 +4,9 @@ window.onscroll = function() {
   scrollFunction();
 };
 
+window.addEventListener("scroll", scrollFunction);
+
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("backToTop").style.display = "block";
