@@ -150,6 +150,19 @@ layout: default
     background-color: #f9f9f9; 
 }
     </style>
+<title>Back to Top</title>
+  <style>
+    #backToTop {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
   <div class="search-container">
     <div class="search-icon" onclick="performSearch()">
@@ -213,5 +226,6 @@ layout: default
         <a href="https://byfu-cs.github.io/privacy/"><button id="disagreeBtn">Disagree</button></a>
     </div>
 
+    <button onclick="topFunction()" id="backToTop">back to the top.</button>
     <!-- 引入 JavaScript 文件 -->
     <script src="script.js"></script>
