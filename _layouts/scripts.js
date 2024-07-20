@@ -1,9 +1,5 @@
 
 // script.js
-window.onscroll = function() {
-  scrollFunction();
-};
-
 window.addEventListener("scroll", scrollFunction);
 
 
