@@ -16,12 +16,12 @@ The following content is based on Google Analytics.<br/>
 You can click here to visit: [Google Analytics](https://analytics.google.com/analytics/web).<br/>
 <br/>
 There are five main steps you can follow to achieve the goal.<br/>
-> Step I.  <a href="#stepone">Generate your personal account.</a>
-> Step II. <a href="#steptwo">Find specific option.</a>
-> Step III. <a href="#stepthree">Get your **Tracking code**.</a>
-> Step IV. <a href="#stepfour">Embedding **Tracking code** in your page.</a>
-> Step V. <a href="#finish">Finish.</a>
-
+> Step I.  <a href="#stepone">Generate your personal account.</a><br/>
+> Step II. <a href="#steptwo">Find specific option.</a><br/>
+> Step III. <a href="#stepthree">Get your **Tracking code**.</a><br/>
+> Step IV. <a href="#stepfour">Embedding **Tracking code** in your page.</a><br/>
+> Step V. <a href="#finish">Finish.</a><br/>
+<br/>
 
 
 ### <a id = "stepone">Step I.</a>
