@@ -4,6 +4,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const popupBox = document.getElementById('popupBox');
     const agreeBtn = document.getElementById('agreeBtn');
     const disagreeBtn = document.getElementById('disagreeBtn');
+    //for pagination-container
+    const postsPerPage = 8;
+    const postsContainer = document.getElementById('posts-container');
+    const paginationContainer = document.getElementById('pagination-container');
+    const posts = Array.from(postsContainer.getElementsByClassName('post'));
+    const totalPages = Math.ceil(posts.length / postsPerPage);
+
+    function showPage(page) {
+      posts.forEach((post, index) => {
+        post.style.display = (index >= (page - 1) * postsPerPage && index < page * postsPerPage) ? 'block' : 'none';
+      });
+    }
+
+    function createPagination() {
+      for (let i = 1; i <= totalPages; i++) {
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = i;
+        link.className = 'pagination-link';
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelectorAll('.pagination-link').forEach(link => link.classList.remove('active'));
+          this.classList.add('active');
+          showPage(i);
+        });
+        paginationContainer.appendChild(link);
+      }
+    }
+
+    createPagination();
+    showPage(1); // Show the first page by default
+    document.querySelector('.pagination-link').classList.add('active');
 
     // 检查是否已显示过弹窗
     const hasShownPopup = sessionStorage.getItem('hasShownPopup');
