@@ -16,7 +16,7 @@ The following content is based on Google Analytics.<br/>
 You can click here to visit: [Google Analytics](https://analytics.google.com/analytics/web).<br/>
 <br/>
 There are five main steps you can follow to achieve the goal.<br/>
-<p style="background-color: gray;"><font size = 4>
+<p style="background-color: #C0C0C0;"><font size = 5>
 > Step I.  <a href="#stepone">Generate your personal account.</a><br/>
 > Step II. <a href="#steptwo">Find specific option.</a><br/>
 > Step III. <a href="#stepthree">Get your **Tracking code**.</a><br/>
