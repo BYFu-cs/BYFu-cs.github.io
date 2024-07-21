@@ -230,9 +230,8 @@ layout: default
 
 <div id="pagination-container"></div>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
     const postsPerPage = 8;
-    const postsContainer = document.getElementById('posts-container');
+    const postsContainer = document.querySelector('.posts');
     const paginationContainer = document.getElementById('pagination-container');
     const posts = Array.from(postsContainer.getElementsByClassName('post'));
     const totalPages = Math.ceil(posts.length / postsPerPage);
@@ -271,7 +270,7 @@ layout: default
     }
 
     createPagination();
-    showPage(1); // show the first page by default
+    showPage(1); // show first page by default
     document.querySelector('.pagination-link').classList.add('active');
   });
 </script>
