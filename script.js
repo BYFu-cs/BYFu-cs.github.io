@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const agreeBtn = document.getElementById('agreeBtn');
     const disagreeBtn = document.getElementById('disagreeBtn');
     //for pagination-container
-  document.addEventListener('DOMContentLoaded', function () {
     const postsPerPage = 8;
     const postsContainer = document.querySelector('.posts');
     const paginationContainer = document.getElementById('pagination-container');
