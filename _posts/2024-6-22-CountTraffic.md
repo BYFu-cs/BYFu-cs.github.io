@@ -19,7 +19,7 @@ There are five main steps you can follow to achieve the goal.<br/>
 > Step I.  <a href="#stepone">Generate your personal account.</a><br/>
 > Step II. <a href="#steptwo">Find specific option.</a><br/>
 > Step III. <a href="#stepthree">Get your **Tracking code**.</a><br/>
-> Step IV. <a href="#stepfour">Embedding **Tracking code** in your page.</a><br/>
+> Step IV. <a href="#stepfour">Embed **Tracking code** in your page.</a><br/>
 > Step V. <a href="#finish">Finish.</a><br/>
 
 ### <a id = "stepone">Step I.</a>
