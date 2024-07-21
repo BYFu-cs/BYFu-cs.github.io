@@ -15,7 +15,13 @@ The following content is based on Google Analytics.<br/>
 <br/>
 You can click here to visit: [Google Analytics](https://analytics.google.com/analytics/web).<br/>
 <br/>
-### Step I.
+There are five main steps you can follow to achieve the goal.<br/>
+> Step I.  <a href="#stepone" >Generate your personal account.</a>
+>
+
+
+
+### <p><a id = "stepone">Step I.</a></p>
 You should create your own account in **Google Analytics**, and then create a recognizable name in the account for the data stream that belongs to you.<br/>
 <br/>
 ### Step II.
