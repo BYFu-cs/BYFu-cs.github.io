@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createPagination();
-    showPage(1); // 默认显示第一页
+    showPage(1); // show the first page by default
     document.querySelector('.pagination-link').classList.add('active');
 
     
