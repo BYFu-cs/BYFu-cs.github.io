@@ -224,6 +224,55 @@ layout: default
 </div>
 
 <div id="pagination-container"></div>
+<script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const postsPerPage = 8;
+    const postsContainer = document.getElementById('posts-container');
+    const paginationContainer = document.getElementById('pagination-container');
+    const posts = Array.from(postsContainer.getElementsByClassName('post'));
+    const totalPages = Math.ceil(posts.length / postsPerPage);
+
+    function showPage(page) {
+      posts.forEach((post, index) => {
+        post.style.display = (index >= (page - 1) * postsPerPage && index < page * postsPerPage) ? 'block' : 'none';
+      });
+    }
+
+    function createPagination() {
+      paginationContainer.innerHTML = '';
+      const maxVisiblePages = 5;
+      const currentPage = parseInt(document.querySelector('.pagination-link.active')?.textContent || 1);
+
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+          const link = document.createElement('a');
+          link.href = '#';
+          link.textContent = i;
+          link.className = 'pagination-link';
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelectorAll('.pagination-link').forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+            showPage(i);
+            createPagination();
+          });
+          paginationContainer.appendChild(link);
+        } else if (i === currentPage - 3 || i === currentPage + 3) {
+          const ellipsis = document.createElement('span');
+          ellipsis.textContent = '...';
+          paginationContainer.appendChild(ellipsis);
+        }
+      }
+    }
+
+    createPagination();
+    showPage(1); // show the first page by default
+    document.querySelector('.pagination-link').classList.add('active');
+  });
+</script>
+
+</script>
 
 <div id="popupBox">
         <h3 font-weight: blod;>Cookie setting</h3>
