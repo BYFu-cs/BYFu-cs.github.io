@@ -21,8 +21,6 @@ There are five main steps you can follow to achieve the goal.<br/>
 > Step III. <a href="#stepthree">Get your **Tracking code**.</a><br/>
 > Step IV. <a href="#stepfour">Embedding **Tracking code** in your page.</a><br/>
 > Step V. <a href="#finish">Finish.</a><br/>
-<br/>
-
 
 ### <a id = "stepone">Step I.</a>
 You should create your own account in **Google Analytics**, and then create a recognizable name in the account for the data stream that belongs to you.<br/>
