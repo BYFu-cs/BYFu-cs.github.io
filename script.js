@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createPagination();
-    showPage(1); // show the first page by default
+    //showPage(1); // show the first page by default
     document.querySelector('.pagination-link').classList.add('active');
 
     
