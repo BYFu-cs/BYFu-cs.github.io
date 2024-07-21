@@ -19,5 +19,5 @@ A Single Population T-test tests whether a sample mean differs significantly fro
 <br/>
 The formula of Single Population T-test is:<br/>
 <head><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
-$$t = \frac{\overline{X} - \mu_{0}}{\frac{\sigma_{x}}{\sqrt{N}}}$$
+$$\begin{aligned}t = \frac{\overline{X} - \mu_{0}}{\frac{\sigma_{x}}{\sqrt{N}}}\end{aligned}$$
 
