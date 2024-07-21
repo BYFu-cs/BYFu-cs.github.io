@@ -18,5 +18,6 @@ In general,T-test can be classified as three tests: Single Population Test, Doub
 A Single Population T-test tests whether a sample mean differs significantly from a known population mean. When the population distribution is normal, such as the population standard deviation is unknown and the sample size is less than 30, then the deviation statistic between the sample mean and the population mean is T-distributed.In other word, the purpose of T-test is to determine whether the mean difference between two types of samples on a certain variable is significant, which is also the reason why we constructing T-test.<br/>
 <br/>
 The formula of Single Population T-test is:<br/>
-<p align="center">$$t = \frac{\overline{X} - \mu_{0}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
+<p align="center">$$t = \frac{\overline{X} - \mu_{0}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p><br/>
+Here \overline{X} represents sample mean,\mu_{0} represents population mean,\sigma_{x} represents standard deviation and N represents the number of sameples.
 
