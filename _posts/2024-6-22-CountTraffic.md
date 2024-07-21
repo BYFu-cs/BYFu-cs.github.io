@@ -17,10 +17,10 @@ You can click here to visit: [Google Analytics](https://analytics.google.com/ana
 <br/>
 There are five main steps you can follow to achieve the goal.<br/>
 
-> <small>Step I.  <a href="#stepone">Generate your personal account.</a></small>
-> <small>Step II. <a href="#steptwo">Find specific option.</a></small>
-> <small>Step III. <a href="#stepthree">Get your **Tracking code**.</a></small>
-> <small>Step IV. <a href="#stepfour">Embed **Tracking code** in your page.</a></small>
+> <small>Step I.  <a href="#stepone">Generate your personal account.</a></small><br/>
+> <small>Step II. <a href="#steptwo">Find specific option.</a></small><br/>
+> <small>Step III. <a href="#stepthree">Get your **Tracking code**.</a></small><br/>
+> <small>Step IV. <a href="#stepfour">Embed **Tracking code** in your page.</a></small><br/>
 > <small>Step V. <a href="#finish">Finish.</a></small>
 
 ### <a id = "stepone">Step I.</a>
