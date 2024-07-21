@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <p>Machine Learning: Confidence Interval and Confidence Level based on T-test.</p>
+title: Machine Learning：Confidence Interval and Confidence Level based on T-test.
 tags: learn
 excerpt:
 ---
