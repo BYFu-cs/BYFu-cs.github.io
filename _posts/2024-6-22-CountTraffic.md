@@ -16,13 +16,12 @@ The following content is based on Google Analytics.<br/>
 You can click here to visit: [Google Analytics](https://analytics.google.com/analytics/web).<br/>
 <br/>
 There are five main steps you can follow to achieve the goal.<br/>
-<p style="background-color: #C0C0C0;"><font size = 5>
-> Step I.  <a href="#stepone">Generate your personal account.</a><br/>
-> Step II. <a href="#steptwo">Find specific option.</a><br/>
-> Step III. <a href="#stepthree">Get your **Tracking code**.</a><br/>
-> Step IV. <a href="#stepfour">Embed **Tracking code** in your page.</a><br/>
-> Step V. <a href="#finish">Finish.</a><br/>
-</font></p>
+
+> Step I.  <font size = 5><a href="#stepone">Generate your personal account.</a></font><br/>
+> Step II. <font size = 5><a href="#steptwo">Find specific option.</a></font><br/>
+> Step III. <font size = 5><a href="#stepthree">Get your **Tracking code**.</a></font><br/>
+> Step IV. <font size = 5><a href="#stepfour">Embed **Tracking code** in your page.</a></font><br/>
+> Step V. <font size = 5><a href="#finish">Finish.</a><br/>
 
 ### <a id = "stepone">Step I.</a>
 You should create your own account in **Google Analytics**, and then create a recognizable name in the account for the data stream that belongs to you.<br/>
