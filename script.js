@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     createPagination();
     showPage(1); // 默认显示第一页
     document.querySelector('.pagination-link').classList.add('active');
-  });
 
     
     // 检查是否已显示过弹窗
