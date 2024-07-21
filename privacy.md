@@ -99,7 +99,7 @@ In order to provide you with the best service, this website will place and acces
 
 ---
 
-## Vii. Amendment of Privacy Protection Policy
+## VII. Amendment of Privacy Protection Policy
 <div>
 The privacy policy of this website will be amended at any time as required, and the amended terms will be posted on the website.<br/>
 <br/>
