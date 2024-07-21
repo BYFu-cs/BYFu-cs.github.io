@@ -157,7 +157,7 @@ layout: default
   text-align: center;
   margin-top: 20px;
 }
-/*
+
 .pagination-link {
   display: inline-block;
   margin: 0 3px; 
@@ -176,20 +176,7 @@ layout: default
 }
 
 .pagination-link.active {
-  background-color: white;
-  color: white;
-}*/
-    .pagination-link {
-  display: inline-block;
-  margin: 0 5px;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  color: #333;
-  text-decoration: none;
-}
-
-.pagination-link.active {
-  background-color: #007bff;
+  background-color: #333;
   color: white;
 }
   </style>
@@ -292,7 +279,7 @@ layout: default
     }
 
     createPagination();
-    //showPage(1); // show the first page by default
+    showPage(1); // show the first page by default
     document.querySelector('.pagination-link').classList.add('active');
   });
 </script>
