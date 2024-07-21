@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const agreeBtn = document.getElementById('agreeBtn');
     const disagreeBtn = document.getElementById('disagreeBtn');
     //for pagination-container
+  document.addEventListener('DOMContentLoaded', function () {
     const postsPerPage = 8;
-    const postsContainer = document.getElementById('posts-container');
+    const postsContainer = document.querySelector('.posts');
     const paginationContainer = document.getElementById('pagination-container');
     const posts = Array.from(postsContainer.getElementsByClassName('post'));
     const totalPages = Math.ceil(posts.length / postsPerPage);
@@ -45,8 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createPagination();
-    showPage(1); // show the first page by default
+    showPage(1); // 默认显示第一页
     document.querySelector('.pagination-link').classList.add('active');
+  });
+
     
     // 检查是否已显示过弹窗
     const hasShownPopup = sessionStorage.getItem('hasShownPopup');
