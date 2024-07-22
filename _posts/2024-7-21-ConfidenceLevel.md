@@ -35,10 +35,15 @@ As the figure above, we can observe that when the degree of freedom increments, 
 ### 1.2.1 Definition of Confidence Interval.
 All confidence intervals are based on the concept of **point estimation**, in which a single sample is taken from the population and its sample mean is used as a point estimate of the population mean.The confidence interval is where we add a **floating range** to the point estimate, and the value within this interval is acceptable to the forecast.<br/>
 <br/>
-Since the mean of the point estimate is easy to find, what we really need to determine is the upper and lower boundaries of confidence interval, that is, the floating range.We will elaborate it detailedly in the following content.<br/>
+Since the mean of the point estimate is easy to find, what we really need to determine is the upper and lower **boundaries(critical points)** of confidence interval, that is, the floating range.We will elaborate it detailedly in the following content.<br/>
 <br/>
 
 ### 1.2.2 Definition of Confidence Level.
-To better understand the confidence level, we need to introduce **Significance Level $$\alpha$$** firstly.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.
+To better understand the confidence level, we need to introduce **Significance Level α** firstly.By definition, Significance level refers to the probability that the null hypothesis is wrongly rejected when the null hypothesis itself is true in a statistical hypothesis test.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.<br/>
+<br/>
+**Confidence Level is an abstraction of Confidence Interval**.By repeatedly building the Confidence Interval, we get a set of Confidence intervals.The Confidence Level is the frequency of the Confidence Interval that contains the real population mean in the set over the number of Confidence intervals in the set, which is:<br/>
+<p algn="center">$$Confidence-Level = \frac{Number of Confidence-Intervals that contain the real population mean}{Totol number of Confidence-Intervals}$$</p>
+However,this formula is inefficient.In contrary,there exists a more efficient formula:
+<p algn="center">$$Confidence-Level = 1 - \alpha$$</p>
 
 
