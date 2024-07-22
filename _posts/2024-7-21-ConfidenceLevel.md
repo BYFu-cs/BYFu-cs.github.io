@@ -31,6 +31,14 @@ Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population
 As the figure above, we can observe that when the degree of freedom increments, the curve becomes narrower and taller, and more resemble as normal distribution.Conversely, it becomes flatter.In the matter of fact, when $$df \geq 30$$, the T-distribution curve and the normal distribution curve are difficult to distinguish with the naked eyes.<br/>
 <br/>
 
-## 1.2 Confidence Interval.
+## 1.2 Confidence Interval and Confidence Level
 ### 1.2.1 Definition of Confidence Interval.
-All confidence intervals are based on the concept of **point estimation**, in which a single sample is taken from the population and its sample mean is used as a point estimate of the population mean.The confidence interval is where we add a floating range to the point estimate, and the value within this interval is acceptable to the forecast.<br/>
+All confidence intervals are based on the concept of **point estimation**, in which a single sample is taken from the population and its sample mean is used as a point estimate of the population mean.The confidence interval is where we add a **floating range** to the point estimate, and the value within this interval is acceptable to the forecast.<br/>
+<br/>
+Since the mean of the point estimate is easy to find, what we really need to determine is the upper and lower boundaries of confidence interval, that is, the floating range.We will elaborate it detailedly in the following content.<br/>
+<br/>
+
+### 1.2.2 Definition of Confidence Level.
+To better understand the Confidence Level, we need to introduce **Significance Level $$\alpha$$** firstly.
+
+
