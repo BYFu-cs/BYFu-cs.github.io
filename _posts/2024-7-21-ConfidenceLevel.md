@@ -21,5 +21,10 @@ The formula of Single Population T-test is:<br/>
 <p align="center">$$t = \frac{\overline{X} - \mu_{0}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
 Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population mean, $$\sigma_{x}$$ represents standard deviation and N represents the number of samples.In Single Population T-test, the **degree of freedom** df = N -1. With more professional terminology, $$\frac{\sigma_{x}}{\sqrt{N}}$$ stands for **Standard Error of Mean**, which is:<br/>
 <p align="center">$$SEM = \frac{\sigma_{x}}{\sqrt{N}}$$</p>
-**SEM** is a quite significant concept.Instead of the standard deviation of the population, SEM utilizes the sample standard deviation.Therefore, we can conclude that **the T-value can be interpreted as the extent to which the sampling mean deviates from the population mean correspond to the SEM**.
+**SEM** is a quite significant concept.Instead of the standard deviation of the population, SEM utilizes the sample standard deviation.In light of above, we can conclude that **the T-value can be interpreted as the extent to which the sampling mean deviates from the population mean correspond to the SEM**.<br/>
+<br/>
+
+### 1.1.2 Feature of T-test.
+
+As the figure above, we can observe
 
