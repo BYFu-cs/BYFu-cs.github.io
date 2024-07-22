@@ -39,7 +39,7 @@ Since the mean of the point estimate is easy to find, what we really need to det
 <br/>
 
 ### 1.2.2 Definition of Confidence Level.
-To better understand the confidence level, we need to introduce **Significance Level α** firstly.By definition, Significance level refers to the probability that the null hypothesis is wrongly rejected when the null hypothesis itself is true in a statistical hypothesis test.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.<br/>
+To better understand the confidence level, we need to introduce **Significance Level $$\alpha$$** firstly.By definition, Significance level refers to the probability that the null hypothesis is wrongly rejected when the null hypothesis itself is true in a statistical hypothesis test.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.<br/>
 <br/>
 **Confidence Level is an abstraction of Confidence Interval**.By repeatedly building the Confidence Interval, we obtain a set of Confidence intervals.The Confidence Level is the frequency of the Confidence Interval that contains the real population mean in the set over the number of Confidence intervals in the set.However,this formula is inefficient.In contrary,there exists a more efficient formula:
 <p algn="center">$$ConfidenceLevel = 1 - \alpha$$</p>
