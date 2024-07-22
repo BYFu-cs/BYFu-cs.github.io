@@ -42,8 +42,8 @@ Since the mean of the point estimate is easy to find, what we really need to det
 To better understand the confidence level, we need to introduce **Significance Level α** firstly.By definition, Significance level refers to the probability that the null hypothesis is wrongly rejected when the null hypothesis itself is true in a statistical hypothesis test.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.<br/>
 <br/>
 **Confidence Level is an abstraction of Confidence Interval**.By repeatedly building the Confidence Interval, we get a set of Confidence intervals.The Confidence Level is the frequency of the Confidence Interval that contains the real population mean in the set over the number of Confidence intervals in the set, which is:<br/>
-<p algn="center">$$Confidence-Level = \frac{Number of Confidence-Intervals that contain the real population mean}{Totol number of Confidence-Intervals}$$</p>
+<p algn="center">$$ConfidenceLevel = \frac{Number_of_ConfidenceIntervals_contain_the_real_population_mean}{Totol_number_of_ConfidenceIntervals}$$</p>
 However,this formula is inefficient.In contrary,there exists a more efficient formula:
-<p algn="center">$$Confidence-Level = 1 - \alpha$$</p>
+<p algn="center">$$ConfidenceLevel = 1 - \alpha$$</p>
 
 
