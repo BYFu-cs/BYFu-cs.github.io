@@ -26,6 +26,6 @@ Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population
 
 ### 1.1.2 Feature of T-test.
 ![t_distribution_comparisons]({{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png)<br/>
-<p align="center"><i>[figure source:<a href="https://www.scribbr.co.uk/stats/t-distribution-meaning/">www.scribbr.co.uk</a>]</i></p>
+<p align="center">[figure source: <i><a href="https://www.scribbr.co.uk/stats/t-distribution-meaning/">www.scribbr.co.uk</a></i>]</p>
 As the figure above, we can observe
 
