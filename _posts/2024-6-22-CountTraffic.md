@@ -4,7 +4,8 @@ title: How to count traffic on your own website?
 tags: tech
 excerpt:
 ---
-  
+
+![cover]({{ site.baseurl }}/images/Fun_Blog1/GA.png)
 Many people want to see the behavior of the client when building their own web pages. There is no doubt that client-facing analytics can always help web administrators run their web pages better. Here's how to count traffic for your website.<br/>
 <br/>
 
