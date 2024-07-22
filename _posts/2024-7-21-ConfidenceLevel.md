@@ -39,6 +39,6 @@ Since the mean of the point estimate is easy to find, what we really need to det
 <br/>
 
 ### 1.2.2 Definition of Confidence Level.
-To better understand the Confidence Level, we need to introduce **Significance Level $$\alpha$$** firstly.
+To better understand the confidence level, we need to introduce **Significance Level $$\alpha$$** firstly.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.
 
 
