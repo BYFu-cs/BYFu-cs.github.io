@@ -28,5 +28,4 @@ Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population
 ### 1.1.2 Feature of T-test.
 ![t_distribution_comparisons]({{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png)<br/>
 <p align="center">[figure source: <i><a href="https://www.scribbr.co.uk/stats/t-distribution-meaning/">www.scribbr.co.uk</a></i>]</p>
-As the figure above, we can observe that when the degree of freedom increments, the image becomes narrower and taller, and more resemble as normal distribution.
-Conversely, it becomes flatter.
+As the figure above, we can observe that when the degree of freedom increments, the function becomes narrower and taller, and more resemble as normal distribution.Conversely, it becomes flatter.In the matter of fact, when $$df \geq 30 $$, the T-distribution curve and the normal distribution curve are difficult to distinguish with the naked eyes.
