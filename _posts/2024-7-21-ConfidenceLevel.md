@@ -13,6 +13,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
 
 <p align="center">Navigation</p>
 <head>
+    <meta charset="UTF-8">
     <title>Navigation</title>
     <style>
         body {
