@@ -59,6 +59,6 @@ In light of above, from the perspective of region, **a confidence level of $$(1 
 Common confidence levels include 90%, 95%, and 99%.It's worth noting that if we take the 95% confidence level as an instance, the 95% does not represent that there exists a 95% probability for $$\mu_{real}$$ to fall within the confidence interval constructed by $$\mu_{sample}$$.Instead, it represents that the confidence interval with a large number of repeated build point estimates has a 95% probability of containing $$\mu_{real}$$.<br/>
 <br/>
 Here are two significant features for Confidence Level:<br/>
-1) When the confidence level is unchanged, the larger the sample size, the narrower the confidence interval.<br/>
-2) When the sample size is unchanged, the higher the confidence level, the wider the confidence interval.<br/>
+▸ When the confidence level is unchanged, the larger the sample size, the narrower the confidence interval.<br/>
+▸ When the sample size is unchanged, the higher the confidence level, the wider the confidence interval.<br/>
 <br/>
