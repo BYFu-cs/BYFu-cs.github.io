@@ -50,4 +50,7 @@ Let $$\mu_{real}$$ represents the population sample mean.Assuming we have the fl
 <br/>
 However, since the floating range is fixed, then the confidence interval we construct for each point estimate and the acceptance region have the same width. Therefore, we can conclude that **if $$\mu_{sample}$$ falls in acceptance region, then the sample confidence interval constructed by $$\mu_{sample}$$ must contain $$\mu_{real}$$; Conversely, if $$\mu_{sample}$$ falls on reject region, then the sample confidence interval constructed must not contain $$\mu_{real}$$**.<br/>
 <br/>
-Therefore, from the perspective of region, a confidence level of $$1 - \alpha$$ is equivalent to a sampling distribution acceptance area of $$1 - \alpha$$.
+Therefore, from the perspective of region, **a confidence level of $$1 - \alpha$$ is equivalent to a sampling distribution acceptance area of $$1 - \alpha$$**.
+
+### 1.2.4 Feature of Confidence Level.
+
