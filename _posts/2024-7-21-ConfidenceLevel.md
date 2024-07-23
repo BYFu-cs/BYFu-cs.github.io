@@ -48,7 +48,7 @@ To better understand the confidence level, we need to introduce **Significance L
 ![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png)<br/>
 Let $$\mu_{real}$$ represents the population sample mean.Assuming we have the floating range by some means (I will discuss it later), we add or subtract the floating range from both sides with $$\mu_{real}$$ as the center to get a closed interval, we call this closed interval as **Acceptance Region**, and the remaining unclosed interval as **Reject Region**.<br/>
 <br/>
-However, since the floating range is fixed, then the confidence interval we construct for each point estimate and the acceptance region have the same width. Therefore, we can conclude that **if $$\mathbf{\mu_{sample}}$$ falls in acceptance region, then the sample confidence interval constructed by $$\mu_{sample}$$ must contain $$\mu_{real}$$; Conversely, if $$\mu_{sample}$$ falls on reject region, then the sample confidence interval constructed must not contain $$\mu_{real}$$**.<br/>
+However, since the floating range is fixed, then the confidence interval we construct for each point estimate and the acceptance region have the same width. Therefore, we can conclude that **if $$\symbfit{\mu_{sample}}$$ falls in acceptance region, then the sample confidence interval constructed by $$\mu_{sample}$$ must contain $$\mu_{real}$$; Conversely, if $$\mu_{sample}$$ falls on reject region, then the sample confidence interval constructed must not contain $$\mu_{real}$$**.<br/>
 <br/>
 Therefore, from the perspective of region, **a confidence level of $$1 - \alpha$$ is equivalent to a sampling distribution acceptance area of $$1 - \alpha$$**.
 
