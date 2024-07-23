@@ -52,8 +52,6 @@ If you're interested in my research work, please feel free to explore my researc
         <br/>
             • The key equations in our essays are:<br/>
             $$
-            \usepackage{amsmath}
-            \usepackage{autobreak}
             \small
             \begin{equation}
             \begin{cases}
