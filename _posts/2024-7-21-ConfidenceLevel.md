@@ -11,7 +11,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
 
 ---
 
-<p align="center">Navigation</p>
+<p align="center">Blog Navigation</p>
 <head>
     <meta charset="UTF-8">
     <title>Navigation</title>
@@ -22,6 +22,10 @@ On the road to machine learning, we will find that the basic algorithms are inse
         }
         li {
             margin-bottom: 10px;
+        }
+        li:first-of-type {
+            font-weight: bold;
+            color: black;
         }
         a {
             text-decoration: none;
