@@ -16,57 +16,16 @@ On the road to machine learning, we will find that the basic algorithms are inse
     <meta charset="UTF-8">
     <title>Navigation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
         ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
+            padding-left: 20px;
         }
-
-        ul ul {
-            display: none;
+        li {
+            margin-bottom: 10px;
         }
-
-        ul li:hover > ul {
-            display: inherit;
-        }
-
-        ul li {
-            margin-right: 10px;
-            float: left;
-            position: relative;
-        }
-
-        li a {
-            display: block;
-            padding: 0 10px;
-            color: #000;
+        a {
             text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #EEE;
-        }
-
-        li ul {
-            position: absolute;
-            left: 0;
-            top: 100%;
-            width: 150px;
-            background-color: #FFF;
-            border: 1px solid #CCC;
-        }
-
-        li ul li {
-            float: none;
-        }
-
-        li ul li ul {
-            top: 0;
-            left: 100%;
+            color: black;
         }
     </style>
 </head>
