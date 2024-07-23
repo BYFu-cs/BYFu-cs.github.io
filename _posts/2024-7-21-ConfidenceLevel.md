@@ -46,5 +46,5 @@ To better understand the confidence level, we need to introduce **Significance L
 
 ### 1.2.3 Confidence Level from a region perspective.
 ![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png)
-$$\frac{\phi^{n+1}_{ijk}-\phi^{n}_{ijk}}{ \Delta t} = -g(x)_{ijk}\mu^{n+\frac{1}{2}}_{ijk}$$
+$$\mu^{n+frac{1}{2}}_{ijk} = H^{\ast}_{ijk} \cdot \frac{F^{‘}(\phi^{\ast}_{ijk})}{\varepsilon^{2}} - \frac{1}{2}(\Delta_{d}\phi^{n+1}_{ijk}+\Delta_{d}\phi^{n}_{ijk})+S(\frac{\phi^{n+1}_{ijk} + \phi^{n}_{ijk}}{2} - \phi^{\ast}_{ijk})$$
 
