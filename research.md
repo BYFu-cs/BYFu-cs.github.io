@@ -52,7 +52,8 @@ If you're interested in my research work, please feel free to explore my researc
         <br/>
             • The key equations in our essays are:<br/>
             $$
-            \begin{figure}
+            \usepackage{amsmath}
+            \usepackage{autobreak}
             \small
             \begin{equation}
             \begin{cases}
@@ -60,7 +61,6 @@ If you're interested in my research work, please feel free to explore my researc
             \mu^{n+\frac{1}{2}}_{ijk} = H^{\ast}_{ijk} \cdot \frac{F^{\prime}(\phi^{\ast}_{ijk})}{\varepsilon^{2}} - \frac{1}{2}(\Delta_{d}\phi^{n+1}_{ijk}+\Delta_{d}\phi^{n}_{ijk})+S(\frac{\phi^{n+1}_{ijk} + \phi^{n}_{ijk}}{2} - \phi^{\ast}_{ijk})
             \end{cases}
             \end{equation}
-            \end{figure}
             $$
         <br/> 
             Below are some of the thesis results:
