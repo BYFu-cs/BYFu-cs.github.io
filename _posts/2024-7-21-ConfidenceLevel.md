@@ -12,6 +12,90 @@ On the road to machine learning, we will find that the basic algorithms are inse
 ---
 
 <p align="center">Navigation</p><br/>
+<head>
+    <title>Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul ul {
+            display: none;
+        }
+
+        ul li:hover > ul {
+            display: inherit;
+        }
+
+        ul li {
+            margin-right: 10px;
+            float: left;
+            position: relative;
+        }
+
+        li a {
+            display: block;
+            padding: 0 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #EEE;
+        }
+
+        li ul {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 150px;
+            background-color: #FFF;
+            border: 1px solid #CCC;
+        }
+
+        li ul li {
+            float: none;
+        }
+
+        li ul li ul {
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <li>1 <a href="#FDF">Fundamental definition and feature.</a></li>
+            <ul>
+                <li>
+                    <li>1.1 <a href="#TT">T-test (T-distribution).</a></li>
+                    <ul>
+                        <li>1.1.1 <a href="#DT">Definition of T-test.</a></li>
+                        <li>1.1.2 <a href="#FT">Feature of T-test.</a></li>
+                    </ul>
+                </li>
+                <li>1.2 <a href="#CICL">Confidence Interval and Confidence Level.</a></li>
+              <ul>
+                <li>1.2.1 <a href="#DCI">Definition of Confidence Interval.</a></li>
+                <li>1.2.2 <a href="#DCL">Definition of Confidence Level.</a></li>
+                <li>1.2.3 <a href="#CLFRP">Confidence Level from a region perspective.</a></li>
+                <li>1.2.4 <a href="#FCL">Feature of Confidence Level.</a></li>
+              </ul>
+            </ul>
+        </li>
+        <li>2 <a href="#PI">Practical Instances.</a></li>
+    </ul>
+</body>
+</html>
+
+
 1 <a href="#FDF">Fundamental definition and feature.</a><br/>
 > 1.1 <a href="#TT">T-test (T-distribution).</a><br/>
 >> 1.1.1 <a href="#DT">Definition of T-test.</a><br/>
