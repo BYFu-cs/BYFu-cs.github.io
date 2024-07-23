@@ -93,7 +93,6 @@ On the road to machine learning, we will find that the basic algorithms are inse
         <li>2 <a href="#PI">Practical Instances.</a></li>
     </ul>
 </body>
-</html>
 
 
 1 <a href="#FDF">Fundamental definition and feature.</a><br/>
