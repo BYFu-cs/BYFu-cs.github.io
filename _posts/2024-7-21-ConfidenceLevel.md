@@ -72,10 +72,10 @@ On the road to machine learning, we will find that the basic algorithms are inse
 <body>
     <ul>
         <li>
-            <li>1 <a href="#FDF">Fundamental definition and feature.</a></li>
+            1 <a href="#FDF">Fundamental definition and feature.</a>
             <ul>
                 <li>
-                    <li>1.1 <a href="#TT">T-test (T-distribution).</a></li>
+                    1.1 <a href="#TT">T-test (T-distribution).</a>
                     <ul>
                         <li>1.1.1 <a href="#DT">Definition of T-test.</a></li>
                         <li>1.1.2 <a href="#FT">Feature of T-test.</a></li>
