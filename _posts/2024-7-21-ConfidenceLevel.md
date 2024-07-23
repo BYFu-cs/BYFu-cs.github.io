@@ -20,7 +20,7 @@ A Single Population T-test tests whether a sample mean differs significantly fro
 <br/>
 The formula of Single Population T-test is:<br/>
 <p align="center">$$t = \frac{\overline{X} - \mu_{0}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
-Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population mean, $$\sigma_{x}$$ represents standard deviation and N represents the number of samples.In Single Population T-test, the **degree of freedom** df = N -1. With more professional terminology, $$\frac{\sigma_{x}}{\sqrt{N}}$$ stands for **Standard Error of Mean**, which is:<br/>
+Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population mean, $$\sigma_{x}$$ represents standard deviation and N represents the number of samples.In Single Population T-test, the **degree of freedom** $$df = N - 1$$. With more professional terminology, $$\frac{\sigma_{x}}{\sqrt{N}}$$ stands for **Standard Error of Mean**, which is:<br/>
 <p align="center">$$SEM = \frac{\sigma_{x}}{\sqrt{N}}$$</p>
 **SEM** is a quite significant concept.Instead of the standard deviation of the population, SEM utilizes the sample standard deviation.In light of above, we can conclude that **the t-value can be interpreted as the extent to which the sampling mean deviates from the population mean correspond to the SEM**.<br/>
 <br/>
@@ -56,4 +56,9 @@ In light of above, from the perspective of region, **a confidence level of $$(1 
 <br/>
 
 ### 1.2.4 Feature of Confidence Level.
-Common confidence levels include 90%, 95%, and 99%.It's worth noting that if we take the 95% confidence level as an instance, the 95% does not represent that there exists a 95% probability for $$\mu_{real}$$ to fall within the confidence interval constructed by $$\mu_{sample}$$.**Instead, it represents that the confidence interval with a large number of repeated build point estimates has a 95% probability of containing mu_real.** <br/>
+Common confidence levels include 90%, 95%, and 99%.It's worth noting that if we take the 95% confidence level as an instance, the 95% does not represent that there exists a 95% probability for $$\mu_{real}$$ to fall within the confidence interval constructed by $$\mu_{sample}$$.Instead, it represents that the confidence interval with a large number of repeated build point estimates has a 95% probability of containing $$\mu_{real}$$.<br/>
+<br/>
+Here are two significant features for Confidence Level:<br/>
+1) When the confidence level is unchanged, the larger the sample size, the narrower the confidence interval.<br/>
+2) When the sample size is unchanged, the higher the confidence level, the wider the confidence interval.<br/>
+<br/>
