@@ -46,4 +46,4 @@ To better understand the confidence level, we need to introduce **Significance L
 
 ### 1.2.3 Confidence Level from a region perspective.
 ![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png)
-
+Let $$\mu_{real}$$ represents the population sample mean.Assuming we have the floating range by some means (I will discuss it later), we add or subtract the floating range from both sides with $$\mu_{real}$$ as the center to get a closed interval, we call this closed interval as **Acceptance Region**, and the remaining unclosed interval as **Reject Region**.
