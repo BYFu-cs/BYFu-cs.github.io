@@ -49,11 +49,11 @@ To better understand the confidence level, we need to introduce **Significance L
 Let $$\mu_{real}$$ represents the population sample mean.Assuming we have the floating range by some means (I will discuss it later), we add or subtract the floating range from both sides with $$\mu_{real}$$ as the center to get a closed interval, we call this closed interval as **Acceptance Region**, and the remaining unclosed interval as **Reject Region**.<br/>
 <br/>
 However, since the floating range is fixed, then the confidence interval we construct for each point estimate and the acceptance region have the same width. Therefore, we can conclude that:<br/>
-<i>• If $$\symbfit{\mu_{sample}}$$ falls in acceptance region, then thesample confidence interval constructed by $$\mu_{sample}$$ must contain $$\mu_{real}$$.<br/>
+<i>• If $$\mu_{sample}$$ falls in acceptance region, then thesample confidence interval constructed by $$\mu_{sample}$$ must contain $$\mu_{real}$$.<br/>
 • If $$\mu_{sample}$$ falls on reject region, then the sample confidence interval constructed by $$\mu_{sample}$$ must not contain $$\mu_{real}$$.</i><br/>
 <br/>
-Therefore, from the perspective of region, **a confidence level of $$(1 - \alpha)$$ is equivalent to a sampling distribution acceptance area of $$(1 - \alpha)$$**.<br/>
+In light of above, from the perspective of region, **a confidence level of $$(1 - \alpha)$$ is equivalent to a sampling distribution acceptance area of $$(1 - \alpha)$$**.<br/>
 <br/>
 
 ### 1.2.4 Feature of Confidence Level.
-
+Common confidence levels include 90%, 95%, and 99%.It's worth noting that if we take the 95% confidence level as an instance, the 95% does not represent that there exists a 95% probability for $$\mu_{real}$$ to fall within the confidence interval constructed by $$\mu_{sample}$$.**Instead, it represents that the confidence interval with a large number of repeated build point estimates has a 95% probability of containing mu_real.** <br/>
