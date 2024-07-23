@@ -17,6 +17,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
     <title>Navigation</title>
     <style>
         ul {
+            font-weight: bold;
             list-style-type: none;
             padding-left: 20px;
         }
@@ -36,7 +37,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
 <body>
     <ul>
         <li>
-            1 <a href="#FDF">Fundamental definition and feature.</a>
+            • 1 <a href="#FDF">Fundamental definition and feature.</a>
             <ul>
                 <li>
                     1.1 <a href="#TT">T-test (T-distribution).</a>
@@ -54,7 +55,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
               </ul>
             </ul>
         </li>
-        <li>2 <a href="#PI">Practical Instances.</a></li>
+        <li>• 2 <a href="#PI">Practical Instances.</a></li>
     </ul>
 </body>
 
