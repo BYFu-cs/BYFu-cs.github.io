@@ -94,20 +94,6 @@ On the road to machine learning, we will find that the basic algorithms are inse
     </ul>
 </body>
 
-
-1 <a href="#FDF">Fundamental definition and feature.</a><br/>
-> 1.1 <a href="#TT">T-test (T-distribution).</a><br/>
->> 1.1.1 <a href="#DT">Definition of T-test.</a><br/>
->> 1.1.2 <a href="#FT">Feature of T-test.</a><br/>
-
-> 1.2 <a href="#CICL">Confidence Interval and Confidence Level.</a><br/>
->> 1.2.1 <a href="#DCI">Definition of Confidence Interval.</a><br/>
->> 1.2.2 <a href="#DCL">Definition of Confidence Level.</a><br/>
->> 1.2.3 <a href="#CLFRP">Confidence Level from a region perspective.</a><br/>
->> 1.2.4 <a href="#FCL">Feature of Confidence Level.</a><br/>
-
-2 <a href="#PI">Practical Instances.</a>
-
 ---
 
 # <a id="FDF">1 Fundamental definition and feature.</a>
