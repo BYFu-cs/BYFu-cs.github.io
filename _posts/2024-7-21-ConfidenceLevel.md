@@ -11,17 +11,19 @@ On the road to machine learning, we will find that the basic algorithms are inse
 
 ---
 
-<p algn="center">Navigation</p><br/>
-> 1 <a href="#FDF">Fundamental definition and feature.</a><br/>
->> 1.1 <a href="#TT">T-test (T-distribution).</a><br/>
->>> 1.1.1 <a href="#DT">Definition of T-test.</a><br/>
->>> 1.1.2 <a href="#FT">Feature of T-test.</a><br/>
->> 1.2 <a href="#CICL">Confidence Interval and Confidence Level.</a><br/>
->>> 1.2.1 <a href="#DCI">Definition of Confidence Interval.</a><br/>
->>> 1.2.2 <a href="#DCL">Definition of Confidence Level.</a><br/>
->>> 1.2.3 <a href="#CLFRP">Confidence Level from a region perspective.</a><br/>
->>> 1.2.4 <a href="#FCL">Feature of Confidence Level.</a><br/>
-> 2 <a href="#PI">Practical Instances.</a>
+<p align="center">Navigation</p><br/>
+1 <a href="#FDF">Fundamental definition and feature.</a><br/>
+> 1.1 <a href="#TT">T-test (T-distribution).</a><br/>
+>> 1.1.1 <a href="#DT">Definition of T-test.</a><br/>
+>> 1.1.2 <a href="#FT">Feature of T-test.</a><br/>
+
+> 1.2 <a href="#CICL">Confidence Interval and Confidence Level.</a><br/>
+>> 1.2.1 <a href="#DCI">Definition of Confidence Interval.</a><br/>
+>> 1.2.2 <a href="#DCL">Definition of Confidence Level.</a><br/>
+>> 1.2.3 <a href="#CLFRP">Confidence Level from a region perspective.</a><br/>
+>> 1.2.4 <a href="#FCL">Feature of Confidence Level.</a><br/>
+
+2 <a href="#PI">Practical Instances.</a>
 
 ---
 
@@ -56,7 +58,7 @@ Since the mean of the point estimate is easy to find, what we really need to det
 To better understand the confidence level, we need to introduce **Significance Level $$\alpha$$** firstly.By definition, Significance level refers to the probability that the null hypothesis is wrongly rejected when the null hypothesis itself is true in a statistical hypothesis test.Significance Level is usually considered a prescribed two-sided threshold, i.e. one side is $$\alpha/2$$.Common values of $$\alpha$$ are 0.05, 0.01, and so on.<br/>
 <br/>
 **Confidence Level is an abstraction of Confidence Interval**.By repeatedly building the confidence interval, we obtain a set of confidence intervals.The confidence level is the frequency of the confidence interval that contains the real population mean in the set over the number of confidence intervals in the set.However,this formula is inefficient.In contrary,there exists a more efficient formula:
-<p algn="center">$$ConfidenceLevel = 1 - \alpha$$</p>
+<p align="center">$$ConfidenceLevel = 1 - \alpha$$</p>
 
 ### <a id="CLFRP">1.2.3 Confidence Level from a region perspective.</a>
 ![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png)<br/>
