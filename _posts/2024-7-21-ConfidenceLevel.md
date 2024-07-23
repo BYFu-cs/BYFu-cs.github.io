@@ -11,7 +11,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
 
 ---
 
-<p align="center">Blog Navigation</p>
+<p align="center"><b>Blog Navigation</b></p>
 <head>
     <meta charset="UTF-8">
     <title>Navigation</title>
@@ -37,25 +37,25 @@ On the road to machine learning, we will find that the basic algorithms are inse
 <body>
     <ul>
         <li>
-            • 1 <a href="#FDF">Fundamental definition and feature.</a>
+            • 1 <a href="#FDF"><u>Fundamental definition and feature.</u></a>
             <ul>
                 <li>
-                    1.1 <a href="#TT">T-test (T-distribution).</a>
+                    1.1 <a href="#TT"><u>T-test (T-distribution).</u></a>
                     <ul>
-                        <li>1.1.1 <a href="#DT">Definition of T-test.</a></li>
-                        <li>1.1.2 <a href="#FT">Feature of T-test.</a></li>
+                        <li>1.1.1 <a href="#DT"><u>Definition of T-test.</u></a></li>
+                        <li>1.1.2 <a href="#FT"><u>Feature of T-test.</u></a></li>
                     </ul>
                 </li>
-                <li>1.2 <a href="#CICL">Confidence Interval and Confidence Level.</a></li>
+                <li>1.2 <a href="#CICL"><u>Confidence Interval and Confidence Level.</u></a></li>
               <ul>
-                <li>1.2.1 <a href="#DCI">Definition of Confidence Interval.</a></li>
-                <li>1.2.2 <a href="#DCL">Definition of Confidence Level.</a></li>
-                <li>1.2.3 <a href="#CLFRP">Confidence Level from a region perspective.</a></li>
-                <li>1.2.4 <a href="#FCL">Feature of Confidence Level.</a></li>
+                <li>1.2.1 <a href="#DCI"><u>Definition of Confidence Interval.</u></a></li>
+                <li>1.2.2 <a href="#DCL"><u>Definition of Confidence Level.</u></a></li>
+                <li>1.2.3 <a href="#CLFRP"><u>Confidence Level from a region perspective.</u></a></li>
+                <li>1.2.4 <a href="#FCL"><u>Feature of Confidence Level.</u></a></li>
               </ul>
             </ul>
         </li>
-        <li>• 2 <a href="#PI">Practical Instances.</a></li>
+        <li>• 2 <a href="#PI"><u>Practical Instances.</u></a></li>
     </ul>
 </body>
 
