@@ -56,12 +56,13 @@ On the road to machine learning, we will find that the basic algorithms are inse
             </ul>
         </li>
         <li>
-            • 2 <a href="#PI"><u>Practical Instances.</u></a>
+            • 2 <a href="#PI"><u>Practical Instantiation.</u></a>
             <ul>
                 <li>2.1 <a href="#BD"><u>Background Description.</u></a></li>
                 <li>2.2 <a href="#PS"><u>Problem Solving.</u></a></li>
                 <ul>
                     <li>2.2.1 <a href="#FM"><u>Formula Manipulation.</u></a></li>
+                    <li>2.2.2 <a href="#TTLU"><u>T-Table Look-Up</u></a></li>
                 </ul>
             </ul>
         </li>
@@ -124,7 +125,7 @@ Here are two significant features for Confidence Level:<br/>
 
 ---
 
-# 2 <a id="PI">Practical Instances.</a>
+# 2 <a id="PI">Practical Instantiation.</a>
 ## 2.1 <a id="BD">Background Description.</a>
 Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Assuming that our confidence interval is set to be $$\alpha$$ and $$\sigma_{x}$$ is the standard deviation of our population.Our goal is to obtain the confidence interval of the analytical population by sampling the sample with size $$N$$(which is point estimation).Now, presuming that the mean of our point estimation is $$\mu_{s}$$<br/>
 <br/>
@@ -132,11 +133,15 @@ Suppose we have an analytical population with unknown population mean $$\mu_{rea
 ### 2.2.1 <a id="FM">Formula Manipulation.</a>
 Since the distribution of our multiple samples conforms to the T-distribution, our critical $$\overline{X}$$ value needs to be calculated by the T-value.
 Recall that the formula of t-value is:<br/>
-<p align="center">$$t_{boundary} = \frac{\overline{X}_{boundary} - \mu_{s}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
+<p align="center">$$t_{bound} = \frac{\overline{X}_{bound} - \mu_{s}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
 There is no need to wonder why $$\mu_{s}$$ displaces the population mean $$\mu_{0}$$ here, because point estimation utilizes the population mean to estimate the sampled mean, and that is:<br/>
 <p align="center">$$\widehat{\mu_{0}} = \mu_{s}$$</p>
 Now, we transform the formula for t-value into another form:<br/>
-$$\overline{X}_{boundary} = \mu_{s} + t_{boundary} \cdot \frac{\sigma_{x}}{\sqrt{N}}$$
+<p align="center">$$\overline{X}_{bound} = \mu_{s} + t_{bound} \cdot \frac{\sigma_{x}}{\sqrt{N}}$$</p>
+The only term left undetermined by the quation is the value of $$t_{bound}$$.
+
+### 2.2.2 <a id="TTLU">T-Table Look-Up</a>
+![t_test]({{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg)<br/>
 
 
 
