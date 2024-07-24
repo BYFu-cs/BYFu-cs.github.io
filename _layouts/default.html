@@ -58,29 +58,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
     </script>
-	<title>Menu</title>
-	<style>
-	.menu-container {
-      display: none;
-      position: absolute;
-      left: 0;
-      bottom: 100%;
-      background-color: white;
-      border: 1px solid #ccc;
-      padding: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-    .menu-toggle:focus + .menu-container,
-    .menu-toggle:active + .menu-container,
-    .menu-toggle:hover + .menu-container {
-      display: block;
-    }
-
-    .menu-container a {
-      display: block;
-      margin-bottom: 5px;
-    }
-	</style>
 	<script src="{{ site.baseurl }}/script.js"></script>
   </head>
 
@@ -95,16 +72,12 @@ function topFunction() {
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-    <button class="menu-toggle">Navigation</button>
-    <div class="menu-container">
+<nav>
       <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
       <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
       <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
       <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
-    </div>
   </nav>
-
         </header>
       </div>
     </div>
