@@ -58,7 +58,11 @@ On the road to machine learning, we will find that the basic algorithms are inse
         <li>
             • 2 <a href="#PI"><u>Practical Instances.</u></a>
             <ul>
-                <li>2.1 <a href="#BD">Background Description.</a></li>
+                <li>2.1 <a href="#BD"><u>Background Description.</u></a></li>
+                <li>2.2 <a href="#PS"><u>Problem Solving.</u></a></li>
+                <ul>
+                    <li>2.2.1 <a href="#FM"><u>Formula Manipulation.</u></a></li>
+                </ul>
             </ul>
         </li>
     </ul>
@@ -120,8 +124,12 @@ Here are two significant features for Confidence Level:<br/>
 
 # 2 <a id="PI">Practical Instances.</a>
 ## 2.1 <a id="BD">Background Description.</a>
-Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Our goal is to obtain the confidence interval and confidence level of the analytical population by sampling the sample (which is point estimation).<br/>
+Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Assuming that our confidence interval is set to be $$\alpha$$.Our goal is to obtain the confidence interval of the analytical population by sampling the sample with size $$N$$(which is point estimation).<br/>
 <br/>
+## 2.2 <a id="PS">Problem Solving.</a>
+### 2.2.1 <a id="FM">Formula Manipulation.</a>
+
+
 
 
 
