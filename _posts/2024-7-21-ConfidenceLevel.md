@@ -86,9 +86,8 @@ Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population
 <br/>
 
 ### <a id="FT">1.1.2 Feature of T-test.</a>
-![t_distribution_comparisons]({{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png)<br/>
 <div align="center">
-  <img src="{{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png" alt="t_distribution_comparisons" width="540" height="405"/>
+  <img src="{{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png" alt="t_distribution_comparisons" height="405"/>
 </div>
 <p align="center">[figure source: <i><a href="https://www.scribbr.co.uk/stats/t-distribution-meaning/">www.scribbr.co.uk</a></i>]</p>
 As the figure above, we can observe that when the degree of freedom increments, the curve becomes narrower and taller, and more resemble as normal distribution.Conversely, it becomes flatter.In the matter of fact, when $$df \geq 30$$, the T-distribution curve and the normal distribution curve are difficult to distinguish with the naked eyes.<br/>
@@ -150,6 +149,15 @@ The only term left undetermined by the quation is the value of $$t_{bound}$$.<br
 <div align="center">
   <img src="{{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg"/>
 </div>
+Recall that the formula for degree of freedom and TwoSide probability is:</br>
+$$
+\begin{equation}
+\begin{cases}
+df = N - 1 \\
+TwoSide = 1 - \alpha
+\end{cases}
+\end{equation}
+$$
 
 
 
