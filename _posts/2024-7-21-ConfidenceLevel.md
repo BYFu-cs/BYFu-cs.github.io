@@ -141,7 +141,7 @@ Now, we transform the formula for t-value into another form:<br/>
 The only term left undetermined by the quation is the value of $$t_{bound}$$.
 
 ### 2.2.2 <a id="TTLU">T-Table Look-Up</a>
-![t_test]({{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg)<br/>
+![t_test]({{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg#pic_center)<br/>
 
 
 
