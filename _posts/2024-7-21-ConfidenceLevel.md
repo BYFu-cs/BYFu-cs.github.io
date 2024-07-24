@@ -86,7 +86,7 @@ Here, $$\overline{X}$$ represents sample mean, $$\mu_{0}$$ represents population
 <br/>
 
 ### <a id="FT">1.1.2 Feature of T-test.</a>
-![t_distribution_comparisons]({{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png =540x405)<br/>
+![t_distribution_comparisons]({{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png)<br/>
 <div align="center">
   <img src="{{ site.baseurl }}/images/ConfidenceLevel/t_distribution_comparisons.png" alt="t_distribution_comparisons" width="540" height="405"/>
 </div>
