@@ -180,7 +180,7 @@ As you may have noticed, the so-called **floating range** is actually $$2 \cdot 
 # <a id="end">3 End.</a>
 We've ultimately got the confidence intervals we want, and I'm sure you know the concepts inside out! Note again: The confidence interval we construct does not contain $$\mu_{real}$$ with the probability of $$\alpha$$, but from the perspective of macroscopic multiple point estimates, the confidence intervals of $$\alpha$$ percent contain $$\mu_{real}$$.<br/>
 <br/>
-Thank you for reading my blog, if you like my blog, please give me comments to support!<br/>
+Thank you for reading my blog, if you like my blog, please offer me a comment to support!<br/>
 <br/>
 
 
