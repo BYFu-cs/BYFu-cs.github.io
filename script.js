@@ -83,13 +83,30 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelector('.menu-toggle').addEventListener('click', function() {
-  var menuContainer = document.querySelector('.menu-container');
-  if (menuContainer.style.display === 'none') {
-    menuContainer.style.display = 'block';
-  } else {
-    menuContainer.style.display = 'none';
-  }
-});
+      var menuContainer = this.nextElementSibling;
+      var buttonRect = this.getBoundingClientRect();
+      var menuRect = menuContainer.getBoundingClientRect();
+      var windowHeight = window.innerHeight;
+      var windowWidth = window.innerWidth;
+
+      // 检查菜单是否超出视口底部
+      if (buttonRect.top + menuRect.height > windowHeight) {
+        // 将菜单向上移动以适应视口
+        menuContainer.style.top = (buttonRect.top - menuRect.height) + 'px';
+      } else {
+        // 将菜单向下移动以适应视口
+        menuContainer.style.top = (buttonRect.top + buttonRect.height) + 'px';
+      }
+
+      // 检查菜单是否超出视口右侧
+      if (buttonRect.left + menuRect.width > windowWidth) {
+        // 将菜单向左移动以适应视口
+        menuContainer.style.left = (buttonRect.left - menuRect.width) + 'px';
+      } else {
+        // 将菜单向右移动以适应视口
+        menuContainer.style.left = (buttonRect.left) + 'px';
+      }
+    });
 
 
 // script.js
