@@ -58,6 +58,55 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
     </script>
+<title>Responsive Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .menu {
+            display: none;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        @media (max-width: 640px) {
+            nav a {
+                display: none;
+            }
+            .menu-icon {
+                display: block;
+                color: white;
+            }
+            .menu {
+                display: block;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                width: 200px;
+                display: none;
+                flex-direction: column;
+            }
+            .menu a {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #444;
+            }
+        }
+    </style>
 	<script src="{{ site.baseurl }}/script.js"></script>
   </head>
 
@@ -73,11 +122,18 @@ function topFunction() {
           </div>
 
 <nav>
-      <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
-      <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
-      <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
-      <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
-  </nav>
+        <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
+        <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
+        <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
+        <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu" id="menu">
+            <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
+            <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
+            <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
+            <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
+        </div>
+    </nav>
         </header>
       </div>
     </div>
