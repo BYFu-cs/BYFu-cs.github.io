@@ -169,7 +169,7 @@ It is quite significant to be careful here that the t-values in our table are al
 <br/>
 
 ### <a id="OCI">2.2.3 Obtain Confidence Interval.</a>
-After getting two values of $$t_{bound}$$, we can obtain two values of $$\overline{X_{bound}}$$, which are **critical points**.The smaller value is for the lower boundary of confidence interval, and the larger value is for the upper boundary of confidence interval.Definitely, we obtain the confidence interval for $$\mu_{s}$$:<br/>
+After getting two values of $$t_{bound}$$, we can obtain two values of $$\overline{X}_{bound}$$, which are **critical points**.The smaller value is for the lower boundary of confidence interval, and the larger value is for the upper boundary of confidence interval.Definitely, we obtain the confidence interval for $$\mu_{s}$$:<br/>
 <p align="center">[$$\mu_{s} - |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}} , \mu_{s} + |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}}$$]</p>
 As you may have noticed, the so-called **floating range** is actually $$2 \cdot |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}}$$! This is also **the width of acceptance region**.
 
