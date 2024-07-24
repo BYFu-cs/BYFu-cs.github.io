@@ -131,7 +131,7 @@ Here are two significant features for Confidence Level:<br/>
 
 # 2 <a id="PI">Practical Instantiation.</a>
 ## 2.1 <a id="BD">Background Description.</a>
-Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Assuming that our confidence interval is set to be $$\alpha$$ and $$\sigma_{x}$$ is the standard deviation of our population.Our goal is to obtain the confidence interval of the analytical population by sampling the sample with size $$N$$(which is point estimation).Now, presuming that the mean of our point estimation is $$\mu_{s}$$<br/>
+Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Assuming that our confidence interval is set to be $$\alpha$$ and $$\sigma_{x}$$ is the standard deviation of our population.Our goal is to obtain the confidence interval of the analytical population by sampling the sample with size $$N$$(which is point estimation).Now, presuming that the mean of our point estimation is $$\mu_{s}$$.<br/>
 <br/>
 ## 2.2 <a id="PS">Problem Solving.</a>
 ### 2.2.1 <a id="FM">Formula Manipulation.</a>
@@ -161,7 +161,10 @@ TwoSide = 1 - \alpha
 \end{equation}
 $$
 </p>
-Depending on the confidence level and the degree of freedom, we lock the t-value in the table.
+Depending on the confidence level and the degree of freedom, we lock the t-value in the table.<br/>
+<br/>
+It is quite significant to be careful here that the t-values in our table are all positive, but in fact there is a t-value of the same absolute magnitude in the negative half axis for the two-sides t:
+<p align = "center">$$t_bound = \pm value$$</p>
 
 
 
