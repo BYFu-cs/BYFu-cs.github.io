@@ -151,7 +151,7 @@ img {
 //
 
 .wrapper-masthead {
-  background-image: url('{{ site.baseurl }}/images/scenery1.jpg');
+  background-image: linear-gradient(to right, white, white),url('{{ site.baseurl }}/images/scenery1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 50px;
