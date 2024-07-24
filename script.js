@@ -88,6 +88,7 @@ function toggleMenu() {
                 menu.style.display = 'none';
             } else {
                 menu.style.display = 'block';
+                menu.style.top = '60px'; // 确保菜单向下弹出
             }
 }
 
