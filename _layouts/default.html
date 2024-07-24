@@ -62,16 +62,19 @@ function topFunction() {
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
         }
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #333;
+            background-color: white;
             padding: 10px;
+            border-bottom: 1px solid #ccc;
         }
         nav a {
-            color: white;
+            color: #007BFF; /* 浅蓝色 */
             text-decoration: none;
             padding: 10px;
         }
@@ -81,6 +84,7 @@ function topFunction() {
         .menu-icon {
             display: none;
             cursor: pointer;
+            color: #007BFF; /* 浅蓝色 */
         }
         @media (max-width: 640px) {
             nav a {
@@ -88,22 +92,23 @@ function topFunction() {
             }
             .menu-icon {
                 display: block;
-                color: white;
             }
             .menu {
                 display: block;
-                background-color: #333;
+                background-color: white;
                 position: absolute;
-                top: 50px;
+                top: 60px; /* 调整为向下弹出 */
                 right: 10px;
                 width: 200px;
                 display: none;
                 flex-direction: column;
+                border: 1px solid #ccc;
             }
             .menu a {
                 display: block;
                 padding: 10px;
-                border-bottom: 1px solid #444;
+                border-bottom: 1px solid #ccc;
+                background-color: white;
             }
         }
     </style>
