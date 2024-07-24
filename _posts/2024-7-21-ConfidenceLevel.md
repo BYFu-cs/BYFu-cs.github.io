@@ -149,7 +149,9 @@ The only term left undetermined by the quation is the value of $$t_{bound}$$.<br
 <div align="center">
   <img src="{{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg"/>
 </div>
-Recall that the formula for degree of freedom and TwoSide probability is:</br>
+This T-Table shows the range of the corresponding **rejection region(first two rows)** and the values of the corresponding **degrees of freedom(first column)**.
+Recall that the formula for degree of freedom and TwoSide probability is:<br/>
+<p align = "center">
 $$
 \begin{equation}
 \begin{cases}
@@ -158,7 +160,8 @@ TwoSide = 1 - \alpha
 \end{cases}
 \end{equation}
 $$
-
+</p>
+Depending on the confidence level and the degree of freedom, we lock the t-value in the table.
 
 
 
