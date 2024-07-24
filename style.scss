@@ -295,8 +295,9 @@ nav a {
   padding-right: 32.5px;
 }
 
+/*
 nav a::after {
-  /*content: "|"; */
+  content: "|";
   position: absolute;
   top: 0;
   right: 0;
@@ -308,7 +309,7 @@ nav a::after {
 nav a:last-child::after {
   content: none; /* Last element of nav does not show the vertical line. */
 }
-
+*/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
