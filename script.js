@@ -84,13 +84,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function toggleMenu() {
             var menu = document.getElementById('menu');
+            var menuIcon = document.querySelector('.menu-icon');
             if (menu.style.display === 'block') {
                 menu.style.display = 'none';
             } else {
+                var rect = menuIcon.getBoundingClientRect();
+                menu.style.top = rect.bottom + 'px';
+                menu.style.left = rect.left + 'px';
                 menu.style.display = 'block';
-                menu.style.top = '60px'; // 确保菜单向下弹出
             }
-}
+        }
 
 // script.js
 window.onscroll = function() {
