@@ -55,7 +55,12 @@ On the road to machine learning, we will find that the basic algorithms are inse
               </ul>
             </ul>
         </li>
-        <li>• 2 <a href="#PI"><u>Practical Instances.</u></a></li>
+        <li>
+            • 2 <a href="#PI"><u>Practical Instances.</u></a>
+            <ul>
+                <li>2.1 <a href="#BD">Background Description.</a></li>
+            </ul>
+        </li>
     </ul>
 </body>
 
@@ -114,3 +119,20 @@ Here are two significant features for Confidence Level:<br/>
 <br/>
 
 # 2 <a id="PI">Practical Instances.</a>
+## 2.1 <a id="BD">Background Description.</a>
+Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Our goal is to obtain the confidence interval and confidence level of the analytical population by sampling the sample (which is point estimation).<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
