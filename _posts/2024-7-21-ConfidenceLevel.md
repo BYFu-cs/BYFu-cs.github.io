@@ -63,6 +63,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
                 <ul>
                     <li>2.2.1 <a href="#FM"><u>Formula Manipulation.</u></a></li>
                     <li>2.2.2 <a href="#TTLU"><u>T-Table Look-Up</u></a></li>
+                    <li>2.2.3 <a href="#OCI"><u>Obtain Confidence Interval.</u></a></li>
                 </ul>
             </ul>
         </li>
@@ -129,12 +130,12 @@ Here are two significant features for Confidence Level:<br/>
 
 ---
 
-# 2 <a id="PI">Practical Instantiation.</a>
-## 2.1 <a id="BD">Background Description.</a>
+# <a id="PI">2 Practical Instantiation.</a>
+## <a id="BD">2.1 Background Description.</a>
 Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Assuming that our confidence interval is set to be $$\alpha$$ and $$\sigma_{x}$$ is the standard deviation of our population.Our goal is to obtain the confidence interval of the analytical population by sampling the sample with size $$N$$(which is point estimation).Now, presuming that the mean of our point estimation is $$\mu_{s}$$.<br/>
 <br/>
-## 2.2 <a id="PS">Problem Solving.</a>
-### 2.2.1 <a id="FM">Formula Manipulation.</a>
+## <a id="PS">2.2 Problem Solving.</a>
+### <a id="FM">2.2.1 Formula Manipulation.</a>
 Since the distribution of our multiple samples conforms to the T-distribution, our critical $$\overline{X}$$ value needs to be calculated by the T-value.
 Recall that the formula of t-value is:<br/>
 <p align="center">$$t_{bound} = \frac{\overline{X}_{bound} - \mu_{s}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
@@ -145,7 +146,7 @@ Now, we transform the formula for t-value into another form:<br/>
 The only term left undetermined by the quation is the value of $$t_{bound}$$.<br/>
 <br/>
 
-### 2.2.2 <a id="TTLU">T-Table Look-Up</a>
+### <a id="TTLU">2.2.2 T-Table Look-Up</a>
 <div align="center">
   <img src="{{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg"/>
 </div>
@@ -164,11 +165,12 @@ $$
 Depending on the confidence level and the degree of freedom, we lock the t-value in the table.<br/>
 <br/>
 It is quite significant to be careful here that the t-values in our table are all positive, but in fact there is a t-value of the same absolute magnitude in the negative half axis for the two-sides t:
-<p align = "center">$$t_bound = \pm value$$</p>
+<p align = "center">$$t_{bound} = \pm value$$</p>
+<br/>
 
-
-
-
+### <a id="OCI">2.2.3 Obtain Confidence Interval.</a>
+After getting two values of $$t_{bound}$$, we can obtain two values of $$\overline{X_{bound}}$$, which are **critical points**.The smaller value is for the lower boundary of confidence interval, and the larger value is for the upper boundary of confidence interval.Definitely, we obtain the confidence interval for $$\mu_{s}$$:<br/>
+<p align="center">$$\left \mu_{s} - |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}} , \mu_{s} + |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}}\right$$</p>
 
 
 
