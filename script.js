@@ -83,18 +83,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleMenu() {
-            var menu = document.getElementById('menu');
-            var menuIcon = document.querySelector('.menu-icon');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                var rect = menuIcon.getBoundingClientRect();
-                menu.style.top = rect.bottom + 'px';
-                menu.style.left = rect.left + 'px';
-                menu.style.display = 'block';
-            }
-        }
+    var menu = document.getElementById('menu');
+    var menuIcon = document.querySelector('.menu-icon');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        window.removeEventListener('scroll', updateMenuPosition);
+    } else {
+        var rect = menuIcon.getBoundingClientRect();
+        menu.style.top = rect.bottom + 'px';
+        menu.style.left = rect.left + 'px';
+        menu.style.display = 'block';
+        window.addEventListener('scroll', updateMenuPosition);
+    }
+}
 
+function updateMenuPosition() {
+    var menu = document.getElementById('menu');
+    var menuIcon = document.querySelector('.menu-icon');
+    var rect = menuIcon.getBoundingClientRect();
+    menu.style.top = rect.bottom + 'px';
+    menu.style.left = rect.left + 'px';
+}
 // script.js
 window.onscroll = function() {
   scrollFunction();
