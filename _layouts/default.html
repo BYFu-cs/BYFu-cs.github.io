@@ -56,7 +56,23 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0;
 }
-    </script>	
+    </script>
+	<title>Menu</title>
+	<style>
+	.menu-container {
+  display: none;
+}
+	</style>
+	<script>
+		document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var menuContainer = document.querySelector('.menu-container');
+  if (menuContainer.style.display === 'none') {
+    menuContainer.style.display = 'block';
+  } else {
+    menuContainer.style.display = 'none';
+  }
+});
+	</script>
   </head>
 
   <body>
@@ -71,11 +87,14 @@ function topFunction() {
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
-            <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
-	    <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
-	    <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
-          </nav>
+  <button class="menu-toggle">Navigation</button>
+  <div class="menu-container">
+    <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
+    <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
+    <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
+    <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
+  </div>
+</nav>
 
         </header>
       </div>
