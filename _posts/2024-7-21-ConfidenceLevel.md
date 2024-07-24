@@ -106,6 +106,9 @@ To better understand the confidence level, we need to introduce **Significance L
 
 ### <a id="CLFRP">1.2.3 Confidence Level from a region perspective.</a>
 ![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png#pic_center =100x100)<br/>
+<div align="center">
+  <img src="{{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png" alt="Acceptance-and-rejection-regions" width="400" height="300"/>
+</div>
 Let $$\mu_{real}$$ represents the population sample mean.Assuming we have the floating range by some means (I will discuss it later), we add or subtract the floating range from both sides with $$\mu_{real}$$ as the center to get a closed interval, we call this closed interval as **Acceptance Region**, and the remaining unclosed interval as **Reject Region**.<br/>
 <br/>
 However, since the floating range is fixed, then the confidence interval we construct for each point estimate and the acceptance region have the same width. Therefore, we can conclude that:<br/>
@@ -138,7 +141,8 @@ There is no need to wonder why $$\mu_{s}$$ displaces the population mean $$\mu_{
 <p align="center">$$\widehat{\mu_{0}} = \mu_{s}$$</p>
 Now, we transform the formula for t-value into another form:<br/>
 <p align="center">$$\overline{X}_{bound} = \mu_{s} + t_{bound} \cdot \frac{\sigma_{x}}{\sqrt{N}}$$</p>
-The only term left undetermined by the quation is the value of $$t_{bound}$$.
+The only term left undetermined by the quation is the value of $$t_{bound}$$.<br/>
+<br/>
 
 ### 2.2.2 <a id="TTLU">T-Table Look-Up</a>
 <div align="center">
