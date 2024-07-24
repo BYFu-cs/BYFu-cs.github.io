@@ -140,7 +140,7 @@ Suppose we have an analytical population with unknown population mean $$\mu_{rea
 Since the distribution of our multiple samples conforms to the T-distribution, our critical $$\overline{X}$$ value needs to be calculated by the T-value.
 Recall that the formula of t-value is:<br/>
 <p align="center">$$t_{bound} = \frac{\overline{X}_{bound} - \mu_{s}}{\frac{\sigma_{x}}{\sqrt{N}}}$$</p>
-There is no need to wonder why $$\mu_{s}$$ displaces the population mean $$\mu_{0}$$ here, because point estimation utilizes the population mean to estimate the sampled mean, and that is:<br/>
+There is no need to wonder why $$\mu_{s}$$ displaces the population mean $$\mu_{0}$$ here, because point estimation utilizes the sample mean to estimate the population mean, and that is:<br/>
 <p align="center">$$\widehat{\mu_{0}} = \mu_{s}$$</p>
 Now, we transform the formula for t-value into another form:<br/>
 <p align="center">$$\overline{X}_{bound} = \mu_{s} + t_{bound} \cdot \frac{\sigma_{x}}{\sqrt{N}}$$</p>
