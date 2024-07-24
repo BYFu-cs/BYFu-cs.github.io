@@ -122,6 +122,8 @@ Here are two significant features for Confidence Level:<br/>
 ▸ When the sample size is unchanged, the higher the confidence level, the wider the confidence interval.<br/>
 <br/>
 
+---
+
 # 2 <a id="PI">Practical Instances.</a>
 ## 2.1 <a id="BD">Background Description.</a>
 Suppose we have an analytical population with unknown population mean $$\mu_{real}$$.Assuming that our confidence interval is set to be $$\alpha$$.Our goal is to obtain the confidence interval of the analytical population by sampling the sample with size $$N$$(which is point estimation).<br/>
