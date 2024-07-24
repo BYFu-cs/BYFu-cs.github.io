@@ -67,6 +67,7 @@ On the road to machine learning, we will find that the basic algorithms are inse
                 </ul>
             </ul>
         </li>
+        <li>• 3 <a href="#end"><u>End.</u></a></li>
     </ul>
 </body>
 
@@ -171,10 +172,16 @@ It is quite significant to be careful here that the t-values in our table are al
 ### <a id="OCI">2.2.3 Obtain Confidence Interval.</a>
 After getting two values of $$t_{bound}$$, we can obtain two values of $$\overline{X}_{bound}$$, which are **critical points**.The smaller value is for the lower boundary of confidence interval, and the larger value is for the upper boundary of confidence interval.Definitely, we obtain the confidence interval for $$\mu_{s}$$:<br/>
 <p align="center">$$[\mu_{s} - |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}} , \mu_{s} + |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}}]$$</p>
-As you may have noticed, the so-called **floating range** is actually $$2 \cdot |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}}$$. This is also **the width of acceptance region**.
+As you may have noticed, the so-called **floating range** is actually $$2 \cdot |t_{bound}| \cdot \frac{\sigma_{x}}{\sqrt{N}}$$. This is also **the width of acceptance region**.<br/>
+<br/>
 
+---
 
-
+# <a id="end">3 End.</a>
+We've ultimately got the confidence intervals we want, and I'm sure you know the concepts inside out! Note again: The confidence interval we construct does not contain $$\mu_{real}$$ with the probability of $$\alpha$$, but from the perspective of macroscopic multiple point estimates, the confidence intervals of $$\alpha$$ percent contain $$\mu_{real}$$.<br/>
+<br/>
+Thank you for reading my blog, if you like my blog, please give me comments to support!<br/>
+<br/>
 
 
 
