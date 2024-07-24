@@ -105,7 +105,7 @@ To better understand the confidence level, we need to introduce **Significance L
 <p align="center">$$ConfidenceLevel = 1 - \alpha$$</p>
 
 ### <a id="CLFRP">1.2.3 Confidence Level from a region perspective.</a>
-![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png#pic_center =400x300)<br/>
+![Acceptance-and-rejection-regions]({{ site.baseurl }}/images/ConfidenceLevel/Acceptance-and-rejection-regions.png#pic_center =100x100)<br/>
 Let $$\mu_{real}$$ represents the population sample mean.Assuming we have the floating range by some means (I will discuss it later), we add or subtract the floating range from both sides with $$\mu_{real}$$ as the center to get a closed interval, we call this closed interval as **Acceptance Region**, and the remaining unclosed interval as **Reject Region**.<br/>
 <br/>
 However, since the floating range is fixed, then the confidence interval we construct for each point estimate and the acceptance region have the same width. Therefore, we can conclude that:<br/>
@@ -141,8 +141,9 @@ Now, we transform the formula for t-value into another form:<br/>
 The only term left undetermined by the quation is the value of $$t_{bound}$$.
 
 ### 2.2.2 <a id="TTLU">T-Table Look-Up</a>
-![t_test]({{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg#pic_center)<br/>
-
+<div align="center">
+  <img src="{{ site.baseurl }}/images/ConfidenceLevel/t-test.jpeg"/>
+</div>
 
 
 
