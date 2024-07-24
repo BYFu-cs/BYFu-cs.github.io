@@ -82,6 +82,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var menuContainer = document.querySelector('.menu-container');
+  if (menuContainer.style.display === 'none') {
+    menuContainer.style.display = 'block';
+  } else {
+    menuContainer.style.display = 'none';
+  }
+});
+
 
 // script.js
 window.onscroll = function() {
