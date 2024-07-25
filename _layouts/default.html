@@ -109,12 +109,22 @@ function topFunction() {
 	    .menu::before {
                 content: "";
                 position: absolute;
-                top: -10px; /* Position the triangle above the menu */
-                left: 10px; /* Adjust the position of the triangle */
+                top: -10px;
+                left: 10px;
                 border-width: 0 10px 10px 10px;
                 border-style: solid;
-                border-color: transparent transparent white transparent;
-                z-index: 100001; /* Ensure the triangle is above the menu */
+                border-color: transparent transparent #ccc transparent; /* 匹配菜单边框颜色 */
+                z-index: 100001;
+            }
+            .menu::after {
+                content: "";
+                position: absolute;
+                top: -9px;
+                left: 11px;
+                border-width: 0 9px 9px 9px;
+                border-style: solid;
+                border-color: transparent transparent white transparent; /* 匹配菜单背景颜色 */
+                z-index: 100002;
             }
             .menu a {
                 display: block;
