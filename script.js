@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("popupBox").classList.remove("active");
     });
 });
-
+/*
 function toggleMenu() {
     var menu = document.getElementById('menu');
     var menuIcon = document.querySelector('.menu-icon');
@@ -104,6 +104,17 @@ function updateMenuPosition() {
     menu.style.top = rect.bottom + 'px';
     menu.style.left = rect.left + 'px';
 }
+*/
+
+function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+
 // script.js
 window.onscroll = function() {
   scrollFunction();
