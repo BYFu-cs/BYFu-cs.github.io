@@ -160,6 +160,11 @@ function topFunction() {
     </style>
 	<title>Gadget</title>
 	<style>
+  .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 		.spinner {
   position: relative;
   width: 60px;
@@ -253,6 +258,7 @@ function topFunction() {
 		<br/>
 		<br/>
 		<br/>
+		<div class="parent">
 		<div class="spinner" style="text-align: center;">
                   <span></span>
                   <span></span>
@@ -263,6 +269,7 @@ function topFunction() {
                   <span></span>
                   <span></span>
               </div>
+		</div>
 <nav>
         <a href="{{ site.baseurl }}/"><b><i>Fun Blogs</i></b></a>
         <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
