@@ -120,14 +120,22 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 ### <a id="1.1.2">1.1.2 泛型類的靜態變量與靜態方法</a>
 對於static的靜態變量或靜態方法儘量在定義時指明所用的具體類型，或者也可以使用非泛型類所聲明的類型參數。<br/>
 針對靜態方法，我們**將靜態方法改寫為泛型靜態方法**。<br/>
-> [!IMPORTANT]
+> 注意！<br/>
 > 被static修飾的所有靜態方法或靜態變量都不能使用泛型類所聲明的類型參數。一旦使用則會報錯。<br/>
 
 舉例如下：
-
-
-
-
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1    public class StaticExample&lt;T&gt; {   
+2        // 泛型類定義的類型參數T不能在靜態方法中使用   
+3        public static &lt;E&gt; E example(E one){ 
+4            return null;    
+5        }
+6    }
+</code></pre>
+    </div>
+此處static後面的<E>為方法簽名，必須要存在此簽名才能正確聲明泛型函數。
 
 
 
