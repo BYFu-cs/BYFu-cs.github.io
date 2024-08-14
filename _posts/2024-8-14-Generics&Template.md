@@ -35,7 +35,6 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
             color: black;
         }
     </style>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css&#34;   rel=" stylesheet" />
     <style>
         /* 自定义代码块样式 */
         .pre-code-block {
@@ -90,10 +89,6 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
             });
         });
     </script>
-    <script src="<url id="" type=" url" status="" title=""
-        wc=""><url id="" type="url" status="" title="" wc="">https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    </url>
-    </url>
 </head>
 <body>
     <ul>
