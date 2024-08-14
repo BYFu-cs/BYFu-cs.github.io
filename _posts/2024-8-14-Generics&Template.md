@@ -148,11 +148,13 @@ z-index: 1; /* 确保在其他内容之上 */
 <div class="pre-code-block">
 <div class="code-language">Java</div>
 <pre><code class="language-java">
+```java
 public class HelloWorld {
 public static void main(String[] args) {
 System.out.println("Hello, World!");
 }
 }
+```
 </code></pre>
 </div>
 
