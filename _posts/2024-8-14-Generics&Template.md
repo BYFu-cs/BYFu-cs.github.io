@@ -35,9 +35,6 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
             color: black;
         }
     </style>
-	<!-- 其他头部信息 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css&#34;   rel=" stylesheet" />
     <style>
         /* 自定义代码块样式 */
@@ -174,25 +171,6 @@ public void test() {
 }
 ```
 
-
-
-
-    <div class="pre-code-block">
-        <div class="code-language">Java</div>
-        <pre><code class="language-JS">
- 1          public class Generic<T> { 
- 2          private T key;
- 3           public Generic(T key) { 
- 4           this.key = key;
- 5   }
- 6
- 7   public T getKey(){ 
- 8      return key;
- 9  }
-10 }
-</code></pre>
-    </div>
-    This is a big success!
     <div class="pre-code-block">
         <div class="code-language">Java</div>
         <pre><code class="language-JS">
