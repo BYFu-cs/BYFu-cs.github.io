@@ -83,20 +83,86 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 ## <a id="1.1">1.1 泛型類</a>
 泛型的本質是為了將類型參數泛化。在泛型的使用過程中，數據類型被設置為一個參數(你也可以稱之為類型佔位符)，在使用時再從外部傳入一個數據類型；而一旦傳入了具體的數據類型后，傳入變量(實參)的數據類型如果不匹配，編譯器就會直接報錯，這樣就可以避免程序在運行后產生報錯。這種參數化類型可以用在類、接口和方法中，分別被稱為泛型類、泛型接口、泛型方法。<br/>
 在Java中，泛型**最重要的特性**就是其**類型安全檢測機制**。<br/>
+
+    <!-- 其他头部信息 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css&#34;   rel=" stylesheet" />
+    <style>
+        /* 自定义代码块样式 */
+        .pre-code-block {
+            background-color: #2d2d2d;
+            /* 背景色 */
+            border: 1px solid #444;
+            /* 边框 */
+            border-radius: 8px;
+            /* 圆角 */
+            padding: 10px;
+            /* 内边距 */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            /* 添加阴影效果 */
+            overflow: auto;
+            /* 溢出时显示滚动条 */
+            color: #f8f8f2;
+            /* 字体颜色 */
+            max-height: 500px;
+            /* 最大高度 */
+            max-width: 100%;
+            /* 最大宽度 */
+            position: relative;
+            /* 位置 */
+        }
+
+        /* 语言标示样式 */
+        .code-language {
+            position: absolute;
+            /* 绝对定位 */
+            top: 10px;
+            left: 10px;
+            background: #66d9ef;
+            /* 背景颜色 */
+            color: #282a36;
+            /* 字体颜色 */
+            padding: 5px 10px;
+            /* 内边距 */
+            border-radius: 4px;
+            /* 圆角 */
+            font-size: 1em;
+            /* 字体大小 */
+            font-family: Arial, sans-serif;
+            /* 字体 */
+            z-index: 1;
+            /* 确保在其他内容之上 */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+    <script src="<url id="" type=" url" status="" title=""
+        wc=""><url id="" type="url" status="" title="" wc="">https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    </url>
+    </url>
+    
 ### <a id="1.1.1">1.1.1 泛型類的格式</a>
 泛型類格式可如下：<br/>
-```java
-public class Generic<T> { 
-    private T key;
-    public Generic(T key) { 
-        this.key = key;
-    }
-
-    public T getKey(){ 
-        return key;
-    }
-}
-```
+ <div class="pre-code-block">
+        <div class="code-language">Java</div>
+        <pre><code class="language-JS">
+ 1          public class Generic<T> { 
+ 2          private T key;
+ 3           public Generic(T key) { 
+ 4           this.key = key;
+ 5   }
+ 6
+ 7   public T getKey(){ 
+ 8      return key;
+ 9  }
+10 }
+ </code></pre></div>
 在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
 測試代碼：<br/>
 ```java
@@ -109,57 +175,36 @@ public void test() {
 }
 ```
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css" rel="stylesheet" />
-<style>
-/* 自定义代码块样式 */
-.pre-code-block {
-background-color: #2d2d2d; /* 背景色 */
-border: 1px solid #444; /* 边框 */
-border-radius: 8px; /* 圆角 */
-padding: 10px; /* 内边距 */
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
-overflow: auto; /* 溢出时显示滚动条 */
-color: #f8f8f2; /* 字体颜色 */
-max-height: 500px; /* 最大高度 */
-max-width: 100%; /* 最大宽度 */
-position: relative; /* 位置 */
-}
 
-/* 语言标示样式 */
-.code-language {
-position: absolute; /* 绝对定位 */
-top: 10px;
-left: 10px;
-background: #66d9ef; /* 背景颜色 */
-color: #282a36; /* 字体颜色 */
-padding: 5px 10px; /* 内边距 */
-border-radius: 4px; /* 圆角 */
-font-size: 1em; /* 字体大小 */
-font-family: Arial, sans-serif; /* 字体 */
-z-index: 1; /* 确保在其他内容之上 */
-}
-</style>
 
-<!-- Prism.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-</head>
-<body>
 
-<div class="pre-code-block">
-<div class="code-language">Java</div>
-<pre><code class="language-java">
-```java
-public class HelloWorld {
-public static void main(String[] args) {
-System.out.println("Hello, World!");
-}
-}
-```
+    <div class="pre-code-block">
+        <div class="code-language">Java</div>
+        <pre><code class="language-JS">
+ 1          public class Generic<T> { 
+ 2          private T key;
+ 3           public Generic(T key) { 
+ 4           this.key = key;
+ 5   }
+ 6
+ 7   public T getKey(){ 
+ 8      return key;
+ 9  }
+10 }
 </code></pre>
-</div>
-
-</body>
-</html>
+    </div>
+    This is a big success!
+    <div class="pre-code-block">
+        <div class="code-language">Java</div>
+        <pre><code class="language-JS">
+ 1           public class HelloWorld {
+ 2              public static void main(String[] args) {
+ 3              System.out.println("Hello, World!");
+ 4
+ 5 
+ 6            }
+</code></pre>
+    </div>
 
 
 
