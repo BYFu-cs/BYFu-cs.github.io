@@ -89,29 +89,33 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 <div class="pre-code-block">
         <div class="code-language">Java</div>
         <pre><code class="language-JS">
- 1           public class HelloWorld {
- 2              public static void main(String[] args) {
- 3              System.out.println("Hello, World!");
- 4
- 5 
- 6            }
+1    public class Generic&lt;T&gt; { 
+2        private T key;
+3    
+4    public Generic(T key) { 
+5        this.key = key;
+6    }
+7    
+8    public T getKey(){ 
+9        return key;
+10   }
+11 }
 </code></pre>
     </div>
 在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
 測試代碼：<br/>
-```java
-@ Test
-public void test() {
-	Generic<String> generic = new Generic<>();// 傳入 String 類型
-	
-	// <> 中什麼都不傳入，等價於 Generic<Object> generic = new Generic<>();
-	Generic generic = new Generic();
-}
-```
-
-
-<!DOCTYPE html>
-<html lang="zh">
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1    @Test
+2    public void test() {
+3        Generic&lt;String&gt; generic = new Generic&lt;&gt;(); // 傳入 String 類型
+4        
+5        // &lt;&gt; 中什麼都不傳入，等價於 Generic&lt;Object&gt; generic = new Generic&lt;&gt;();
+6        Generic generic = new Generic();
+7    }
+</code></pre>
+    </div>
 
 <head>
     <!-- 其他头部信息 -->
@@ -180,30 +184,6 @@ public void test() {
     </url>
     </url>
 
-
-    <div class="pre-code-block">
-        <div class="code-language">Java</div>
-        <pre><code class="language-JS">
- 1           public class HelloWorld {
- 2              public static void main(String[] args) {
- 3              System.out.println("Hello, World!");
- 4
- 5 
- 6            }
-</code></pre>
-    </div>
-    This is a big success!
-    <div class="pre-code-block">
-        <div class="code-language">Java</div>
-        <pre><code class="language-JS">
- 1           public class HelloWorld {
- 2              public static void main(String[] args) {
- 3              System.out.println("Hello, World!");
- 4
- 5 
- 6            }
-</code></pre>
-    </div>
 </body>
 
 </html>
