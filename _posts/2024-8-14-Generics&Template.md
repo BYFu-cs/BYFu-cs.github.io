@@ -98,6 +98,16 @@ public class Generic<T> {
 }
 '''
 在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
+測試代碼：<br/>
+'''java
+@ Test
+public void test() {
+	Generic<String> generic = new Generic<>();// 傳入 String 類型
+	
+	// <> 中什麼都不傳入，等價於 Generic<Object> generic = new Generic<>();
+	Generic generic = new Generic();
+}
+'''
 
 
 
