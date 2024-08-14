@@ -35,56 +35,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
             color: black;
         }
     </style>
-</head>
-<body>
-    <ul>
-        <li>
-            • 1 <a href="#1"><u>Java泛型淺述</u></a>
-            <ul>
-                <li>
-                    1.1 <a href="#1.1"><u>泛型類</u></a>
-                    <ul>
-                        <li>1.1.1 <a href="#1.1.1"><u>泛型類的格式</u></a></li>
-                        <li>1.1.2 <a href="#1.1.2"><u>泛型類的靜態變量與靜態方法</u></a></li>
-                        <li>1.1.3 <a href="#1.1.3"><u>多類型泛型類的創建</u></a></li>
-                    </ul>
-                </li>
-                <li>1.2 <a href="#1.2"><u>泛型接口</u></a></li>
-              <ul>
-                <li>1.2.1 <a href="#1.2.1"><u>泛型接口的格式</u></a></li>
-                <li>1.2.2 <a href="#1.2.2"><u>泛型接口的接口繼承</u></a></li>
-                <li>1.2.3 <a href="#1.2.3"><u>泛型接口的類實現</u></a></li>
-                <li>1.2.4 <a href="#1.2.4"><u>泛型類基於泛型接口的抽象實現</u></a></li>
-              </ul>
-              <li>1.3 <a href="#1.3"><u>泛型方法</u></a></li>
-              <li>1.4 <a href="#1.4"><u>泛型的反演化：類型擦除</u></a></li>
-            </ul>
-        </li>
-        <li>
-            • 2 <a href="#"><u>C++模板淺述</u></a>
-            <ul>
-                <li>2.1 <a href="#2.1"><u>類型模板函數</u></a></li>
-                <li>2.2 <a href="#2.2"><u>非類型模板參數</u></a></li>
-                <li>2.3 <a href="#2.3"><u>模板類</u></a></li>
-                <ul>
-                    <li>2.3.1 <a href="#2.3.1"><u>模板類的格式</u></a></li>
-                    <li>2.3.2 <a href="#2.3.2"><u>模板類靜態成員函數與靜態成員變量</u></a></li>
-                </ul>
-                <li>2.4 <a href="#2.4"><u>默認模板實參</u></a></li>
-            </ul>
-        </li>
-        <li>• 3 <a href="#3"><u>總結 - 異同相較</u></a></li>
-    </ul>
-</body>
-
----
-
-# <a id="1">1 Java泛型淺述</a>
-## <a id="1.1">1.1 泛型類</a>
-泛型的本質是為了將類型參數泛化。在泛型的使用過程中，數據類型被設置為一個參數(你也可以稱之為類型佔位符)，在使用時再從外部傳入一個數據類型；而一旦傳入了具體的數據類型后，傳入變量(實參)的數據類型如果不匹配，編譯器就會直接報錯，這樣就可以避免程序在運行后產生報錯。這種參數化類型可以用在類、接口和方法中，分別被稱為泛型類、泛型接口、泛型方法。<br/>
-在Java中，泛型**最重要的特性**就是其**類型安全檢測機制**。<br/>
-
-    <!-- 其他头部信息 -->
+	<!-- 其他头部信息 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css&#34;   rel=" stylesheet" />
@@ -146,6 +97,54 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
         wc=""><url id="" type="url" status="" title="" wc="">https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     </url>
     </url>
+</head>
+<body>
+    <ul>
+        <li>
+            • 1 <a href="#1"><u>Java泛型淺述</u></a>
+            <ul>
+                <li>
+                    1.1 <a href="#1.1"><u>泛型類</u></a>
+                    <ul>
+                        <li>1.1.1 <a href="#1.1.1"><u>泛型類的格式</u></a></li>
+                        <li>1.1.2 <a href="#1.1.2"><u>泛型類的靜態變量與靜態方法</u></a></li>
+                        <li>1.1.3 <a href="#1.1.3"><u>多類型泛型類的創建</u></a></li>
+                    </ul>
+                </li>
+                <li>1.2 <a href="#1.2"><u>泛型接口</u></a></li>
+              <ul>
+                <li>1.2.1 <a href="#1.2.1"><u>泛型接口的格式</u></a></li>
+                <li>1.2.2 <a href="#1.2.2"><u>泛型接口的接口繼承</u></a></li>
+                <li>1.2.3 <a href="#1.2.3"><u>泛型接口的類實現</u></a></li>
+                <li>1.2.4 <a href="#1.2.4"><u>泛型類基於泛型接口的抽象實現</u></a></li>
+              </ul>
+              <li>1.3 <a href="#1.3"><u>泛型方法</u></a></li>
+              <li>1.4 <a href="#1.4"><u>泛型的反演化：類型擦除</u></a></li>
+            </ul>
+        </li>
+        <li>
+            • 2 <a href="#"><u>C++模板淺述</u></a>
+            <ul>
+                <li>2.1 <a href="#2.1"><u>類型模板函數</u></a></li>
+                <li>2.2 <a href="#2.2"><u>非類型模板參數</u></a></li>
+                <li>2.3 <a href="#2.3"><u>模板類</u></a></li>
+                <ul>
+                    <li>2.3.1 <a href="#2.3.1"><u>模板類的格式</u></a></li>
+                    <li>2.3.2 <a href="#2.3.2"><u>模板類靜態成員函數與靜態成員變量</u></a></li>
+                </ul>
+                <li>2.4 <a href="#2.4"><u>默認模板實參</u></a></li>
+            </ul>
+        </li>
+        <li>• 3 <a href="#3"><u>總結 - 異同相較</u></a></li>
+    </ul>
+</body>
+
+---
+
+# <a id="1">1 Java泛型淺述</a>
+## <a id="1.1">1.1 泛型類</a>
+泛型的本質是為了將類型參數泛化。在泛型的使用過程中，數據類型被設置為一個參數(你也可以稱之為類型佔位符)，在使用時再從外部傳入一個數據類型；而一旦傳入了具體的數據類型后，傳入變量(實參)的數據類型如果不匹配，編譯器就會直接報錯，這樣就可以避免程序在運行后產生報錯。這種參數化類型可以用在類、接口和方法中，分別被稱為泛型類、泛型接口、泛型方法。<br/>
+在Java中，泛型**最重要的特性**就是其**類型安全檢測機制**。<br/>
     
 ### <a id="1.1.1">1.1.1 泛型類的格式</a>
 泛型類格式可如下：<br/>
