@@ -109,6 +109,56 @@ public void test() {
 }
 ```
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css" rel="stylesheet" />
+<style>
+/* 自定义代码块样式 */
+.pre-code-block {
+background-color: #2d2d2d; /* 背景色 */
+border: 1px solid #444; /* 边框 */
+border-radius: 8px; /* 圆角 */
+padding: 10px; /* 内边距 */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+overflow: auto; /* 溢出时显示滚动条 */
+color: #f8f8f2; /* 字体颜色 */
+max-height: 500px; /* 最大高度 */
+max-width: 100%; /* 最大宽度 */
+position: relative; /* 位置 */
+}
+
+/* 语言标示样式 */
+.code-language {
+position: absolute; /* 绝对定位 */
+top: 10px;
+left: 10px;
+background: #66d9ef; /* 背景颜色 */
+color: #282a36; /* 字体颜色 */
+padding: 5px 10px; /* 内边距 */
+border-radius: 4px; /* 圆角 */
+font-size: 1em; /* 字体大小 */
+font-family: Arial, sans-serif; /* 字体 */
+z-index: 1; /* 确保在其他内容之上 */
+}
+</style>
+
+<!-- Prism.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</head>
+<body>
+
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+public class HelloWorld {
+public static void main(String[] args) {
+System.out.println("Hello, World!");
+}
+}
+</code></pre>
+</div>
+
+</body>
+</html>
+
 
 
 
