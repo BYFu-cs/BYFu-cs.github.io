@@ -88,7 +88,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 泛型類格式可如下：<br/>
 <div class="pre-code-block">
         <div class="code-language">Java</div>
-        <pre><code class="language-JS">
+        <pre><code class="language-java">
 1    public class Generic&lt;T&gt; { 
 2        private T key;
 3    
