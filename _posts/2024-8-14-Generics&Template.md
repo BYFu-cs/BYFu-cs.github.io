@@ -107,7 +107,15 @@ public void test() {
 	// <> 中什麼都不傳入，等價於 Generic<Object> generic = new Generic<>();
 	Generic generic = new Generic();
 }
-
+```
+<pre><code>
+	public void test() {
+	Generic<String> generic = new Generic<>();// 傳入 String 類型
+	
+	// <> 中什麼都不傳入，等價於 Generic<Object> generic = new Generic<>();
+	Generic generic = new Generic();
+}
+</code></pre>
 
 
 
