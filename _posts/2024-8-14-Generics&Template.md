@@ -107,7 +107,7 @@ public void test() {
 	// <> 中什麼都不傳入，等價於 Generic<Object> generic = new Generic<>();
 	Generic generic = new Generic();
 }
-```
+
 
 
 
