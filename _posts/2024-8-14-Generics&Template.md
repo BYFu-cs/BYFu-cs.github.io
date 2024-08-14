@@ -35,61 +35,6 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
             color: black;
         }
     </style>
-    <style>
-        /* 自定义代码块样式 */
-        .pre-code-block {
-            background-color: #2d2d2d;
-            /* 背景色 */
-            border: 1px solid #444;
-            /* 边框 */
-            border-radius: 8px;
-            /* 圆角 */
-            padding: 10px;
-            /* 内边距 */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            /* 添加阴影效果 */
-            overflow: auto;
-            /* 溢出时显示滚动条 */
-            color: #f8f8f2;
-            /* 字体颜色 */
-            max-height: 500px;
-            /* 最大高度 */
-            max-width: 100%;
-            /* 最大宽度 */
-            position: relative;
-            /* 位置 */
-        }
-
-        /* 语言标示样式 */
-        .code-language {
-            position: absolute;
-            /* 绝对定位 */
-            top: 10px;
-            left: 10px;
-            background: #66d9ef;
-            /* 背景颜色 */
-            color: #282a36;
-            /* 字体颜色 */
-            padding: 5px 10px;
-            /* 内边距 */
-            border-radius: 4px;
-            /* 圆角 */
-            font-size: 1em;
-            /* 字体大小 */
-            font-family: Arial, sans-serif;
-            /* 字体 */
-            z-index: 1;
-            /* 确保在其他内容之上 */
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelectorAll('code').forEach((block) => {
-                hljs.highlightBlock(block);
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
 </head>
 <body>
     <ul>
@@ -141,22 +86,6 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     
 ### <a id="1.1.1">1.1.1 泛型類的格式</a>
 泛型類格式可如下：<br/>
-<div class="pre-code-block">
-<div class="code-language">Java</div>
-        <pre><code class="language-JS">
- 1          public class Generic<T> { 
- 2          private T key;
- 3           public Generic(T key) { 
- 4           this.key = key;
- 5   }
- 6
- 7   public T getKey(){ 
- 8      return key;
- 9  }
-10 }
-        </code></pre>
- </div>
-<br/>
 在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
 測試代碼：<br/>
 ```java
@@ -169,17 +98,7 @@ public void test() {
 }
 ```
 
-    <div class="pre-code-block">
-        <div class="code-language">Java</div>
-        <pre><code class="language-JS">
- 1           public class HelloWorld {
- 2              public static void main(String[] args) {
- 3              System.out.println("Hello, World!");
- 4
- 5 
- 6            }
-</code></pre>
-    </div>
+
 
 
 
