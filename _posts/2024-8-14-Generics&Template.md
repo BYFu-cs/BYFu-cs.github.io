@@ -86,6 +86,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     
 ### <a id="1.1.1">1.1.1 泛型類的格式</a>
 泛型類格式可如下：<br/>
+<div class="pre-code-block">
+        <div class="code-language">Java</div>
+        <pre><code class="language-JS">
+ 1           public class HelloWorld {
+ 2              public static void main(String[] args) {
+ 3              System.out.println("Hello, World!");
+ 4
+ 5 
+ 6            }
+</code></pre>
+    </div>
 在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
 測試代碼：<br/>
 ```java
