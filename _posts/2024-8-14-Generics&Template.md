@@ -138,9 +138,50 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 6    }
 </code></pre>
     </div>
-此處static後面的&lt;E&gt;為方法簽名，必須要存在此簽名才能正確聲明泛型函數。
+此處static後面的&lt;E&gt;為方法簽名，必須要存在此簽名才能正確聲明泛型函數。<br/>
+使用測試類：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 @Test
+2 public class Main {
+3     public static void main(String[] args) {
+4         // 直接調用靜態泛型方法
+5         Integer integerValue = StaticExample.example(1); // 返回類型為Integer
+6         String stringValue = StaticExample.example("Hello"); // 返回類型為String
+7     }
+8 }
+</code></pre>
+    </div>
+類型參數在example方法被調用時自動推斷。因此，每次調用example方法時，我們都可以傳入不同類型的參數，並且每次調用的返回類型都會根據所傳遞對象的參數類型進行自動確定。<br/>
 
-
+### <a id="1.1.3">1.1.3 多類型泛型類的創建</a>
+多類型泛型類的創建格式如下：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 public class MultiType&lt;T, E&gt; {
+2     T key1;
+3     E key2;
+4     
+5     public T getKey1() {
+6         return key1;
+7     }
+8     
+9     public E getKey2() {
+10        return key2;
+11     }
+12 }
+</code></pre>
+    </div>
+上述的泛型類支持兩種不同的參數類型。<br/>
+聲明的代碼為：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 MultiType<Integer, String> multiType = new MultiType<>();
+</code></pre>
+    </div>
 
 
 
