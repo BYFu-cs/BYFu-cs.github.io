@@ -99,6 +99,14 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+<script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
 <!-- Gitalk start -->
 <div id="gitalk-container"></div> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
