@@ -104,6 +104,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 10   }
 11 }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
 測試代碼：<br/>
@@ -118,6 +129,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 6        Generic generic = new Generic();
 7    }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 
 ### <a id="1.1.2">1.1.2 泛型類的靜態變量與靜態方法</a>
@@ -137,6 +159,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 5        }
 6    }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 此處static後面的&lt;E&gt;為方法簽名，必須要存在此簽名才能正確聲明泛型函數。<br/>
 使用測試類：<br/>
@@ -152,6 +185,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 7     }
 8 }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 類型參數在example方法被調用時自動推斷。因此，每次調用example方法時，我們都可以傳入不同類型的參數，並且每次調用的返回類型都會根據所傳遞對象的參數類型進行自動確定。<br/>
 
@@ -173,6 +217,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 11     }
 12 }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 上述的泛型類支持兩種不同的參數類型。<br/>
 聲明的代碼為：<br/>
@@ -181,6 +236,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 <pre><code class="language-java">
 1 MultiType<Integer, String> multiType = new MultiType<>();
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 
 ## <a id="1.2">1.2 泛型接口</a>
@@ -201,6 +267,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 10     }
 11 }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 對於接受泛型參數的APIzero接口而言，有如下三大注意事項：<br/>
 •接口中的屬性默認是靜態的，因此不能使用類型參數聲明，如：T element;這種聲明方式會直接報錯。<br/>
@@ -239,6 +316,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 15    }
 16 }
 </code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 > 注意！<br/>
 > 由於在繼承APIzero接口時，指定了類型參數T為 String，U為 Double，那麼在類A實現時必須要提供APIzero接口內抽象方法的具體實現。<br/>
@@ -299,6 +387,35 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
             /* 字体 */
             z-index: 1;
             /* 确保在其他内容之上 */
+        }
+        .tools {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle {
+            padding: 0 4px;
+        }
+
+        .box {
+            display: inline-block;
+            align-items: center;
+            width: 10px;
+            height: 10px;
+            padding: 1px;
+            border-radius: 50%;
+        }
+
+        .red {
+            background-color: #ff605c;
+        }
+
+        .yellow {
+            background-color: #ffbd44;
+        }
+
+        .green {
+            background-color: #00ca4e;
         }
     </style>
 </head>
