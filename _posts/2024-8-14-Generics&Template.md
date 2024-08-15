@@ -294,6 +294,17 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 2 	        ...
 3 }
 </code></pre>
+   <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
     </div>
 我們可以用類A實現此接口：<br/>
 <div class="pre-code-block">
@@ -335,100 +346,6 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 
 
 
-
-
-
-<head>
-    <!-- 其他头部信息 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-    <style>
-        /* 自定义代码块样式 */
-        .pre-code-block {
-            background-color: #2d2d2d;
-            /* 背景色 */
-            border: 1px solid #444;
-            /* 边框 */
-            border-radius: 8px;
-            /* 圆角 */
-            padding: 10px;
-            /* 内边距 */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            /* 添加阴影效果 */
-            overflow: auto;
-            /* 溢出时显示滚动条 */
-            color: #f8f8f2;
-            /* 字体颜色 */
-            max-height: 500px;
-            /* 最大高度 */
-            max-width: 100%;
-            /* 最大宽度 */
-            position: relative;
-            /* 位置 */
-        }
-
-        /* 语言标示样式 */
-        .code-language {
-            position: absolute;
-            /* 绝对定位 */
-            top: 10px;
-            left: 10px;
-            background: #66d9ef;
-            /* 背景颜色 */
-            color: #282a36;
-            /* 字体颜色 */
-            padding: 5px 10px;
-            /* 内边距 */
-            border-radius: 4px;
-            /* 圆角 */
-            font-size: 1em;
-            /* 字体大小 */
-            font-family: Arial, sans-serif;
-            /* 字体 */
-            z-index: 1;
-            /* 确保在其他内容之上 */
-        }
-        .tools {
-            display: flex;
-            align-items: center;
-        }
-
-        .circle {
-            padding: 0 4px;
-        }
-
-        .box {
-            display: inline-block;
-            align-items: center;
-            width: 10px;
-            height: 10px;
-            padding: 1px;
-            border-radius: 50%;
-        }
-
-        .red {
-            background-color: #ff605c;
-        }
-
-        .yellow {
-            background-color: #ffbd44;
-        }
-
-        .green {
-            background-color: #00ca4e;
-        }
-    </style>
-</head>
-
-<body>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelectorAll('code').forEach((block) => {
-                hljs.highlightBlock(block);
-            });
-        });
-    </script>
-</body>
 
 
 
