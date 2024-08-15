@@ -219,6 +219,9 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 </code></pre>
     </div>
 我們可以用類A實現此接口：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
 1 public class A implements APIone {
 2     @Override
 3     public void instance(String s) { 
@@ -235,6 +238,8 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 14        // 實現細節
 15    }
 16 }
+</code></pre>
+    </div>
 > 注意！<br/>
 > 由於在繼承APIzero接口時，指定了類型參數T為 String，U為 Double，那麼在類A實現時必須要提供APIzero接口內抽象方法的具體實現。<br/>
 
