@@ -207,6 +207,19 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 •抽象方法與普通方法都可以使用類型參數，如：T get(U u);和void yes(T t);這兩個抽象方法。<br/>
 •亦可以在接口中使用默認方法, 默認方法可以使用泛型接口的類型參數。如：default T method(U u)等。<br/>
 
+### <a id="1.2.2">1.2.2 泛型接口的接口繼承</a>
+定義一個接口APIone繼承了泛型接口APIzero，在繼承泛型接口時，必須指定泛型接口APIzero的類型參數。<br/>
+如：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 public interface APIone extends APIzero&lt;String, Double&gt; {
+2 	        ...
+3 }
+</code></pre>
+    </div>
+
+
 
 
 <head>
