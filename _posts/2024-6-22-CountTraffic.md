@@ -37,16 +37,6 @@ Click on your data stream, and then in the '**Web stream details**' row to the b
 <br/>
 You need to choose '**Install manually**' as option.<br/>
 Then you are able to see the **Tracking Code** of your personsal account is as follows:<br/>
-```html
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="xxxxxxxxxx"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'xxxxxxxxxx');
-</script>
-```
 <div class="pre-code-block">
         <div class="code-language">JavaScript</div>
         <pre><code class="language-html">
