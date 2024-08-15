@@ -47,6 +47,30 @@ Then you are able to see the **Tracking Code** of your personsal account is as f
   gtag('config', 'xxxxxxxxxx');
 </script>
 ```
+<div class="pre-code-block">
+        <div class="code-language">JavaScript</div>
+        <pre><code class="language-html">
+1 &lt;!-- Google tag (gtag.js) --&gt;
+2 &lt;script async src="https://www.googletagmanager.com/gtag/js?id=xxxxxxxxxx"&gt;&lt;/script&gt; 
+3 &lt;script&gt;
+4   window.dataLayer = window.dataLayer || [];
+5   function gtag(){dataLayer.push(arguments);}
+6   gtag('js', new Date());
+7   gtag('config', 'xxxxxxxxxx');
+8 &lt;/script&gt;
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
 You only need to substitue the **id** into yourself's.<br/>
 <br/>
 ### <a id = "stepfour">Step IV.</a>
