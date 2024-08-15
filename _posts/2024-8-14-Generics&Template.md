@@ -183,7 +183,8 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 </code></pre>
     </div>
 
-### <a id="1.2">1.2 泛型接口</a>
+## <a id="1.2">1.2 泛型接口</a>
+### <a id="1.2.1">1.2.1 泛型接口的格式</a>
 泛型接口的創建格式如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
