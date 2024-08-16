@@ -342,8 +342,45 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 > 注意！<br/>
 > 由於在繼承APIzero接口時，指定了類型參數T為 String，U為 Double，那麼在類A實現時必須要提供APIzero接口內抽象方法的具體實現。<br/>
 
-
-
+### <a id="1.2.3">1.2.3 泛型接口的類實現</a>
+定義一個類B直接實現泛型接口APIzero，在B類定義時需要確定泛型接口APIzero中的類型參數。
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 public class B implements APIzero&lt;String, Integer&gt; {
+2     @Override 
+3     public void instance(String s) { 
+4         // 實現細節 
+5     } 
+6     
+7     @Override 
+8     public String get(Integer i) { 
+9         // 實現細節
+10     } 
+11     
+12     @Override 
+13     public void yes(String s) { 
+14         // 實現細節 
+15     }
+16     
+17     // B類自己的方法
+18     …
+19 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+> 注意！<br/>
+> 若B類在定義時未確定泛型接口APIzero中的類型參數，則全部默認為Object類型。<br/>
 
 
 
