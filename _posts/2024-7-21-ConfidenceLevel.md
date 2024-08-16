@@ -107,6 +107,7 @@ To better understand the confidence level, we need to introduce **Significance L
 <br/>
 **Confidence Level is an abstraction of Confidence Interval**.By repeatedly building the confidence interval, we obtain a set of confidence intervals.The confidence level is the frequency of the confidence interval that contains the real population mean in the set over the number of confidence intervals in the set.However,this formula is inefficient.In contrary,there exists a more efficient formula:
 <p align="center">$$ConfidenceLevel = 1 - \alpha$$</p>
+<br/>
 
 ### <a id="CLFRP">1.2.3 Confidence Level from a region perspective.</a>
 <div align="center">
