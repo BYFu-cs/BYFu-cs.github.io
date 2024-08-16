@@ -491,7 +491,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 <div class="pre-code-block">
 <div class="code-language">Java</div>
 <pre><code class="language-java">
-1 Box<Integer> integerBox = new Box<>();
+1 Box&lt;Integer&gt; integerBox = new Box&lt;&gt;();
 </code></pre>
   <div class="tools">
     <div class="circle">
