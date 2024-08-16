@@ -462,12 +462,50 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 •實例中testMethod2為泛型方法，且其使用的類型參數T與泛型類聲明的&lt;T&gt;無關，僅僅與方法簽名中的&lt;T&gt;一致。<br/>
 
 ## <a id="1.4">1.4 泛型的反演化：類型擦除</a>
-
-
-
-
-
-
+在Java中，泛型主要用於提高代碼的復用性、可讀性和安全性，但它們在編譯時被處理，而在運行時不保留類型信息。這意味着虛擬機（JVM）在運行時看到的是擦除了具體類型的泛型代碼。<br/>
+例如，考慮以下泛型類：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 public class Box&lt;T&gt; {
+2     private T t;
+3     
+4     public void set(T t) { this.t = t; }
+5     
+6     public T get() { return t; }
+7 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+創建Box類的實例：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 Box<Integer> integerBox = new Box<>();
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+在編譯時，Box<Integer>被看作是具有類型參數Integer的泛型類型。但是在運行時，integerBox實例不會保留Integer(&lt;T&gt;)類型的信息，它退化為Box(Object)類型。
 
 
 
