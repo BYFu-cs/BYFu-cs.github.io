@@ -382,8 +382,28 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 > <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
 > 若B類在定義時未確定泛型接口APIzero中的類型參數，則全部默認為Object類型。<br/>
 
-
-
+### <a id="1.2.4">1.2.4 泛型類基於泛型接口的抽象實現</a>
+若是用泛型類實現泛型接口則無需指明泛型類型參數，但其聲明的類型參數必須要和接口中的類型參數相同。<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 class C<T, U> implements APIzero<T, U> { 
+2	       ...
+3 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+如上，此處定義了一個泛型類C實現APIzero，二者的類型參數完全一致。<br/>
 
 
 
