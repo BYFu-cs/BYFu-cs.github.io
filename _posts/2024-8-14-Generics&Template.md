@@ -431,7 +431,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     </div>
 > <div class="tooltip"><div class="iconwarning"><b>i</b></div> <b>特別注意！</b></div>
 > 泛型類中定義的類型參數和泛型方法中定義的類型參數是相互獨立的。<br/>
-<br/>
+
 以下實例可以更好輔助您理解：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
