@@ -116,7 +116,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     </div>
   </div>
     </div>
-在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號<>中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
+在創建泛型類的對象時，必須指定類型參數T的具體數據類型，即尖括號&lt;&gt;中傳入的什麼數據類型，T便會被替換成對應的類型。若<>中什麼都不傳入，默認是<Object>即默認為對象類。<br/>
 測試代碼：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
@@ -146,8 +146,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 對於static的靜態變量或靜態方法儘量在定義時指明所用的具體類型，或者也可以使用非泛型類所聲明的類型參數。<br/>
 針對靜態方法，我們**將靜態方法改寫為泛型靜態方法**。<br/>
 <div class="tooltip">
-  <div class="icon">i</div>
-  <div class="tooltiptext">注意！</div>
+  <div class="icon">i</div>注意！
 </div>
 > 被static修飾的所有靜態方法或靜態變量都不能使用泛型類所聲明的類型參數。一旦使用則會報錯。<br/>
 
