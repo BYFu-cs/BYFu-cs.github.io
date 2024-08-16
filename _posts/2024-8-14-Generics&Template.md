@@ -406,6 +406,32 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 如上，此處定義了一個泛型類C實現APIzero，二者的類型參數完全一致。<br/>
 
 ## <a id="1.3">1.3 泛型方法</a>
+泛型方法並非指在泛型類/泛型接口中使用了定義的泛型參數的方法。而只有在方法簽名中聲明了&lt;T&gt;的方法才是泛型方法。<br/>
+如：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 public class Method<U> {
+2     public <T, S> T testMethod(T t, S s, U u) {
+3         return null;
+4     }
+5 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+> <div class="tooltip"><div class="iconwarning"><b>i</b></div> <b>特別注意！</b></div>
+> 泛型類中定義的類型參數和泛型方法中定義的類型參數是相互獨立的。<br/>
+
 
 
 
