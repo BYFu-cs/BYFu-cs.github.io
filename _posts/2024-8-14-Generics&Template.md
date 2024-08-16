@@ -345,6 +345,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     </div>
 > <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
 > 由於在繼承APIzero接口時，指定了類型參數T為 String，U為 Double，那麼在類A實現時必須要提供APIzero接口內抽象方法的具體實現。<br/>
+
 <br/>
 
 ### <a id="1.2.3">1.2.3 泛型接口的類實現</a>
