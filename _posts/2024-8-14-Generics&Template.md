@@ -145,9 +145,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 ### <a id="1.1.2">1.1.2 泛型類的靜態變量與靜態方法</a>
 對於static的靜態變量或靜態方法儘量在定義時指明所用的具體類型，或者也可以使用非泛型類所聲明的類型參數。<br/>
 針對靜態方法，我們**將靜態方法改寫為泛型靜態方法**。<br/>
-<div class="tooltip">
-  <div class="icon">i</div> 注意！
-</div>
+> <div class="tooltip"><div class="icon">i</div> 注意！</div>
 > 被static修飾的所有靜態方法或靜態變量都不能使用泛型類所聲明的類型參數。一旦使用則會報錯。<br/>
 
 舉例如下：
