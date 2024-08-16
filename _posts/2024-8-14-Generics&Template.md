@@ -411,8 +411,8 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 <div class="pre-code-block">
 <div class="code-language">Java</div>
 <pre><code class="language-java">
-1 public class Method<U> {
-2     public <T, S> T testMethod(T t, S s, U u) {
+1 public class Method&lt;U&gt; {
+2     public &lt;T, S&gt; T testMethod(T t, S s, U u) {
 3         return null;
 4     }
 5 }
