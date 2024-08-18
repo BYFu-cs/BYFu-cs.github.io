@@ -581,7 +581,96 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
   </div>
     </div>
 類似於Java的泛型方法，C++的模板函數**根據函數傳入的實參來推斷模板實參**。<br/>
-若實參為int型，編譯器會將模板實參推斷為int，並將它綁定到模板參數T。這意味著編譯器用推斷出的模板參數來為我們實例化，這些編譯器生成的版本通常被稱為模板的實例。
+若實參為int型，編譯器會將模板實參推斷為int，並將它綁定到模板參數T。這意味著編譯器用推斷出的模板參數來為我們實例化，這些編譯器生成的版本通常被稱為模板的實例。<br/>
+> <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
+> 若要加上inline關鍵字使類型模板swap函數變為內聯函數的語法會略有不同。<br/>
+具體語法如下：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 template&lt;typename T&gt; inline void swap(T& a, T& b) {
+2     T temp = a;
+3     a = b;
+4     b = temp;
+5 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+二者的本質是相同的，注意到inline關鍵字置於尖括號後。<br/>
+<br/>
+
+## <a id="2.2">2.2 非類型模板參數 (Non-type Template Function)</a>
+非類型模板參數允許我們在模板中使用常量值作為參數。它們用於在模板定義中指定一個常量值，而不是一個數據類型。非類型模板參數可以是整數、枚舉、指針或引用類型。在模板參數列表中，我們使用一個特定的類型來定義非類型模板參數。<br/>
+例如：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 template&lt;int N&gt;
+2 int multiplyByN(int value) {
+3     return value * N;
+4 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+在上面的例子中，N是一個非類型模板參數，它表示一個整數常量值。在函數體內，我們可以將N用作常量值來執行相應的計算。<br/>
+測試代碼：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 int main()
+2 {
+3     //@test
+4     int result = multiplyByN&lt;5&gt;(10); // result = 50
+5     
+6     int multiplier = 3; 
+7     int result = multiplyByN&lt;multiplier&gt;(7); // result = 21
+8     
+9     return 0;
+10 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
