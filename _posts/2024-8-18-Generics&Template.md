@@ -554,6 +554,9 @@ extends是一個限定類型參數邊界的語法，其限定類型參數T只能
 
 # <a id="2">2 C++模板淺述</a>
 C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。在C++中，模板本質上就是一套宏指令集。<br/>
+<div align="center">
+  <img src="{{ site.baseurl }}/images/Generics&Template/C++.jpg" alt="Generics" style="width: 50%; height: auto;"/>
+</div>
 <br/>
 ## <a id="2.1">2.1 類型模板函數 (Type Template Function)</a>
 模板函數在代碼形式上類似於Java的泛型，模板參數T也存在於一對尖括號<>內，只不過在尖括號內還需要多加一個typename關鍵字。即以關鍵字template開始，後跟一個含有typename關鍵字的**模板參數列表**。<br/>
@@ -583,7 +586,9 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
 類似於Java的泛型方法，C++的模板函數**根據函數傳入的實參來推斷模板實參**。<br/>
 若實參為int型，編譯器會將模板實參推斷為int，並將它綁定到模板參數T。這意味著編譯器用推斷出的模板參數來為我們實例化，這些編譯器生成的版本通常被稱為**模板的實例**。<br/>
 > <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
-> 若要加上inline關鍵字使類型模板swap函數變為內聯函數的語法會略有不同。<br/>
+> 若要加上inline關鍵字使類型模板swap函數變為內聯函數的語法會略有不同。
+
+<br/>
 具體語法如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">C++</div>
