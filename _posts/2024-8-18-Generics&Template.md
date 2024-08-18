@@ -91,7 +91,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 泛型類格式可如下：<br/>
 <div class="pre-code-block">
         <div class="code-language">Java</div>
-        <pre><code class="language-java">
+        <pre><code class="language">
 1    public class Generic&lt;T&gt; { 
 2        private T key;
 3    
@@ -120,7 +120,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 測試代碼：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1    @Test
 2    public void test() {
 3        Generic&lt;String&gt; generic = new Generic&lt;&gt;(); // 傳入 String 類型
@@ -152,7 +152,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 舉例如下：
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1    public class StaticExample&lt;T&gt; {   
 2        // 泛型類定義的類型參數T不能在靜態方法中使用   
 3        public static &lt;E&gt; E example(E one){ 
@@ -176,7 +176,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 使用測試類：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 @Test
 2 public class Main {
 3     public static void main(String[] args) {
@@ -205,7 +205,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 多類型泛型類的創建格式如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class MultiType&lt;T, E&gt; {
 2     T key1;
 3     E key2;
@@ -235,7 +235,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 聲明的代碼為：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 MultiType<Integer, String> multiType = new MultiType<>();
 </code></pre>
   <div class="tools">
@@ -257,7 +257,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 泛型接口的創建格式如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public interface APIzero&lt;T, U&gt; {
 2     int n = 10;
 3     
@@ -293,7 +293,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 如：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public interface APIone extends APIzero&lt;String, Double&gt; {
 2 	        ...
 3 }
@@ -313,7 +313,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 我們可以用類A實現此接口：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class A implements APIone {
 2     @Override
 3     public void instance(String s) { 
@@ -352,7 +352,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 定義一個類B直接實現泛型接口APIzero，在B類定義時需要確定泛型接口APIzero中的類型參數。
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class B implements APIzero&lt;String, Integer&gt; {
 2     @Override 
 3     public void instance(String s) { 
@@ -394,7 +394,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 若是用泛型類實現泛型接口則無需指明泛型類型參數，但其聲明的類型參數必須要和接口中的類型參數相同。<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 class C&lt;T, U&gt; implements APIzero&lt;T, U&gt; { 
 2	       ...
 3 }
@@ -419,7 +419,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 如：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class Method&lt;U&gt; {
 2     public &lt;T, S&gt; T testMethod(T t, S s, U u) {
 3         return null;
@@ -444,7 +444,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 以下實例可以更好輔助您理解：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class Test&lt;T&gt; {
 2     public void testMethod1(T t) {
 3         System.out.println(t);
@@ -476,7 +476,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 例如，考慮以下泛型類：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class Box&lt;T&gt; {
 2     private T t;
 3     
@@ -500,7 +500,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 創建Box類的實例：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 Box&lt;Integer&gt; integerBox = new Box&lt;&gt;();
 </code></pre>
   <div class="tools">
@@ -527,7 +527,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 如：<br/>
 <div class="pre-code-block">
 <div class="code-language">Java</div>
-<pre><code class="language-java">
+<pre><code class="language">
 1 public class Caculate&lt;T extends Number&gt; {
 2     private T num; // 反编译结果为：private Number num;
 3 }
@@ -560,7 +560,7 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
 實例如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">C++</div>
-<pre><code class="language-C++">
+<pre><code class="language">
 1 template&lt;typename T&gt;
 2 void swap(T& a, T& b) {
 3     T temp = a;
