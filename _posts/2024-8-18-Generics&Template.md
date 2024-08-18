@@ -555,7 +555,7 @@ extends是一個限定類型參數邊界的語法，其限定類型參數T只能
 # <a id="2">2 C++模板淺述</a>
 C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。在C++中，模板本質上就是一套宏指令集。<br/>
 <div align="center">
-  <img src="{{ site.baseurl }}/images/Generics&Template/C++.jpg" alt="Generics" style="width: 50%; height: auto;"/>
+  <img src="{{ site.baseurl }}/images/Generics&Template/C++.png" alt="Generics" style="width: 50%; height: auto;"/>
 </div>
 <br/>
 ## <a id="2.1">2.1 類型模板函數 (Type Template Function)</a>
