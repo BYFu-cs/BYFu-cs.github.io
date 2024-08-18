@@ -558,6 +558,7 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
   <img src="{{ site.baseurl }}/images/Generics&Template/C++.png" alt="Generics" style="width: 50%; height: auto;"/>
 </div>
 <br/>
+
 ## <a id="2.1">2.1 類型模板函數 (Type Template Function)</a>
 模板函數在代碼形式上類似於Java的泛型，模板參數T也存在於一對尖括號<>內，只不過在尖括號內還需要多加一個typename關鍵字。即以關鍵字template開始，後跟一個含有typename關鍵字的**模板參數列表**。<br/>
 實例如下：<br/>
@@ -588,7 +589,6 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
 > <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
 > 若要加上inline關鍵字使類型模板swap函數變為內聯函數的語法會略有不同。
 
-<br/>
 具體語法如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">C++</div>
