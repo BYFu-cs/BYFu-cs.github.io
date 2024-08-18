@@ -517,23 +517,71 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     </div>
 在編譯時，Box<Integer>被看作是具有類型參數Integer的泛型類型。但是在運行時，integerBox實例不會保留Integer(&lt;T&gt;)類型的信息，它退化為Box(Object)類型。<br/>
 <br/>
+**類型擦除的全過程**<br/>
+1.編譯時：泛型代碼被檢查類型安全。<br/>
+2.編譯後：所有的類型參數信息被擦除，替換為它們的界限（如果有的話），或者是Object類型（如果沒有界限）。<br/>
+3.運行時：JVM看到的只是原始類型，沒有任何泛型類型參數。<br/>
+<br/>
+值得注意的是：儘管大部分情況下是這樣，但並非所有的類型擦除後都會退化為Object類型。在類型參數**使用了extends和super語法的有界類型參數**時情況就並非如此。<br/>
+<br/>
+如：<br/>
+<div class="pre-code-block">
+<div class="code-language">Java</div>
+<pre><code class="language-java">
+1 public class Caculate&lt;T extends Number&gt; {
+2     private T num; // 反编译结果为：private Number num;
+3 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+Java泛型的類型擦除是為了在運行時保持性能和兼容性，編譯器會在編譯時去除泛型的類型信息，並將泛型類型替換為它們的界限，並在運行時使用原始類型。<br/>
+上述實例中使用了extends語法的類型參數T在被擦除後會被替換為Number而並非是Object。<br/>
+<br/>
+extends是一個限定類型參數邊界的語法，其限定類型參數T只能是Number類或者是Number的子類。 也就是說，在創建Caculate類對象的時候，尖括號&lt;&gt;中只能傳入Number類或者Number的子類的參數類型，所以在創建Caculate類對象時無論傳入何種參數類型，Number均為其父類，於是使用Number類作為T的原始數據類型，進行類型擦除並替換。<br/>
+<br/>
+  
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# <a id="2">2 C++模板淺述</a>
+C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。在C++中，模板本質上就是一套宏指令集。<br/>
+<br/>
+## <a id="2.1">2.1 類型模板函數 (Type Template Function)</a>
+模板函數在代碼形式上類似於Java的泛型，模板參數T也存在於一對尖括號<>內，只不過在尖括號內還需要多加一個typename關鍵字。即以關鍵字template開始，後跟一個含有typename關鍵字的**模板參數列表**。<br/>
+實例如下：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language-C++">
+1 template&lt;typename T&gt;
+2 void swap(T& a, T& b) {
+3     T temp = a;
+4     a = b;
+5     b = temp;
+6 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+類似於Java的泛型方法，C++的模板函數**根據函數傳入的實參來推斷模板實參**。<br/>
+若實參為int型，編譯器會將模板實參推斷為int，並將它綁定到模板參數T。這意味著編譯器用推斷出的模板參數來為我們實例化，這些編譯器生成的版本通常被稱為模板的實例。
 
 
 
