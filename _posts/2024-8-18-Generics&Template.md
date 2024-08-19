@@ -856,6 +856,19 @@ C++與Java不同的一個<b>關鍵點</b>在於：C++的類允許在類內聲明
 9     
 10    return 0;
 11 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
 > <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
 > 靜態成員函數 getCount() 和靜態成員變量count與模板參數 T 無關。因此，對於所有類型的實例對象，count 是共享的。
 
