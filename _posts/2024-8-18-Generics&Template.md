@@ -198,7 +198,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
     </div>
   </div>
     </div>
-類型參數在example方法被調用時自動推斷。因此，每次調用example方法時，我們都可以傳入不同類型的參數，並且每次調用的返回類型都會根據所傳遞對象的參數類型進行自動確定。<br/>
+類型參數在example方法被調用時<b>自動推斷</b>b>。因此，每次調用example方法時，我們都可以傳入不同類型的參數，並且每次調用的返回類型都會根據所傳遞對象的參數類型進行自動確定。<br/>
 <br/>
 
 ### <a id="1.1.3">1.1.3 多類型泛型類的創建</a>
@@ -665,7 +665,8 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
     </div>
   </div>
     </div>
-    
+<br/>
+
 ## <a id="2.3">2.3 模板類</a>
 ### <a id="2.3.1">2.3.1 模板類的格式</a>
 同樣，模板類與泛型類在形式上類似。
@@ -697,6 +698,7 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
     </div>
   </div>
     </div>
+<br/>
 測試代碼如下：<br/>
 <div class="pre-code-block">
 <div class="code-language">C++</div>
@@ -798,6 +800,7 @@ C++與Java不同的一個<b>關鍵點</b>在於：C++的類允許在類內聲明
     </div>
   </div>
     </div>
+<br/>
     
 ### <a id="2.3.2">2.3.2 模板類靜態成員函數與靜態成員變量</a>
 區別於Java中被static修飾的所有靜態方法或靜態變量都不能使用泛型類所聲明的類型參數，C++允許靜態函數使用類模板類型。<br/>
@@ -870,10 +873,96 @@ C++與Java不同的一個<b>關鍵點</b>在於：C++的類允許在類內聲明
   </div>
     </div>
 > <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
-> 靜態成員函數 getCount() 和靜態成員變量count與模板參數 T 無關。因此，對於所有類型的實例對象，count 是共享的。
+> 靜態成員函數getCount()和靜態成員變量count與模板參數T無關。因此，於所有類型的實例對象，count是共享的。
 
+<br/>
 ## <a id="2.4">2.4 默認模板實參</a>
-正如對於Java泛型非限定類型參數邊界的情況，若不顯式指定泛型類型參數，則全部默認為Object類型。C++也提供了對於默認模板實參的支持，只不過這種默認模板實參需要開發者手動指明。
+正如對於Java泛型非限定類型參數邊界的情況，若不顯式指定泛型類型參數，則全部默認為Object類型。C++也提供了對於默認模板實參的支持，只不過這種默認模板實參需要開發者手動指明。<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 template &lt;typename T = int, typename F = std::less&lt;T&gt;&gt;
+2 int compare(const T &v1, const T &v2, F f = F())
+3 {
+4     if (f(v1, v2)) return -1;
+5     if (f(v2, v1)) return 1;
+6     return 0;
+7 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+上述實例中compare函數是一個模板函數，其模板類型有兩個，接受三個參數。但是只有前兩個參數是必須的，且若不顯式指明，前二參數默認為整數類型。第三個參數是一個可選的函數對象參數，它有一個默認值為std::less<int>。<br/>
+<br/>
+在調用 compare 函數時，如果只提供了前兩個參數 v1 和 v2，編譯器會根據函數模板參數的默認類型進行<b>自動推導</b>。<br/>
+<br/>
+因此，下面這兩種調用方式均爲合法：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 int result1 = compare(5, 10);  // 使用預設的比較函數對象 less&lt;int&gt;
+2 int result2 = compare(5, 10, MyComparator());  // 使用自定義的比較函數對象 MyComparator
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+<br/>
+此處我們在MyComparator結構體內重載operator()函數：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 struct MyComparator {
+2     bool operator()(int a, int b) const {
+3         return a &lt; b; // 比較貳整數
+4     }
+5 };
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+此實例中，MyComparator是一個函數對象，它重載了函數調用運算符，因此可以被當作一個函數來調用。當它被傳遞給compare函數時，它將會被用於執行比較操作。<br/>
+<br/>
 
+---
 
-
+# <a id="3">3 總結 - 異同相較</a>
+其實無論是Java的泛型亦或是C++的模板，二者核心特性的實現皆在於：<b>讓編譯器識別參數類型</b>。而二者實現此特性的手段卻各不相同：<br/>
+<b>C++使用的是「代碼生成」的方式，而Java使用的是「類型擦除」的方式</b>。<br/>
+•「代碼生成」：編譯器在編譯期間識別實際傳入的參數類型，生成用於該類型的代碼。<br/>
+•「類型擦除」：對於非限定類型參數邊界的情況，編譯器在編譯期間將實際類型擦除，將每個類型都視為Object類型。對於限定類型參數邊界的情況，類型退化為T類型的父類。<br/>
+<br/>
+以下四點為Java泛型與C++模板在實現上的<b>主要異同</b>：<br/>
+1.Java泛型相比C++的最大優點在於其對於繼承、遺傳等特性方面有巨大優勢。Java通過不同的類與接口的實現在運用泛型操作方便的同時抽象程度更高，這使得結構的代碼復用效率更高、擴展性更強。而C++的模板更偏向直接使用,即模板特化。<br/>
+2.C++模板可以使用int等基本數據類型，Java則不行。Java泛型在設計時要求類型參數是引用類型（或者稱為對象類型），而不是基本數據類型。這是為了避免與協變返回等Java特性的衝突。<br/>
+3.Java中類的定義只能在類體內，而C++不受此規則限制。<br/>
+4.Java中，自身類的類型參數不能用於靜態方法和變量，但在C++中，模板類型可以用於靜態方法和靜態變量，這是二者設計理念上的巨大差異。<br/>
+<br/>
+上述所有為本博客所淺述之全部，若您喜歡本博客，可以給予我評論支持，感謝閲讀！<br/>
+<br/>
