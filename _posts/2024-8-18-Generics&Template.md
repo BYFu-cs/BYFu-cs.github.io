@@ -529,7 +529,7 @@ Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，�
 <div class="code-language">Java</div>
 <pre><code class="language">
 1 public class Caculate&lt;T extends Number&gt; {
-2     private T num; // 反编译结果为：private Number num;
+2     private T num; // 反編譯結果為：private Number num;
 3 }
 </code></pre>
   <div class="tools">
