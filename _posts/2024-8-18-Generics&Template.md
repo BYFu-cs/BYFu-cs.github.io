@@ -665,18 +665,202 @@ C++中也有與Java泛型類似的泛型編程範式，我們稱其為模板。�
     </div>
   </div>
     </div>
+    
+## <a id="2.3">2.3 模板類</a>
+### <a id="2.3.1">2.3.1 模板類的格式</a>
+同樣，模板類與泛型類在形式上類似。
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 template &lt;typename T1, typename T2&gt;
+2 class Pair {
+3 private:
+4     T1 key1;
+5     T2 key2;
+6 
+7 public:
+8     Pair(const T1& f, const T2& s) : key1(f), key2(s) {}
+9     
+10    T1 getFirst() const { return key1; }
+11    T2 getSecond() const { return key2; }
+12 };
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+測試代碼如下：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 int main() {
+2     //@test
+3     // 創建一個 Pair 對象，類型為 int 和 double
+4     Pair&lt;int, double&gt; intDoublePair(1, 2.5);
+5     
+6     // 創建一個 Pair 對象，類型為 std::string 和 int
+7     Pair&lt;std::string, int&gt; stringIntPair("Hello", 42);
+8     
+9     // 調用 getFirst() 和 getSecond() 成員函數
+10     std::cout &lt;&lt; "First element (int, double pair): " &lt;&lt; intDoublePair.getFirst() &lt;&lt; std::endl;
+11     std::cout &lt;&lt; "Second element (int, double pair): " &lt;&lt; intDoublePair.getSecond() &lt;&lt; std::endl;
+12     
+13     std::cout &lt;&lt; "First element (string, int pair): " &lt;&lt; stringIntPair.getFirst() &lt;&lt; std::endl;
+14     std::cout &lt;&lt; "Second element (string, int pair): " &lt;&lt; stringIntPair.getSecond() &lt;&lt; std::endl;
+15     
+16     return 0;
+17 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+上述二測試例皆顯式地指明了模板實參。<br/>
+<br/>
+C++與Java不同的一個<b>關鍵點</b>在於：C++的類允許在類內聲明函數而在類外定義具體函數，而Java類所有的方法都必須在類內定義。這就導致作為模板類，我們也同樣擁有模板類外的模板函數定義語法，這是Java泛型類所不具備的。<br/>
+<br/>
+下述實例可證明此點：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 template&lt;typename T&gt;
+2 class MyContainer {
+3 private:
+4     T element;
+5 public:
+6     MyContainer(const T& element);
+7     T getElement() const ; 
+8 };
+9 //類外定義構造函數
+10 template&lt;typename T&gt; 
+11 MyContainer&lt;T&gt;::MyContainer(const T& element) : element(element) {
+12     // 構造函數體
+13 }
+14 template&lt;typename T&gt; 
+15 T MyContainer&lt;T&gt;::getElement() const{
+16     return element;
+17 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+在這個構造函數中，我們使用初始化列表將傳入的參數 element 直接賦值給類成員 element。如果T是一個複雜類型，使用初始化列表可以提高效率，因為它避免了複製或移動構造函數的調用。<br/>
+測試代碼如下：<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 //@Test
+2 int main() {
+3     // 範例使用
+4     MyContainer&lt;int&gt; intContainer(42);
+5     std::cout &lt;&lt; "Element in intContainer: " &lt;&lt; intContainer.getElement() &lt;&lt; std::endl;
+6     
+7     MyContainer&lt;std::string&gt; stringContainer("Hello, World!");
+8     std::cout &lt;&lt; "Element in stringContainer: " &lt;&lt; stringContainer.getElement() &lt;&lt; std::endl;
+9     
+10    return 0;
+11 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+    
+### <a id="2.3.2">2.3.2 模板類靜態成員函數與靜態成員變量</a>
+區別於Java中被static修飾的所有靜態方法或靜態變量都不能使用泛型類所聲明的類型參數，C++允許靜態函數使用類模板類型。<br/>
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 template&lt;typename T&gt;
+2 class MyClass {
+3 private:
+4     static int count; // 靜態成員變量
+5 public:
+6     static int getCount() {
+7         return count;
+8     }
+9     
+10    // 靜態成員函數，返回類型為模板參數 T
+11    static T getDefaultValue(const T &t);
+12 };
+13 
+14 // 注意：此處定義無需再次使用關鍵字 static
+15 // 模板類靜態成員變量的定義必須在類外進行
+16 template&lt;typename T&gt;
+17 int MyClass&lt;T&gt;::count = 1;
+18 
+19 // 注意：此處定義無需再次使用關鍵字 static
+20 template&lt;typename T&gt;
+21 T MyClass&lt;T&gt;::getDefaultValue(const T &t){
+22     return t;
+23 }
+</code></pre>
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+    </div>
+<br/>  
+測試代碼如下：<br/>  
+<div class="pre-code-block">
+<div class="code-language">C++</div>
+<pre><code class="language">
+1 //@test
+2 int main() {
+3     std::cout &lt;&lt; "Count value is: " &lt;&lt; MyClass&lt;int&gt;::getCount() &lt;&lt; std::endl;
+4     // 使用整型实例化 MyClass 並調用靜態成員函數
+5     std::cout &lt;&lt; "Processed int value: " &lt;&lt; MyClass&lt;int&gt;::getDefaultValue(42) &lt;&lt; std::endl;
+6     
+7     // 使用字符串類型實例化 MyClass 並調用靜態成員函數
+8     std::cout &lt;&lt; "Processed string value: " &lt;&lt; MyClass&lt;std::string&gt;::getDefaultValue("Hello World") &lt;&lt; std::endl;
+9     
+10    return 0;
+11 }
+> <div class="tooltip"><div class="icon"><b>i</b></div> <b>注意！</b></div>
+> 靜態成員函數 getCount() 和靜態成員變量count與模板參數 T 無關。因此，對於所有類型的實例對象，count 是共享的。
 
-
-
-
-
-
-
-
-
-
-
-
+## <a id="2.4">2.4 默認模板實參</a>
+正如對於Java泛型非限定類型參數邊界的情況，若不顯式指定泛型類型參數，則全部默認為Object類型。C++也提供了對於默認模板實參的支持，只不過這種默認模板實參需要開發者手動指明。
 
 
 
