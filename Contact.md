@@ -14,7 +14,7 @@ If you are interested in establishing academic collaboration with me, have sugge
 ## Contact information 
 
 My mainland e-mail box: [fboyoffice@qq.com](mailto:fboyoffice@qq.com)<br/>
-My e-mail box abroad: [Currently unavailable!](mailto:fboyoffice@qq.com)<br/>
+My e-mail box abroad: [boyifu101@gmail.com](mailto:boyifu101@gmail.com)<br/>
 <br/>
 Phone number 1: (+853) 68590830<br/>
 Phone number 2: (+86) 19358590830<br/>
