@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Research 研究合作
+title: Research 科研
 permalink: /research/
 ---
 
 <p>
-If you're interested in my research work, please feel free to explore my research group via the link provided below:
+I am currently studying under Professor Yang Junxiang.If you're interested in my research work, please feel free to explore my research group via the link provided below:
 <br/>
 <br/>
 <a href="https://cfdyang521.github.io/year-archive/">Prof.Yang's Group.</a>
