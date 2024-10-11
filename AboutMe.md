@@ -11,10 +11,11 @@ English name: Fredy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender: Male
 
 ## Personal Profile  個人簡述
 
-I am now a junior student majoring in C.S. in Macau University of Science and Technology. My academic interests lie in exploring various network technologies, software engineering, and numerical computing. I possess a strong passion for artificial intelligence development and aspire to contribute significantly to the field in the future.
-I aspire to advance through tackling complex challenges in computer science, and I aim to leverage my technical expertise for international career progression.
+I am now a junior student majoring in C.S. in Macau University of Science and Technology.
 
-我是一名澳門科技大學大三計算機科學專業的學生。我熱衷於鑽研各種網絡技術、軟件工程以及數值計算。我對人工智能的發展抱有極大興趣，亦希冀未來能在有關領域擁有建樹。我志於通過學習計算機專業中富有挑戰性的任務得到成長，並希冀以專業技術技能在海外謀求職業發展。
+我是一名澳門科技大學大三計算機科學專業的學生。以下是我的生活近照：
+
+![Boyi Fu](/images/BoyiFu-lifes#pic_center)
 
 ---
 
@@ -32,9 +33,9 @@ You can visit my undergraduate Alma mater's home page by clicking the following 
 ![MUST](/images/FunBlog/M.U.S.T..jpeg#pic_center)
 
 ### Postgraduate University:
-I will be applying for master’s programs abroad in the 25fall. I hope to meet like-minded peers during the application season. My target regions for applications include, but are not limited to: Hong Kong SAR, Singapore, and the United Kingdom.
+I will be applying for master’s programs abroad in the 25fall. I hope to meet like-minded peers during the application season. My target regions for applications include, but are not limited to: Asia and Europe.
 
-我將於25fall進行面嚮海外的碩士研究生申請。希望能在申請季結識更多志同道合的夥伴。我的申請目標地區包括但不限於：中國香港、新加坡與英國。
+我將於25fall進行面嚮海外的碩士研究生申請。希望能在申請季結識更多志同道合的夥伴。我的申請目標地區包括但不限於：亞洲、歐洲。
 
 ---
 
