@@ -13,7 +13,9 @@ English name: Fredy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender: Male
 
 I am now a junior student majoring in C.S. in Macau University of Science and Technology.
 
-我是一名澳門科技大學大三計算機科學專業的學生。以下是我的生活近照：
+我是一名澳門科技大學大三計算機科學專業的學生。
+
+以下是我的生活近照：
 
 ![Boyi Fu](/images/BoyiFu-lifes.jpg#pic_center)
 
