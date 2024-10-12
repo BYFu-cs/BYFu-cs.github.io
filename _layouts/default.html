@@ -244,6 +244,10 @@ function topFunction() {
 </style>
 <title>tooltip</title>
 	<style>
+:root {
+  --bg: {{ post.color }};
+  --tooltip-bg: {{ post.color }};
+}
 	.tooltip-container {
   position: relative;
   transition: all 0.2s;
