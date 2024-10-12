@@ -5,6 +5,9 @@ tags: tech
 excerpt: 
 ---
 
+<div class="tooltip-container-orange">
+  <span class="text-orange">Blog</span>
+</div>
 <div align="center">
   <img src="{{ site.baseurl }}/images/Generics&Template/Comparison.png" alt="Comparsion"/>
 </div>
