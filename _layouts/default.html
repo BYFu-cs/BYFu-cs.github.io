@@ -244,10 +244,6 @@ function topFunction() {
 </style>
 <title>tooltip</title>
 	<style>
-:root {
-  --bg: {{ post.color }};
-  --tooltip-bg: {{ post.color }};
-}
 	.tooltip-container {
   position: relative;
   transition: all 0.2s;
@@ -256,12 +252,13 @@ function topFunction() {
   width: fit-content;
   box-sizing: border-box;
   margin-top: 1rem;
+  display: inline-block;
 }
 
 .text {
   z-index: 9;
-  background: var(--bg);
-  color: var(--color);
+  background: {{ post.color }};
+  color: white;
   padding: 0.7em 1.8em;
   border-radius: 0.75rem;
   height: fit-content;
