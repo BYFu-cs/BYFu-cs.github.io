@@ -47,4 +47,6 @@ More information regarding me will be presented in a subsequent update, so stay 
 
 關於我的更多信息將會在後續的更新中呈現，敬請期待！
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=iELzQL63jtQ9LGQ6qgck1nr55GLwlTUH8zbYW1ISVOw"></script>
+<div id="clustrGlobe" style="width:50px; height:50px;">
+    <script type="text/javascript" src="//clustrmaps.com/globe.js?d=iELzQL63jtQ9LGQ6qgck1nr55GLwlTUH8zbYW1ISVOw"></script>
+</div>
