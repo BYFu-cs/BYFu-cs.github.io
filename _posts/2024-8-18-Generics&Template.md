@@ -9,7 +9,7 @@ excerpt:
   <img src="{{ site.baseurl }}/images/Generics&Template/Comparison.png" alt="Comparsion"/>
 </div>
 <div class="tooltip-container-lightblue">
-  <span class="text-lightblue">#Blog</span>
+  <span class="text-lightblue">#New Blog</span>
 </div>
 Java的泛型(Generics)是Java 5(也稱為Java 1.5)版本中首次引入的，此特性增加了Java語言的類型安全和靈活性。模板(Template)是C++98(也被稱為標準模板庫，Standard Template Library，STL)中引入的重要特性，此特性允許開發者編寫泛型代碼。本博客旨在通過代碼實例淺析Java的泛型與C++模板實現的異同。<br/>
 <br/>
