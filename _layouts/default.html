@@ -333,7 +333,8 @@ function topFunction() {
   padding: 1rem 0;
   width: fit-content;
   box-sizing: border-box;
-  --bg-red: linear-gradient(135deg, #ff5252, #f44336);
+  --bg-red-start: #ff5252;
+  --bg-red-end: #f44336;
   --color: #fff;
   --tooltip-bg-red: #ff5252;
   --tooltip-color: #fff;
@@ -343,7 +344,7 @@ function topFunction() {
 
 .text-red {
   z-index: 9;
-  background: var(--bg-red);
+  background: linear-gradient(var(--bg-red-start), var(--bg-red-end));
   color: var(--color);
   padding: 0.7em 1.8em;
   border-radius: 0.75rem;
