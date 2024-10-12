@@ -242,25 +242,21 @@ function topFunction() {
   }
 }
 </style>
-<title>Orange tip for Blogs</title>
+<title>tooltip</title>
 	<style>
-	.tooltip-container-orange {
+	.tooltip-container {
   position: relative;
   transition: all 0.2s;
   font-size: 14px;
   padding: 1rem 0;
   width: fit-content;
   box-sizing: border-box;
-  --bg-orange: linear-gradient(135deg, #ff9800, #e65100);
-  --color: #fff;
-  --tooltip-bg-orange: #ff9800;
-  --tooltip-color: #fff;
-  --margin: 0.5rem;
+  margin-top: 1rem;
 }
 
-.text-orange {
+.text {
   z-index: 9;
-  background: var(--bg-orange);
+  background: var(--bg);
   color: var(--color);
   padding: 0.7em 1.8em;
   border-radius: 0.75rem;
@@ -270,7 +266,7 @@ function topFunction() {
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.15);
 }
 
-.tooltip-orange {
+.tooltip {
   position: absolute;
   top: calc(-1 * var(--margin));
   left: 50%;
@@ -279,13 +275,13 @@ function topFunction() {
   opacity: 0;
   pointer-events: none;
   transition: all 0.2s;
-  background: var(--tooltip-bg-orange);
+  background: var(--tooltip-bg);
   color: var(--tooltip-color);
   border-radius: 0.5rem;
   z-index: 99999;
 }
 
-.tooltip-orange::before {
+.tooltip::before {
   position: absolute;
   content: "";
   height: 0.6em;
@@ -293,62 +289,7 @@ function topFunction() {
   bottom: -0.2em;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
-  background: var(--tooltip-bg-orange);
-  border-bottom-right-radius: 0.175rem;
-}
-	</style>
-	<title>Blue tip for News</title>
-	<style>
-	.tooltip-container-lightblue {
-  position: relative;
-  transition: all 0.2s;
-  font-size: 14px;
-  padding: 1rem 0;
-  width: fit-content;
-  box-sizing: border-box;
-  --bg-lightblue: linear-gradient(135deg, #89d8f8, #4a89dc);
-  --color: #fff;
-  --tooltip-bg-lightblue: #89d8f8;
-  --tooltip-color: #fff;
-  --margin: 0.5rem;
-}
-
-.text-lightblue {
-  z-index: 9;
-  background: var(--bg-lightblue);
-  color: var(--color);
-  padding: 0.7em 1.8em;
-  border-radius: 0.75rem;
-  height: fit-content;
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.15);
-}
-
-.tooltip-lightblue {
-  position: absolute;
-  top: calc(-1 * var(--margin));
-  left: 50%;
-  transform: translateX(-50%) translateY(0%) scale(0);
-  padding: 0.3em 0.6em;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.2s;
-  background: var(--tooltip-bg-lightblue);
-  color: var(--tooltip-color);
-  border-radius: 0.5rem;
-  z-index: 99999;
-}
-
-.tooltip-lightblue::before {
-  position: absolute;
-  content: "";
-  height: 0.6em;
-  width: 0.6em;
-  bottom: -0.2em;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  background: var(--tooltip-bg-lightblue);
+  background: var(--tooltip-bg);
   border-bottom-right-radius: 0.175rem;
 }
 	</style>
