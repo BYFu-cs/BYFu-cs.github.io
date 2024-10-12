@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 <p>
-I am currently advised by Professor Junxiang Yang. If you're interested in my research work, please feel free to explore my research group via the link provided below:
+Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in his research work, please feel free to explore the research group via the link provided below:
 <br/>
 <br/>
 <a href="https://cfdyang521.github.io/year-archive/">Prof.Yang's Group.</a>
@@ -42,12 +42,12 @@ I am currently advised by Professor Junxiang Yang. If you're interested in my re
     </style>
 </head>
 <body>
-    <h2>Numerical computing: 3D narrow volume reconstruction utilizing leap-frog algorithm.</h2>
+    <h2>Numerical computing: 3D narrow volume reconstruction.</h2>
     <div class="collapsible">
         <p>
-            The whole Scientific research I participated is based on Allen-Cahn(AC) equation and Crank-Nicolson(CN) Method. The proposed modified fusion algorithm, such as the leap-frog algorithm, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a faster or more accurate model. The research papers by our group will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
+            The whole Scientific research Boyi Fu participated is based on Allen-Cahn(AC) equation and Crank-Nicolson(CN) Method. The proposed scheme, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a more accurate reconstruction model. The research papers will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
         <br/> 
-            我目前参与之科研項目基于Allen-Cahn(AC)方程與Crank-Nicolson(CN)方法。根據不同的點雲模型，我們提出了一種修正後的融合改良算法(如leap-frog algorithm)可以在前人的研究上更加精進我們的擬合模型，從而擁有更快的或更精確的模型。
+            付博亦目前参与之科研項目基于Allen-Cahn(AC)方程與Crank-Nicolson(CN)方法。根據不同的點雲模型，提出了一種新的算法可以在前人的研究上更加精進擬合模型，從而擁有更精確的重建模型。
 課題組的研究論文將會對模型的能量穩定性、數值魯棒性以及代碼實操性提出要求。<br/> 
         <br/>
             • The key equations in our essays are:<br/>
