@@ -6,7 +6,7 @@ excerpt:
 ---
 
 ![cover]({{ site.baseurl }}/images/Fun_Blog1/GA.png.webp)
-<div class="tooltip-container-orange"><span class="text-orange">#Blog</span></div><div class="tooltip-container-red"><span class="text-red">#Tech</span>nbsp;<span class="text-red">#Web</span></div>Many people want to see the behavior of the client when building their own web pages. There is no doubt that client-facing analytics can always help web administrators run their web pages better. Here's how to count traffic for your website.<br/>
+<div class="tooltip-container-orange"><span class="text-orange">#Blog</span></div><div class="tooltip-container-red"><span class="text-red">#Tech</span> <span class="text-red">#Web</span></div>Many people want to see the behavior of the client when building their own web pages. There is no doubt that client-facing analytics can always help web administrators run their web pages better. Here's how to count traffic for your website.<br/>
 <br/>
 
 ---
