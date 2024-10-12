@@ -242,51 +242,7 @@ function topFunction() {
   }
 }
 </style>
-<title>tooltip</title>
-	<style>
-	.tooltip-container {
-  position: relative;
-  transition: all 0.2s;
-  font-size: 14px;
-  padding: 1rem 0;
-  width: fit-content;
-  box-sizing: border-box;
-  margin-top: 1rem;
-  --bg: linear-gradient(135deg, #ff9800, #e65100);
-  --color: #fff;
-  --tooltip-bg: {{ post.color }}; 
-  --tooltip-color: #fff;
-  --margin: 0.5rem;
-}
 
-.text {
-  background: var(--bg);
-  z-index: 9;
-  color: var(--color);
-  padding: 0.7em 1.8em;
-  border-radius: 0.75rem;
-  line-height: 1.5;
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.15);
-  display: inline-block; 
-  overflow: hidden; 
-}
-
-.tooltip {
-  position: absolute;
-  top: calc(-1 * var(--margin));
-  left: 50%;
-  transform: translateX(-50%) translateY(0%) scale(0);
-  padding: 0.3em 0.6em;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.2s;
-  background: var(--tooltip-bg);
-  color: var(--tooltip-color);
-  border-radius: 0.5rem;
-  z-index: 99999;
-}
 	</style>
 	<script src="{{ site.baseurl }}/script.js"></script>
   </head>
