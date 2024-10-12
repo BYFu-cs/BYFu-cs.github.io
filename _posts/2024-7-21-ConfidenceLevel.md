@@ -3,8 +3,6 @@ layout: post
 title: Machine Learning：Confidence Interval and Confidence Level based on T-test.
 tags: learn
 excerpt:
-color: "#ff9800"
-tip_text: "#Blog"
 ---
 
 ![cover]({{ site.baseurl }}/images/ConfidenceLevel/cover.png)
