@@ -228,6 +228,11 @@ layout: default
         {{ post.excerpt }}
       </div>
 
+      <div class="tooltip-container" style="background-color: {{ post.color }}">
+        <div class="text">{{ post.tip_text }}</div>
+        <div class="tooltip">{{ post.tip_text }}</div>
+      </div>
+
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
