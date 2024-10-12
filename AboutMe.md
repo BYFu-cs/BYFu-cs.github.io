@@ -47,14 +47,4 @@ More information regarding me will be presented in a subsequent update, so stay 
 
 關於我的更多信息將會在後續的更新中呈現，敬請期待！
 
-<head>
-<style>
-#clstr_globe {
-    width: 50px; /* 你想要的宽度 */
-    height: 50px; /* 你想要的高度 */
-}
-</style>
-</head>
-<body>
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=ZYjYZ0RsWvk6YIDH324LfcbQdw__BR_fi-ZPGPzBCgQ"></script>
-</body>
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=53iyqp1zzpt&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=times_new_roman&amp;l=0" async="async"></script>
