@@ -1,21 +1,16 @@
 ---
 layout: page
-title: Regarding Me  基本信息
+title: Biograpy 簡介
 permalink: /AboutMe/
 ---
 
-English name: Fredy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender: Male              
-中文姓名: 付博亦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性別: 男              
+## Profile  簡述
 
----
+Boyi Fu is now a junior student majoring in C.S. in Macau University of Science and Technology.
 
-## Personal Profile  個人簡述
+付博亦目前是一名澳門科技大學大三計算機科學專業的學生。
 
-I am now a junior student majoring in C.S. in Macau University of Science and Technology.
-
-我是一名澳門科技大學大三計算機科學專業的學生。
-
-以下是我的生活近照：
+他的生活近照如下：
 
 ![Boyi Fu](/images/BoyiFu-lifes.jpg#pic_center)
 
