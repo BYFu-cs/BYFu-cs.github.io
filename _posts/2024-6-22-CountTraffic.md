@@ -3,6 +3,8 @@ layout: post
 title: How to count traffic on your own website?
 tags: tech
 excerpt: 
+color: "#ff9800"
+tip_text: "#Blog"
 ---
 
 ![cover]({{ site.baseurl }}/images/Fun_Blog1/GA.png.webp)
