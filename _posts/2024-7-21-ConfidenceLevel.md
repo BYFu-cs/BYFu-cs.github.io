@@ -8,7 +8,7 @@ excerpt:
 ![cover]({{ site.baseurl }}/images/ConfidenceLevel/cover.png)
 <div class="tooltip-container-orange">
   <span class="text-orange">#Blog</span>
-</div><div class="tooltip-container-red"><span class="text-red">#Stats</span>nbsp;<span class="text-red">#ML</span></div>
+</div><div class="tooltip-container-red"><span class="text-red">#Stats</span> <span class="text-red">#ML</span></div>
 On the road to machine learning, we will find that the basic algorithms are inseparable from the knowledge of mathematical statistics. This blog is to assist you to better understand Confidence Interval and Confidence Level from fundamental concepts to practical instances.<br/>
 <br/>
 
