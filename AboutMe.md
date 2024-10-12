@@ -46,5 +46,3 @@ I will be applying for master’s programs abroad in the 25fall. I hope to meet 
 More information regarding me will be presented in a subsequent update, so stay tuned!
 
 關於我的更多信息將會在後續的更新中呈現，敬請期待！
-
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=53iyqp1zzpt&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=times_new_roman&amp;l=0" async="async"></script>
