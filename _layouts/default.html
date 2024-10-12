@@ -252,7 +252,11 @@ function topFunction() {
   width: fit-content;
   box-sizing: border-box;
   margin-top: 1rem;
-  display: inline-block;
+  --bg: linear-gradient(135deg, #ff9800, #e65100);
+  --color: #fff;
+  --tooltip-bg: {{ post.color }}; 
+  --tooltip-color: #fff;
+  --margin: 0.5rem;
 }
 
 .text {
