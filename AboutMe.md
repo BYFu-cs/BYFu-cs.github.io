@@ -18,14 +18,7 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 
 ## <span class="title-underline">Education 教育</span>
 ### B.Sc: 
-<style>
-  img {
-    vertical-align: middle; 
-    width: 75px; 
-    height: auto;
-  }
- </style>
-<img src="images/FunBlog/MUST.png" alt="MUST">
+<img src="images/FunBlog/MUST.png" alt="MUST" style="vertical-align: middle; width: 75px; height: auto;">
 
 **<a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a> (THE ranking Top 300)**
 
