@@ -16,7 +16,7 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 
 ---
 
-## Education 教育
+## <span class="title-underline">Education 教育</span>
 ### Undergraduate University: 
 Macau University of Science and Technology. (THE ranking Top 300)
 
@@ -33,7 +33,7 @@ Boyi Fu will be applying for master’s programs abroad in the 25fall. He sincer
 
 ---
 
-## More Information 更多
+## <span class="title-underline">More Information 更多</span>
 
 More information will be presented in a subsequent update, so stay tuned!
 
