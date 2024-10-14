@@ -5,7 +5,7 @@ permalink: /privacy/
 ---
 
 <h1 style="text-align: center;">
-Privacy-Policy 
+<span class="title-underline">Privacy-Policy</span> 
 <br/>
 隱私權政策
 </h1>
