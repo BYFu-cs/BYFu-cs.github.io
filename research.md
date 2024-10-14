@@ -42,7 +42,7 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
     </style>
 </head>
 <body>
-    <h2><span class="title-underline">Numerical computing: 3D narrow volume reconstruction.</span></h2>
+    <h2>Numerical computing: 3D narrow volume reconstruction.</h2>
     <div class="collapsible">
         <p>
             The whole Scientific research Boyi Fu participated is based on Allen-Cahn(AC) equation and Crank-Nicolson(CN) Method. The proposed scheme, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a more accurate reconstruction model. The research papers will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
