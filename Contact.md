@@ -11,7 +11,7 @@ If you are interested in establishing academic collaboration with Boyi Fu, have 
 
 ---
 
-## Contact information 
+## <span class="title-underline">Contact information</span> 
 
 Mainland e-mail box: [fboyoffice@qq.com](mailto:fboyoffice@qq.com)<br/>
 E-mail box abroad: [boyifu101@gmail.com](mailto:boyifu101@gmail.com)<br/>
