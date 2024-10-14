@@ -4,7 +4,7 @@ title: Biograpy 簡介
 permalink: /AboutMe/
 ---
 
-## Profile  簡述
+## Profile  概述
 
 Boyi Fu is now a junior student majoring in C.S. in Macau University of Science and Technology.
 
@@ -16,11 +16,9 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 
 ---
 
-## University  關於大學
-### Undergraduate University:
-Boyi Fu's undergraduate alma mater is situated in Macau SAR, China. M.U.S.T., a globally recognized educational institution, has also secured a position within the top 500 of the QS ranking. Through high-quality international education and bilingual instruction, he has cultivated strong comprehensive abilities and developed a robust career mindset here.
-
-付博亦的本科大學位於中國澳門，M.U.S.T.是一所國際化的教育機構，亦進入世界大學排行榜(QS ranking)前500名。通過優質的國際化教育與雙語教學，他於此地積纍並取得了良好的綜合質素同良善的職業發展觀。
+## Education 教育
+### Undergraduate University: 
+Macau University of Science and Technology. (THE ranking Top 300)
 
  <p align="center">
   <a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a>
