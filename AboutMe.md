@@ -30,8 +30,6 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 **<a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a> (THE ranking Top 300)**
 Course Work: Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathematics, Probability Theory, OOP in C++, Algorithm Implementation and Design, Data Structures, Digital Logic, Database Systems, Principles of Computer Composition, Computer Networks, Operating Systems, Software Engineering.
 
-![MUST](/images/FunBlog/M.U.S.T..jpeg#pic_center)
-
 ### Postgraduate University:
 Boyi Fu will be applying for master’s programs abroad in the 25fall. He sincerely hopes to meet like-minded peers during the application season. His target regions for applications include, but are not limited to: Asia and Europe.
 
