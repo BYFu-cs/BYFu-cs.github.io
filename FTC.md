@@ -5,7 +5,7 @@ permalink: /FTC/
 ---
 
 <h1 style="text-align: center;">
-FTC 免責聲明
+<span FTC 免責聲明
 </h1>
   
 <div>
@@ -44,4 +44,4 @@ FTC 免責聲明
 
 ---
 
-技術人員電郵 : fboyoffice@qq.com
+技術人員電郵 : boyifu101@gmail.com
