@@ -4,7 +4,7 @@ title: Biograpy 簡介
 permalink: /AboutMe/
 ---
 
-## Profile  概述
+## <span class="title-underline">Profile  概述</span>
 
 Boyi Fu is now a junior student majoring in C.S. in Macau University of Science and Technology.
 
