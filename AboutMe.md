@@ -22,6 +22,8 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 
 **<a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a> (THE ranking Top 300)**
 
+Duration: 2022 Sept - 2026 July
+
 Course Work: Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathematics, Probability Theory, OOP in C++, Algorithm Implementation and Design, Data Structures, Digital Logic, Database Systems, Principles of Computer Composition, Computer Networks, Operating Systems, Software Engineering.
 
 ### Summer Program: 
@@ -30,6 +32,8 @@ Course Work: Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathe
 **<a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Science and Technology</a> (THE ranking Top 50)**
 
 Track: Big Data Analysis and Application
+
+Duration: 2024 July - 2024 Aug
 
 Supervisor: Professor Lixian Su 
 
