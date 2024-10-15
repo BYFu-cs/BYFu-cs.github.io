@@ -34,7 +34,7 @@ Track: Big Data Analysis and Application
 Supervisor: Lixian Su 
 
 結業合影：
-![Group Photo](/images/groupphoto.JPG#pic_center)
+![Group Photo](/images/FunBlog/groupphoto.JPG#pic_center)
 
 ### Postgraduate University:
 Boyi Fu will be applying for master’s programs abroad in the 25fall. He sincerely hopes to meet like-minded peers during the application season. His target regions for applications include, but are not limited to: Asia and Europe.
