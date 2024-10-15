@@ -29,7 +29,7 @@ Course Work: Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathe
 ### Summer Program: 
 <img style="vertical-align: middle; width: 75px; height: auto;" src="{{ site.baseurl }}/images/FunBlog/CUHK.jpg" alt="CUHK">
 
-**<a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Science and Technology</a> (THE ranking Top 50)**
+**<a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong</a> (THE ranking Top 50)**
 
 Track: Big Data Analysis and Application
 
