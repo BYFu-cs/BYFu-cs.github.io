@@ -24,6 +24,14 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 
 Course Work: Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathematics, Probability Theory, OOP in C++, Algorithm Implementation and Design, Data Structures, Digital Logic, Database Systems, Principles of Computer Composition, Computer Networks, Operating Systems, Software Engineering.
 
+### Summer Program: 
+<img style="vertical-align: middle; width: 75px; height: auto;" src="{{ site.baseurl }}/images/FunBlog/CUHK.png" alt="CUHK">
+
+**<a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Science and Technology</a> (THE ranking Top 50)**
+
+Track: Big Data Analysis and Application
+Supervisor: Lixian Su 
+
 ### Postgraduate University:
 Boyi Fu will be applying for master’s programs abroad in the 25fall. He sincerely hopes to meet like-minded peers during the application season. His target regions for applications include, but are not limited to: Asia and Europe.
 
