@@ -31,7 +31,7 @@ Course Work: Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathe
 
 Track: Big Data Analysis and Application
 
-Supervisor: Lixian Su 
+Supervisor: Professor Lixian Su 
 
 結業合影：
 ![Group Photo](/images/FunBlog/groupphoto.JPG#pic_center)
