@@ -13,7 +13,7 @@ Boyi Fu is now a junior student majoring in C.S. in Macau University of Science 
 他的生活近照如下：
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/BoyiFu-lifes.jpg" alt="Boyi Fu" style="width: 50%; height: auto;"/>
+  <img src="{{ site.baseurl }}/images/BoyiFu-lifes.jpg" alt="Boyi Fu" style="width: 90%; height: auto;"/>
 </div>
 
 ---
@@ -41,7 +41,7 @@ Supervisor: Professor Lixian Su
 
 結業合影：
 <div align="center">
-  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto.JPG" alt="Group photo" style="width: 50%; height: auto;"/>
+  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto.JPG" alt="Group photo" style="width: 90%; height: auto;"/>
 </div>
 
 ### Postgraduate University:
