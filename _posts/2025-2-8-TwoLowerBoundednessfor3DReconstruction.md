@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our New Work has been accepted!
+title: Our Work has been accepted!
 tags: paper
 excerpt: 
 ---
