@@ -16,7 +16,7 @@ Our latest work <blod><i>Two lower boundedness-preservity auxiliary variable met
 ---
 
 If you are interested in our work, please kindly follow the following link:
-****
+**<a href="https://www.sciencedirect.com/science/article/abs/pii/S1007570425000607">https://www.sciencedirect.com/science/article/abs/pii/S1007570425000607</a>**
 <div align="center">
   <img src="{{ site.baseurl }}/images/TwoLowerBoundednessfor3DReconstruction/1.jpg" alt="CNSNS1" height="405"/>
 </div>
