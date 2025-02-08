@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/Generics&Template/Comparison.png" alt="Comparsion"/>
+  <img src="{{ site.baseurl }}/images/TwoLowerBoundednessfor3DReconstruction/SCIcoverCNSNS1.jpg" alt="CNSNS"/>
 </div>
 <div class="tooltip-container-blue">
   <span class="text-orange">#News</span>
