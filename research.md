@@ -79,7 +79,6 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
             III. The reconstruction of a Teapot we obtained.
             </p>
         <br/>
-<br/> 
 (Warning: Please note that the paper is not yet published! Please do not distribute these results without permission! The right to pursue legal action is reserved.)<br/> 
 <br/> 
 (警告:請注意，目前論文尚未公開！閣下請勿未經允許私自傳播此結果！撰寫者保留依法追究責任之權利。)
