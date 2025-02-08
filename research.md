@@ -50,7 +50,7 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
             付博亦目前参与之科研項目基于Allen-Cahn(AC)方程與Crank-Nicolson(CN)方法。根據不同的點雲模型，提出了一種新的算法可以在前人的研究上更加精進擬合模型，從而擁有更精確的重建模型。
 課題組的研究論文將會對模型的能量穩定性、數值魯棒性以及代碼實操性提出要求。<br/> 
         <br/>
-            • The key equations in our former essays are:<br/>
+            • The key equations in our former essays were:<br/>
             $$
             \small
             \begin{equation}
