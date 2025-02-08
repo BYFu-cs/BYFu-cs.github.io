@@ -65,13 +65,13 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
         <br/> 
         </p>
             <p style="text-align: center;">
-            <img src="/images/research/point_disk3.png" alt="pointcloud_disk"><br/>
-            I. The point cloud of a Disk.
+            <img src="/images/research/Buddhatogether.gif" alt="Buddhatogether"><br/>
+            I. The point cloud of a Buddha and its reconstruction.
             </p>
         <br/>
             <p style="text-align: center;">
-            <img src="/images/research/point_tea.png" alt="pointcloud_tea"><br/>
-            II. The point cloud of a Teapot.
+            <img src="/images/research/owltogether.gif" alt="owltogether"><br/>
+            II. The point cloud of a owl and its reconstruction.
             </p>
         <br/>
             <p style="text-align: center;">
@@ -80,13 +80,8 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
             </p>
         <br/>            
             <p style="text-align: center;">
-            <img src="/images/research/tea.png" alt="tea"><br/>
+            <img src="/images/research/teapot.gif" alt="teapot"><br/>
             IV. The reconstruction of Teapot we obtained.
-            </p>
-        <br/>
-            <p style="text-align: center;">
-            <img src="/images/research/GoldenDragon.png" alt="GD"><br/>
-            V. The reconstruction of a Golden Dragon we obtained.
             </p>
         <br/>
 <br/> 
