@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TwoLowerBoundednessfor3DReconstruction/SCIcoverCNSNS1.jpg" alt="CNSNS"/>
+  <img src="{{ site.baseurl }}/images/TwoLowerBoundednessfor3DReconstruction/SCIcoverCNSNS1.jpg" alt="CNSNS" height="405"/>
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
