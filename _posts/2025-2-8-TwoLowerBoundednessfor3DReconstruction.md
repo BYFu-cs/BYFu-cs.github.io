@@ -11,7 +11,7 @@ excerpt:
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
 </div><div class="tooltip-container-red"><span class="text-red">#3D</span> <span class="text-red">#Reconstruction</span></div>
-Our latest work <i>**Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction**</i> has been published recently. <br/>
+Our latest work <i>**Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction**</i> has been published to CNSNS recently. <br/>
 <br/>
 
 ---
