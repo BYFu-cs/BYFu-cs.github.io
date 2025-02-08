@@ -71,17 +71,12 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
         <br/>
             <p style="text-align: center;">
             <img src="/images/research/owltogether.gif" alt="owltogether"><br/>
-            II. The point cloud of a owl and its reconstruction.
+            II. The point cloud of a Owl and its reconstruction.
             </p>
-        <br/>
-            <p style="text-align: center;">
-            <img src="/images/research/disk1.png" alt="disk"><br/>
-            III. The reconstruction of Disk we obtained.
-            </p>
-        <br/>            
+        <br/>         
             <p style="text-align: center;">
             <img src="/images/research/teapot.gif" alt="teapot"><br/>
-            IV. The reconstruction of Teapot we obtained.
+            III. The reconstruction of a Teapot we obtained.
             </p>
         <br/>
 <br/> 
