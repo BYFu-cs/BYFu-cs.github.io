@@ -10,7 +10,7 @@ excerpt:
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
-</div><div class="tooltip-container-red"><span class="text-red">#3D</span> <span class="text-red">#Reconstruction</span></div>
+</div><div class="tooltip-container-red"><span class="text-red">#3D</span> <span class="text-red">#Reconstruction</span> <span class="text-red">#BDF2</span></div>
 Our latest work <i>**Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method**</i> has been published to CMA recently. <br/>
 <br/>
 
@@ -22,5 +22,5 @@ The algorithm uses a linearized backward differentiation formula (BDF2) for time
 If you are interested in our work, please kindly follow the link below:<br/>
 **<a href="https://www.sciencedirect.com/science/article/pii/S0898122125001166">https://www.sciencedirect.com/science/article/pii/S0898122125001166</a>**
 <div align="center">
-  <img src="{{ site.baseurl }}/images/3DBDF2Method/component.jpg" alt="CAM1"/>
+  <img src="{{ site.baseurl }}/images/3DBDF2Method/component.png" alt="CAM1"/>
 </div>
