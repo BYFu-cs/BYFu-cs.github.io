@@ -65,16 +65,25 @@
         }
         nav {
             display: flex;
-            justify-content: flex-end; /* 修改为右对齐 */
+            justify-content: space-between;
             align-items: center;
             background-color: white;
             padding: 10px;
             border-bottom: none;
             position: relative;
         }
+        .desktop-menu {
+            display: flex;
+        }
+        .desktop-menu a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
         .menu-icon {
             padding: 5px 10px;
-            display: block; /* 始终显示菜单图标 */
+            display: none;
             cursor: pointer;
             border-radius: 7px;
             border: 0;
@@ -96,45 +105,55 @@
             box-shadow: none;
             transform: scale(0.98);
         }
-        .menu {
+        .mobile-menu {
             top: 110%;
-            display: block;
+            display: none;
             background-color: white;
             position: absolute;
             width: 200px;
-            display: none;
             flex-direction: column;
             border: 1px solid #ccc;
             z-index: 100000;
             border-radius: 10px;
+            left: 0;
         }
-        .menu::before {
+        .mobile-menu::before {
             content: "";
             position: absolute;
             top: -10px;
-            right: 10px;
+            left: 10px;
             border-width: 0 10px 10px 10px;
             border-style: solid;
             border-color: transparent transparent #ccc transparent;
             z-index: 100001;
         }
-        .menu::after {
+        .mobile-menu::after {
             content: "";
             position: absolute;
             top: -9px;
-            right: 11px;
+            left: 11px;
             border-width: 0 9px 9px 9px;
             border-style: solid;
             border-color: transparent transparent white transparent;
             z-index: 100002;
         }
-        .menu a {
+        .mobile-menu a {
             display: block;
             padding: 10px;
             border-bottom: 1px solid #ccc;
             background-color: white;
-            text-align: center;
+            text-align: left;
+            color: black;
+            text-decoration: none;
         }
+        @media (max-width: 640px) {
+            .desktop-menu {
+                display: none;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }    
     </style>
     <title>Gadget</title>
     <style>
@@ -330,6 +349,16 @@
         }
     </style>
     <script src="{{ site.baseurl }}/script.js"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        if (menu.style.display === 'block') {
+          menu.style.display = 'none';
+        } else {
+          menu.style.display = 'block';
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -355,8 +384,14 @@
             </div>
           </div>
           <nav>
+            <div class="desktop-menu">
+              <a href="{{ site.baseurl }}/"><b><i>News</i></b></a>
+              <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
+              <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
+              <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
+            </div>
             <div class="menu-icon" onclick="toggleMenu()">Nav-Bar ☰</div>
-            <div class="menu" id="menu">
+            <div class="mobile-menu" id="mobileMenu">
                 <a href="{{ site.baseurl }}/"><b><i>News</i></b></a>
                 <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
                 <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
