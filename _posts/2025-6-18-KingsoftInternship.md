@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/KingsoftInternship/pic.jpg" alt="Daily Routine" height="405"/>
+  <img src="{{ site.baseurl }}/images/KingsoftInternship/pic.jpg" alt="Daily Routine"/>
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
