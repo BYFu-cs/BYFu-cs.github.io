@@ -4,7 +4,13 @@ title: Blogs
 permalink: /blog/
 ---
 
-<h1>Blogs</h1>
+<div class="search-container">
+  <div class="search-icon" onclick="performBlogSearch()">
+    <img src="/images/istockphoto-icon.jpg" alt="Search">
+  </div>
+  <input type="text" id="blog-search-input" placeholder="Search Blogs...">
+  <ul id="blog-results-container"></ul>
+</div>
 
 <div class="posts">
   {% for item in site.blog %}
