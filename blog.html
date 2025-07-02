@@ -1,0 +1,16 @@
+ ---
+  layout: default
+  title: Blogs
+  permalink: /blog/
+  ---
+
+  <h1>Blogs</h1>
+  <ul>
+    {% for item in site.blog %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        <span>{{ item.date | date: "%Y-%m-%d" }}</span>
+        <p>{{ item.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
