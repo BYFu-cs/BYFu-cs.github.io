@@ -67,17 +67,12 @@ function topFunction() {
         }
         nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* 修改为flex-start让按钮靠左 */
             align-items: center;
             background-color: white;
             padding: 10px;
             border-bottom: none;
 	    position: relative;
-        }
-        nav a {
-            color: black;
-            text-decoration: none;
-            padding: 10px;
         }
         .menu {
             display: none;
@@ -86,7 +81,7 @@ function topFunction() {
 	     padding: 5px 10px;
 	    /*background-color: #ededed;亮灰色*/
             /*border: 1px solid #ccc;*/
-            display: none;
+            display: block; /* 始终显示汉堡菜单按钮 */
             cursor: pointer;
             /* color: #516984;灰蓝色 */
 	    border-radius: 7px;
@@ -96,6 +91,7 @@ function topFunction() {
             font-weight: Bold;
             transition: all 0.5s;
             -webkit-transition: all 0.5s;
+            margin-right: auto; /* 让按钮靠左 */
         }
 	    .menu-icon:hover {
   background-color: #6fc5ff;
@@ -110,14 +106,7 @@ function topFunction() {
   box-shadow: none;
   transform: scale(0.98);
 }
-        @media (max-width: 640px) {
-            nav a {
-                display: none;
-            }
-            .menu-icon {
-                display: block;
-            }
-            .menu {
+        .menu {
 		top: 110%;
                 display: block;
                 background-color: white;
@@ -155,9 +144,13 @@ function topFunction() {
                 border-bottom: 1px solid #ccc;
                 background-color: white;
                 text-align: center; /* 文字居中 */
+                text-decoration: none;
+                color: black;
             }
-	}    
-    </style>
+            .menu a:last-child {
+                border-bottom: none;
+            }   
+	</style>
 	<title>Gadget</title>
 	<style>
   .parent {
@@ -395,10 +388,6 @@ function topFunction() {
               </div>
 		</div>
 <nav>
-        <a href="{{ site.baseurl }}/"><b><i>Blogs & News</i></b></a>
-        <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
-        <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
-        <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
         <div class="menu-icon" onclick="toggleMenu()">Nav-Bar ☰</div>
         <div class="menu" id="menu">
             <a href="{{ site.baseurl }}/"><b><i>News</i></b></a>
@@ -436,5 +425,16 @@ function topFunction() {
 	</span>
 </div>
 	<button onclick="topFunction()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    
+    <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+    </script>
   </body>
 </html>
