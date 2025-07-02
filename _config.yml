@@ -15,6 +15,11 @@ avatar: "/images/BoyiFu.jpg"
 # Flags below are optional
 #
 
+collections:
+  blog:
+    output: true
+    permalink: /_blog/:name/
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
