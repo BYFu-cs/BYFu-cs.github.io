@@ -1,16 +1,19 @@
- ---
-  layout: default
-  title: Blogs
-  permalink: /blog/
-  ---
+---
+layout: default
+title: Blogs
+permalink: /blog/
+---
 
-  <h1>Blogs</h1>
-  <ul>
-    {% for item in site.blog %}
-      <li>
-        <a href="{{ item.url }}">{{ item.title }}</a>
-        <span>{{ item.date | date: "%Y-%m-%d" }}</span>
-        <p>{{ item.excerpt }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+<h1>Blogs</h1>
+
+<div class="posts">
+  {% for item in site.blog %}
+    <article class="post">
+      <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
+      <div class="entry">
+        {{ item.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ item.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
