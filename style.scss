@@ -214,74 +214,29 @@ img {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  border-bottom: none;
-  position: relative;
-}
-
-.menu-icon {
-  display: block !important;
-  padding: 5px 10px;
-  border-radius: 7px;
-  border: 0;
-  background-color: #2ba8fb;
-  color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 10px;
-  /* 固定在左侧 */
-  align-self: flex-start;
-}
-
-.menu-icon:hover {
-  background-color: #6fc5ff;
-  box-shadow: 0 0 20px #6fc5ff50;
-  transform: scale(1.1);
-}
-
-.menu-icon:active {
-  background-color: #3d94cf;
-  box-shadow: none;
-  transform: scale(0.98);
-}
-
-.menu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  top: 110%;
-  width: 100vw;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  z-index: 100000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  align-items: center;
-}
-
-.menu a {
-  display: block;
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
-  background-color: white;
-  text-align: center;
-  width: 100%;
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
   font-size: 18px;
-}
 
- .menu a:last-child {
-  border-bottom: none;
-}
-
-@media (max-width: 640px) {
-  .menu {
-    width: 100vw;
-    left: 0;
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
   }
+
+  a {
+    margin-left: 33px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
   }
 }
 
