@@ -4,187 +4,97 @@ title: Blogs
 permalink: /blog/
 ---
 
-<title>Search_bar</title>
-<style>
-    .search-container {
-      display: flex;
-      align-items: center;
-      position: relative;
-      max-width: 600px; 
-      margin: 20px auto;
-      background-color: #f9f9f9; 
-      padding: 2px 5px;
-      box-shadow: 0 -2.5px 7.5px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-    }
-
-    #search-input {
-      flex: 1; 
-      max-width: 600px; 
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      transition: border-color 0.3s ease-in-out; 
-      max-width: 600px; 
-      display: flex;
-      align-items: center; 
-    }
-
-    #search-input:focus {
-      outline: none;
-      border-color: dodgerblue; 
-    }
-
-    .search-icon {
-      padding: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-      order: -1;
-    }
-
-    .search-icon:hover {
-      background-color: #ddd;
-      border-radius: 50%;
-    }
-
-    .search-icon img {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-    }
-
-    #results-container {
-      list-style-type: none;
-      margin-top: 10px;
-      position: absolute;
-      top: 100%; 
-      left: 0; 
-      width: 100%; 
-      background-color: #f9f9f9; 
-      padding: 10px; 
-    }
-
-    #results-container li {
-      margin: 5px 0;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px; 
-      list-style-type: none; 
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    #results-container li::before {
-      content: "\2022"; 
-      margin-right: 5px; 
-}
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-  </style>
-  <title>PopupBox</title>
-    <style>
-    #popupBox {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; 
-    z-index: 1000;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-    width: 400px; 
-    height: 300px; 
-}
-      
-    #popupBox.active {
-    display: block;
-    opacity: 1; /* 弹窗显示时透明度变为 1 */
-}
-
-#agreeBtn {
-    background-color: #87CEEB; /* light blue */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    font-size: 16px;
-}
-
-#agreeBtn:hover,
-#agreeBtn:active {
-    background-color: #4682B4; /* dark blue */
-}
-
-#disagreeBtn {
-    background-color: #d3d3d3;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    font-size: 16px;
-}
-
-#disagreeBtn:hover,
-#disagreeBtn:active {
-    background-color: #f9f9f9; 
-}
-    </style>
-  <title>pagination-container</title>
-  <style>
-    #pagination-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.pagination-link {
-  display: inline-block;
-  margin: 0 3px; 
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  color: #007bff;
-  text-decoration: none;
-  background-color: white; 
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.pagination-link:hover {
-  background-color: #add8e6;
-  color: white;
-}
-
-.pagination-link.active {
-  background-color: #333;
-  color: white;
-}
-  </style>
+<!-- 搜索框 -->
 <div class="search-container">
-  <div class="search-icon" onclick="performBlogSearch()">
+  <div class="search-icon" onclick="performSearch()">
     <img src="/images/istockphoto-icon.jpg" alt="Search">
   </div>
-  <input type="text" id="blog-search-input" placeholder="Search Blogs...">
-  <ul id="blog-results-container"></ul>
+  <input type="text" id="search-input" placeholder="Search Blogs...">
+  <ul id="results-container"></ul>
 </div>
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
+<script>
+  const posts = [
+    {% for post in site.blog %}
+      {
+        title: "{{ post.title }}",
+        url: "{{ post.url }}",
+        desc: "{{ post.excerpt | strip_html | strip_newlines | replace: '"', '\"' }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
 
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: posts,
+    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No Result!',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+
+<!-- 帖子列表 -->
 <div class="posts">
-  {% for item in site.blog %}
+  {% for post in site.blog %}
     <article class="post">
-      <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="entry">
-        {{ item.excerpt }}
+        {{ post.excerpt }}
       </div>
-      <a href="{{ site.baseurl }}{{ item.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
+
+<!-- 分页 -->
+<div id="pagination-container"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const postsPerPage = 4;
+    const postsContainer = document.querySelector('.posts');
+    const paginationContainer = document.getElementById('pagination-container');
+    const posts = Array.from(postsContainer.getElementsByClassName('post'));
+    const totalPages = Math.ceil(posts.length / postsPerPage);
+
+    function showPage(page) {
+      posts.forEach((post, index) => {
+        post.style.display = (index >= (page - 1) * postsPerPage && index < page * postsPerPage) ? 'block' : 'none';
+      });
+    }
+
+    function createPagination() {
+      paginationContainer.innerHTML = '';
+      const maxVisiblePages = 5;
+      const currentPage = parseInt(document.querySelector('.pagination-link.active')?.textContent || 1);
+
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+          const link = document.createElement('a');
+          link.href = '#';
+          link.textContent = i;
+          link.className = 'pagination-link';
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelectorAll('.pagination-link').forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+            showPage(i);
+            createPagination();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+          paginationContainer.appendChild(link);
+        } else if (i === currentPage - 3 || i === currentPage + 3) {
+          const ellipsis = document.createElement('span');
+          ellipsis.textContent = '...';
+          paginationContainer.appendChild(ellipsis);
+        }
+      }
+    }
+
+    createPagination();
+    showPage(1); // show the first page by default
+    document.querySelector('.pagination-link').classList.add('active');
+  });
+</script>
