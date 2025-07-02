@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             showPage(i);
             createPagination();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           });
           paginationContainer.appendChild(link);
         } else if (i === currentPage - 3 || i === currentPage + 3) {
