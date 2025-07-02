@@ -6,9 +6,9 @@ permalink: /AboutMe/
 
 ## <span class="title-underline">Profile  概述</span>
 
-Boyi Fu is now a junior student majoring in C.S. in Macau University of Science and Technology.
+Boyi Fu is now a Senior student majoring in C.S. in Macau University of Science and Technology.
 
-付博亦目前是一名澳門科技大學大三計算機科學專業的學生。
+付博亦目前是一名澳門科技大學大四計算機科學專業的學生。
 
 他的生活近照如下：
 
