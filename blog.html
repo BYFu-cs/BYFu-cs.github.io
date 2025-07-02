@@ -4,6 +4,81 @@ title: Blogs
 permalink: /blog/
 ---
 
+<title>Search_bar</title>
+  <style>
+    .search-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      max-width: 600px; 
+      margin: 20px auto;
+      background-color: #f9f9f9; 
+      padding: 2px 5px;
+      box-shadow: 0 -2.5px 7.5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    #search-input {
+      flex: 1; 
+      max-width: 600px; 
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s ease-in-out; 
+      max-width: 600px; 
+      display: flex;
+      align-items: center; 
+    }
+
+    #search-input:focus {
+      outline: none;
+      border-color: dodgerblue; 
+    }
+
+    .search-icon {
+      padding: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      order: -1;
+    }
+
+    .search-icon:hover {
+      background-color: #ddd;
+      border-radius: 50%;
+    }
+
+    .search-icon img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+
+    #results-container {
+      list-style-type: none;
+      margin-top: 10px;
+      position: absolute;
+      top: 100%; 
+      left: 0; 
+      width: 100%; 
+      background-color: #f9f9f9; 
+      padding: 10px; 
+    }
+
+    #results-container li {
+      margin: 5px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px; 
+      list-style-type: none; 
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    #results-container li::before {
+      content: "\2022"; 
+      margin-right: 5px; 
+}
+
 <div class="search-container">
   <div class="search-icon" onclick="performBlogSearch()">
     <img src="/images/istockphoto-icon.jpg" alt="Search">
