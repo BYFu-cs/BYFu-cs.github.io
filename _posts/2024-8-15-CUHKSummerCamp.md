@@ -30,5 +30,5 @@ Boyi Fu and the CUHK logo:
 
 Boyi Fu and his supervisor Su:
 <div align="center">
-  <img src="{{ site.baseurl }}/images/FunBlog/Supervisor.jpg" alt="supervisor" height="505"/>
+  <img src="{{ site.baseurl }}/images/FunBlog/Supervisor.jpg" alt="supervisor" width="800"/>
 </div>
