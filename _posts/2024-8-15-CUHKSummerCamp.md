@@ -16,4 +16,19 @@ Lately, Boyi Fu has Finished the study in CUHK Summer Camp. The specific track i
 
 ---
 
-Boyi Fu will upload more image later.
+In CUHK, Boyi Fu enjoyed a happy summer period with his friends and his supervisor.<br/>
+
+Boyi Fu and his friend:
+<div align="center">
+  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto2.JPG" alt="Gate"/>
+</div>
+
+Boyi Fu and the CUHK logo:
+<div align="center">
+  <img src="{{ site.baseurl }}/images/FunBlog/CUHKsingle.JPG" alt="logo"/>
+</div>
+
+Boyi Fu and his supervisor Li:
+<div align="center">
+  <img src="{{ site.baseurl }}/images/FunBlog/supervisor.JPG" alt="supervisor"/>
+</div>
