@@ -17,3 +17,8 @@ Lately, Boyi Fu has joined Kingsoft as a full-time Backend Developer in Zhuhai, 
 ---
 
 Boyi Fu thought he was quite lucky to be one member in the Quality Center of Kingsoft!
+
+ <p style="text-align: center;">
+            <img src="{{ site.baseurl }}/images/KingsoftInternship/kingsoft.jpg" alt="logo"><br/>
+            Fig. The Environment of Kingsoft.
+            </p>
