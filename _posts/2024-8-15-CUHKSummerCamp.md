@@ -25,10 +25,10 @@ Boyi Fu and his friends:
 
 Boyi Fu and the CUHK logo:
 <div align="center">
-  <img src="{{ site.baseurl }}/images/FunBlog/singleCUHK.jpg" alt="logo" width="800"/>
+  <img src="{{ site.baseurl }}/images/FunBlog/singleCUHK.jpg" alt="logo" height="405"/>
 </div>
 
 Boyi Fu and his supervisor Su:
 <div align="center">
-  <img src="{{ site.baseurl }}/images/FunBlog/Supervisor.jpg" alt="supervisor" width="800"/>
+  <img src="{{ site.baseurl }}/images/FunBlog/Supervisor.jpg" alt="supervisor" height="405"/>
 </div>
