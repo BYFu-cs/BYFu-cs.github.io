@@ -20,17 +20,17 @@ Boyi Fu was quite thankful to his coordinators and friends. They took some photo
 
 <p style="text-align: center;">
 <div align="center">
-  <img src="{{ site.baseurl }}/images/MacauFoundation/Elite1.jpg" alt="Elite1" width="800"/>
+  <img src="{{ site.baseurl }}/images/MacauFoundation/Elite1.jpg" alt="Elite1" width="800"/><br/>
 </div>
 Fig. Group Photo.
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/MacauFoundation/Elite2.jpg" alt="Elite2" width="800"/>
+  <img src="{{ site.baseurl }}/images/MacauFoundation/Elite2.jpg" alt="Elite2" width="800"/><br/>
 </div>
 Fig. Boyi Fu and his friends.
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/MacauFoundation/Elite3.jpg" alt="Elite3" width="800"/>
+  <img src="{{ site.baseurl }}/images/MacauFoundation/Elite3.jpg" alt="Elite3" width="800"/><br/>
 </div>
 Fig. Boyi Fu and his friends.
 
