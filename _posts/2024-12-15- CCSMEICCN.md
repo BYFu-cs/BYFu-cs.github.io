@@ -18,10 +18,7 @@ Lately, Boyi Fu and his team has won the National Second Prize in the 2024 China
 
 In Suzhou , Boyi Fu and his team were quite delight to share their new methods and new insights in the field of applied engineering, automation as well as computer version.<br/>
 
-<p style="text-align: center;">
 <div align="center">
   <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto4.jpg" alt="groupphoto" width="800"/><br/>
 </div>
-Fig. Team Photo in Suzhou University.
-
-</p>
+<p style="text-align: center;">Fig. Team Photo in Suzhou University.</p>
