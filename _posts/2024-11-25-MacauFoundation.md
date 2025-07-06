@@ -11,7 +11,7 @@ excerpt:
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
 </div><div class="tooltip-container-red"><span class="text-red">#Fundação Macau</span> <span class="text-red">#Scholarship</span> </div>
-Congratulations to Boyi Fu for receiving this prestigious scholarship! According to news from M.U.S.T. and [xxx], only the top 0.3% of undergraduate students can earn this award.<br/>
+Congratulations to Boyi Fu for receiving this prestigious scholarship! According to news from M.U.S.T. and Fundação Macau, only the top 0.3% of undergraduate students can earn this award.<br/>
 <br/>
 
 ---
