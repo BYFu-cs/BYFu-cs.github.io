@@ -22,17 +22,17 @@ In Shenzhen , Boyi Fu and his team were quite delight to share their new methods
 Some photos during the competition:
 <p style="text-align: center;">
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto2.jpg" alt="thinking" width="800"/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto2.jpg" alt="thinking" width="800"/><br/>
 </div>
 Fig. Team were dealing with bugs.
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/Award.jpg" alt="award" width="800"/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/Award.jpg" alt="award" width="800"/><br/>
 </div>
 Fig. The awarding ceremony.
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/robot.jpg" alt="robot" width="800"/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/robot.jpg" alt="robot" width="800"/><br/>
 </div>
 Fig. Robot arm with applied algorithm from the team.
 
