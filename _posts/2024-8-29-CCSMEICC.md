@@ -20,20 +20,17 @@ More importantly, the team has been invited to attend the final national competi
 In Shenzhen , Boyi Fu and his team were quite delight to share their new methods and new insights in the field of applied engineering, automation as well as computer version.<br/>
 
 Some photos during the competition:
-<p style="text-align: center;">
 <div align="center">
   <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto2.jpg" alt="thinking" width="800"/><br/>
 </div>
-Fig. Team were dealing with bugs.
+<p style="text-align: center;">Fig. Team were dealing with bugs.</p>
 
 <div align="center">
   <img src="{{ site.baseurl }}/images/CCSMEICC/Award.jpg" alt="award" width="800"/><br/>
 </div>
-Fig. The awarding ceremony.
+<p style="text-align: center;">Fig. The awarding ceremony.</p>
 
 <div align="center">
   <img src="{{ site.baseurl }}/images/CCSMEICC/robot.jpg" alt="robot" width="800"/><br/>
 </div>
-Fig. Robot arm with applied algorithm from the team.
-
-</p>
+<p style="text-align: center;">Fig. Robot arm with applied algorithm from the team.</p>
