@@ -20,7 +20,7 @@ In Suzhou , Boyi Fu and his team were quite delight to share their new methods a
 
 <p style="text-align: center;">
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto4.jpg" alt="groupphoto" width="800"/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto4.jpg" alt="groupphoto" width="800"/><br/>
 </div>
 Fig. Team Photo in Suzhou University.
 
