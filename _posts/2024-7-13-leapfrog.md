@@ -16,7 +16,6 @@ Our latest work <i>**On the numerical approximation of a phase-field volume reco
 
 ---
 
-...<br/>
 <br/>
 
 If you are interested in our work, please kindly follow the link below:<br/>
