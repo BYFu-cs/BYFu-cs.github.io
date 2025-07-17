@@ -40,9 +40,9 @@ Duration: 2024 July - 2024 Aug
 Supervisor: Professor Lixian Su 
 
 ### Postgraduate University:
-Boyi Fu will be applying for master’s programs abroad in the 25fall. He sincerely hopes to meet like-minded peers during the application season. His target regions for applications include, but are not limited to: Asia and Europe.
+Boyi Fu will be applying for master’s programs and PhD programs abroad in the 25fall. He sincerely hopes to meet like-minded peers during the application season. His target regions for applications include, but are not limited to: Asia and Europe.
 
-付博亦將於25fall進行面嚮海外的碩士研究生申請。他誠摯希望能在申請季結識更多志同道合的夥伴。他的申請目標地區包括但不限於：亞洲、歐洲。
+付博亦將於25fall進行面嚮海外的碩博研究生申請。他誠摯希望能在申請季結識更多志同道合的夥伴。他的申請目標地區包括但不限於：亞洲、歐洲。
 
 ---
 
