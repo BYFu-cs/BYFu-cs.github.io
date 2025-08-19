@@ -95,9 +95,9 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
 ---
 
 ## <span class="title-underline">Publications</span> 
-[1] **B. Fu**, D. Cai, X. Kong, R. Gao, & J. Yang (2025). On the numerical approximation of a phase-field volume reconstruction model: Linear and energy-stable leap-frog finite difference scheme. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 151, 109104.
-[2] D. Cai, **B. Fu**, R. Gao, X. Kong, & J. Yang (2025). Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method. Computers & Mathematics with Applications, 189, 1–23.
-[3] X. Kong, R. Gao, **B. Fu**, D. Cai, & J. Yang (2025). Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 143, 108649.
+[1] **B. Fu**, D. Cai, X. Kong, R. Gao, & J. Yang (2025). On the numerical approximation of a phase-field volume reconstruction model: Linear and energy-stable leap-frog finite difference scheme. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 151, 109104. <br/> 
+[2] D. Cai, **B. Fu**, R. Gao, X. Kong, & J. Yang (2025). Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method. Computers & Mathematics with Applications, 189, 1–23.<br/> 
+[3] X. Kong, R. Gao, **B. Fu**, D. Cai, & J. Yang (2025). Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 143, 108649.<br/> 
 
 </body>
 </html>
