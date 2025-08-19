@@ -90,9 +90,8 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
             button.textContent = paragraph.classList.contains('expanded') ? 'Collapse' : 'Read More';
         }
     </script>
-<br/>
 
----
+<hr class="divider">
 
 ## <span class="title-underline">Publications</span> 
 [1] **B. Fu**, D. Cai, X. Kong, R. Gao, & J. Yang (2025). On the numerical approximation of a phase-field volume reconstruction model: Linear and energy-stable leap-frog finite difference scheme. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 151, 109104. <br/> 
