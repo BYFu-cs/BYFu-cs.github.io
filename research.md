@@ -83,15 +83,6 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
     </div>
     <button class="fancy-button" onclick="toggleText()">Read More</button>
 
-    <script>
-        function toggleText() {
-            const paragraph = document.querySelector('.collapsible');
-            paragraph.classList.toggle('expanded');
-            const button = document.querySelector('.fancy-button');
-            button.textContent = paragraph.classList.contains('expanded') ? 'Collapse' : 'Read More';
-        }
-    </script>
-
 ---
 
 ## <span class="title-underline">Publications</span> 
@@ -102,7 +93,14 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
 </body>
 </html>
 
-
+    <script>
+        function toggleText() {
+            const paragraph = document.querySelector('.collapsible');
+            paragraph.classList.toggle('expanded');
+            const button = document.querySelector('.fancy-button');
+            button.textContent = paragraph.classList.contains('expanded') ? 'Collapse' : 'Read More';
+        }
+    </script>
 
 
 
