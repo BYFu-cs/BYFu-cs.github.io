@@ -45,7 +45,7 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
     <h2>Computing Geometry: 3D Volume Reconstruction.</h2>
     <div class="collapsible">
         <p>
-            The current Scientific research Boyi Fu participated is based on different computing Methods. The proposed scheme, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a more accurate reconstruction model. The research papers will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
+            The current scientific research Boyi Fu participated is based on different computing Methods. The proposed scheme, aiming to enhance the fitting model based on various point cloud models from previous studies, resulting in a more accurate reconstruction model. The research papers will outline requirements for energy stability, numerical robustness, and code operability of the model.<br/> 
         <br/> 
             付博亦目前参与之科研項目基于不同算法。根據不同的點雲模型，提出了一種新的算法可以在前人的研究上更加精進擬合模型，從而擁有更精確的重建模型。
 課題組的研究論文將會對模型的能量穩定性、數值魯棒性以及代碼實操性提出要求。<br/> 
@@ -91,6 +91,14 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
             button.textContent = paragraph.classList.contains('expanded') ? 'Collapse' : 'Read More';
         }
     </script>
+
+---
+
+## <span class="title-underline">Publications</span> 
+[1] **B. Fu**, D. Cai, X. Kong, R. Gao, & J. Yang (2025). On the numerical approximation of a phase-field volume reconstruction model: Linear and energy-stable leap-frog finite difference scheme. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 151, 109104.
+[2] D. Cai, **B. Fu**, R. Gao, X. Kong, & J. Yang (2025). Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method. Computers & Mathematics with Applications, 189, 1–23.
+[3] X. Kong, R. Gao, **B. Fu**, D. Cai, & J. Yang (2025). Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 143, 108649.
+
 </body>
 </html>
 
