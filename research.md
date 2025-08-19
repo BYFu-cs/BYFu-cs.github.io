@@ -81,7 +81,7 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
         <br/>
 
     </div>
-    <button class="fancy-button" onclick="toggleText()">Read More</button>
+    <button class="fancy-button" onclick="toggleText()">Read More</button><br/>
 
 ---
 
