@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internship Post
+title: Kingsoft Internship Post
 tags: News
 excerpt: 
 ---
