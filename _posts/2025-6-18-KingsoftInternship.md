@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/KingsoftInternship/pic.jpg" alt="Daily Routine" width="800"/>
+  <img src="{{ site.baseurl }}/images/KingsoftInternship/pic.jpg" alt="Daily Routine" height="405"/>
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
@@ -19,6 +19,6 @@ Lately, Boyi Fu has joined Kingsoft as a full-time Backend Developer in Zhuhai, 
 Boyi Fu thought he was quite lucky to be one member in the Quality Center of Kingsoft!
 
  <p style="text-align: center;">
-            <img src="{{ site.baseurl }}/images/KingsoftInternship/kingsoft.jpg" alt="logo" width="800"><br/>
+            <img src="{{ site.baseurl }}/images/KingsoftInternship/kingsoft.jpg" alt="logo" height="405"><br/>
             Fig. The Environment of Kingsoft.
             </p>
