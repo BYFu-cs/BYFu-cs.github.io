@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto.JPG" alt="Graduation Ceremony" height="405"/>
+  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto.JPG" alt="Graduation Ceremony" width="600"/>
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
@@ -20,7 +20,7 @@ In CUHK, Boyi Fu enjoyed a happy summer period with his friends and his supervis
 
 Boyi Fu and his friends:
 <div align="center">
-  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto2.jpg" alt="Gate" height="405"/>
+  <img src="{{ site.baseurl }}/images/FunBlog/groupphoto2.jpg" alt="Gate" width="600"/>
 </div>
 
 Boyi Fu and the CUHK logo:
