@@ -13,7 +13,7 @@ Boyi Fu is now a Senior student majoring in C.S. in Macau University of Science 
 他的生活近照如下：
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/BoyiFu-lifes.jpg" alt="Boyi Fu" width="800"/>
+  <img src="{{ site.baseurl }}/images/BoyiFu-lifes.jpg" alt="Boyi Fu" width="600"/>
 </div>
 
 ---
