@@ -17,6 +17,6 @@ Lately, Boyi Fu is honored to participate in the establishment of the inaugural 
 ---
 
  <p style="text-align: center;">
-            <img src="{{ site.baseurl }}/images/IEEE/logo.png" alt="logo" width="800"><br/>
+            <img src="{{ site.baseurl }}/images/IEEE/logo.png" alt="logo" width="600"><br/>
             Fig. The organization we established.
             </p>
