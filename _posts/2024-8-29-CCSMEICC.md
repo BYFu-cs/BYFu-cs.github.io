@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto.jpg" alt="Defense" width="800"/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto.jpg" alt="Defense" height="405"/>
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
@@ -21,16 +21,16 @@ In Shenzhen , Boyi Fu and his team were quite delight to share their new methods
 
 Some photos during the competition:
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto2.jpg" alt="thinking" width="800"/><br/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/groupphoto2.jpg" alt="thinking" height="405"/><br/>
 </div>
 <p style="text-align: center;">Fig. Team were dealing with bugs.</p>
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/Award.jpg" alt="award" width="800"/><br/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/Award.jpg" alt="award" height="405"/><br/>
 </div>
 <p style="text-align: center;">Fig. The awarding ceremony.</p>
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/CCSMEICC/robot.jpg" alt="robot" width="800"/><br/>
+  <img src="{{ site.baseurl }}/images/CCSMEICC/robot.jpg" alt="robot" height="405"/><br/>
 </div>
 <p style="text-align: center;">Fig. Robot arm with applied algorithm from the team.</p>
