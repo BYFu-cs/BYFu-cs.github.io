@@ -52,17 +52,22 @@ Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in
         min-width: 280px;
         max-width: 320px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     .research-item img {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        height: 260px;
+        object-fit: contain;
         display: block;
         border-radius: 8px;
+        background-color: #f5f5f5;
     }
     .research-item p {
         margin-top: 12px;
         font-size: 14px;
         line-height: 1.5;
+        flex-grow: 1;
     }
     </style>
 </head>
