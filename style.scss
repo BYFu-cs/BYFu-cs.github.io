@@ -114,6 +114,7 @@ nav a:hover {
   border: 1px solid #e5e7eb;
   border-radius: 18px;
   padding: 20px 22px;
+  margin-bottom: 26px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
@@ -125,6 +126,7 @@ nav a:hover {
 
 .posts > .post:last-child {
   border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0;
 }
 
 /* 內文區塊更舒服 */
@@ -391,58 +393,6 @@ blockquote {
 .red { background-color: #ff605c; }
 .yellow { background-color: #ffbd44; }
 .green { background-color: #00ca4e; }
-
-/* Cookie popup (index/blog) */
-#popupBox {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 18px 18px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.22);
-  border-radius: 16px;
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.22s ease;
-  width: min(520px, calc(100vw - 24px));
-  height: auto;
-}
-
-#popupBox.active {
-  display: block;
-  opacity: 1;
-}
-
-#agreeBtn,
-#disagreeBtn {
-  border: none;
-  padding: 10px 14px;
-  cursor: pointer;
-  transition: transform 0.12s ease, filter 0.12s ease;
-  font-size: 15px;
-  border-radius: 12px;
-}
-
-#agreeBtn {
-  background: linear-gradient(135deg, #4f46e5, #38bdf8);
-  color: #fff;
-  font-weight: 800;
-}
-
-#disagreeBtn {
-  background-color: #eef2f7;
-  color: #111827;
-  font-weight: 700;
-}
-
-#agreeBtn:hover,
-#disagreeBtn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.02);
-}
 
 /* Pagination (index/blog) */
 #pagination-container {
