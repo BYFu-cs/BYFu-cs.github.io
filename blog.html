@@ -15,7 +15,7 @@ permalink: /blog/
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
 <script>
   const posts = [
-    {% for post in site.blog %}
+    {% for post in site.posts %}
       {
         title: "{{ post.title }}",
         url: "{{ post.url }}",
@@ -44,17 +44,13 @@ permalink: /blog/
     .post-cover img{width:100%;border-radius:12px;display:block}
     .post-tags{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:8px;margin-top:8px;width:100%}
     .post-summary{flex:1;padding-left:18px}
-    .tag-badge{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#1f2937;padding:6px 12px;border-radius:999px;border:1px solid #e6eef9;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin:4px 6px 0 0}
-    .text-lightblue{background:linear-gradient(180deg,#e6f5ff,#d9eeff);color:#0366d6;padding:6px 10px;border-radius:8px;font-weight:700;border:1px solid rgba(3,102,214,0.12)}
-    .text-red{background:linear-gradient(180deg,#fff0f0,#ffecec);color:#b91c1c;padding:6px 10px;border-radius:8px;font-weight:700;border:1px solid rgba(185,28,28,0.08);margin-left:6px}
-    /* Hide inline tooltip containers when rendering the posts listing
-       (we render badges under the cover instead). */
+    /* Hide inline tooltip containers when rendering the posts listing (we render badges under the cover instead) */
     .posts .tooltip-container-lightblue,
     .posts .tooltip-container-red {
       display: none !important;
     }
   </style>
-  {% for post in site.blog %}
+  {% for post in site.posts %}
     {% if post.title == "Our work has been accepted!" %}
       <article class="post post-list-item">
         <h2 class="post-card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
@@ -87,11 +83,15 @@ permalink: /blog/
             <div class="post-tags">
               {% if post.badges %}
                 {% for badge in post.badges %}
-                  <span class="tag-badge">{{ badge }}</span>
+                  {% if badge == "#News" %}
+                    <span class="text-lightblue">{{ badge }}</span>
+                  {% else %}
+                    <span class="text-red">{{ badge }}</span>
+                  {% endif %}
                 {% endfor %}
               {% else %}
                 {% for t in post.tags %}
-                  <span class="tag-badge">#{{ t }}</span>
+                  <span class="text-red">#{{ t }}</span>
                 {% endfor %}
               {% endif %}
             </div>
