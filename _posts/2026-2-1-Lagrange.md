@@ -6,7 +6,7 @@ excerpt:
 ---
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/leapfrog/SCIcoverLagrange.png" alt="CNSNS" height="405"/>
+  <img src="{{ site.baseurl }}/images/lagrange/SCIcoverLagrange.png" alt="lagrange" height="405"/>
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
@@ -17,7 +17,7 @@ Our latest work <i>**Three-dimensional narrow volume reconstruction method with 
 ---
 
 If you are interested in our work, please kindly follow the link below:<br/>
-**<a href="https://www.sciencedirect.com/https://www.sciencedirect.com/science/article/abs/pii/S1007570425005155">https://www.sciencedirect.com/science/article/abs/pii/S1007570425005155</a>**
+**<a href="https://www.sciencedirect.com/science/article/pii/S0898122125004833">https://www.sciencedirect.com/science/article/pii/S0898122125004833</a>**
 <div align="center">
-  <img src="{{ site.baseurl }}/images/leapfrog/component.jpg" alt="CNSNS1"/>
+  <img src="{{ site.baseurl }}/images/leapfrog/component.png" alt="CMA2"/>
 </div>
