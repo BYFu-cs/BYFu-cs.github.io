@@ -19,5 +19,5 @@ Our latest work <i>**Three-dimensional narrow volume reconstruction method with 
 If you are interested in our work, please kindly follow the link below:<br/>
 **<a href="https://www.sciencedirect.com/science/article/pii/S0898122125004833">https://www.sciencedirect.com/science/article/pii/S0898122125004833</a>**
 <div align="center">
-  <img src="{{ site.baseurl }}/images/leapfrog/component.png" alt="CMA2"/>
+  <img src="{{ site.baseurl }}/images/lagrange/component.png" alt="CMA2"/>
 </div>
