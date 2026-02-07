@@ -208,30 +208,7 @@ nav a:hover {
   margin: 4px 6px 0 0;
 }
 
-/* Restore original tooltip button styles used inside posts */
-.tooltip-container-lightblue, .tooltip-container-red {
-  display: inline-block;
-  margin-top: 8px;
-}
-.text-lightblue {
-  display: inline-block;
-  background: linear-gradient(180deg,#e6f5ff,#d9eeff);
-  color: #0366d6;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-weight: 700;
-  border: 1px solid rgba(3,102,214,0.12);
-}
-.tooltip-container-red .text-red {
-  display: inline-block;
-  background: linear-gradient(180deg,#fff0f0,#ffecec);
-  color: #b91c1c;
-  padding: 6px 10px;
-  border-radius: 8px;
-  margin-left: 6px;
-  font-weight: 700;
-  border: 1px solid rgba(185,28,28,0.08);
-}
+/* Inline tooltip containers are handled in-post; listing hides them via .posts scope. */
 
 @media (max-width: 860px) {
   .post-list-flex {
