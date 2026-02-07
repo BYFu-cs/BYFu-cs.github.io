@@ -2,6 +2,12 @@
 layout: post
 title: Our work has been accepted!
 tags: paper
+cover: /images/3DBDF2Method/SCIcoverCMA1.jpg
+badges:
+  - "#News"
+  - "#3D"
+  - "#CMA"
+  - "#BDF2"
 excerpt: 
 ---
 
@@ -11,7 +17,7 @@ excerpt:
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
 </div><div class="tooltip-container-red"><span class="text-red">#3D</span> <span class="text-red">#CMA</span> <span class="text-red">#BDF2</span></div>
-Our latest work <i>**Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method**</i> has been published to CMA recently. <br/>
+Our latest work <i>**Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method**</i> has been published to Comput. Math. Appl. recently. <br/>
 <br/>
 
 ---

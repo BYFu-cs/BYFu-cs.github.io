@@ -2,6 +2,11 @@
 layout: post
 title: Our work has been accepted!
 tags: paper
+cover: /images/TwoLowerBoundednessfor3DReconstruction/SCIcoverCNSNS1.jpg
+badges:
+  - "#News"
+  - "#3D"
+  - "#CNSNS"
 excerpt: 
 ---
 

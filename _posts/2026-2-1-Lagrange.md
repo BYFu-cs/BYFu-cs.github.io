@@ -3,6 +3,10 @@ layout: post
 title: Our work has been accepted!
 tags: paper
 cover: /images/lagrange/SCIcoverLagrange.png
+badges:
+  - "#News"
+  - "#3D"
+  - "#CMA"
 excerpt: 
 ---
 

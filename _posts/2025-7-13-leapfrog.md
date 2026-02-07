@@ -2,6 +2,11 @@
 layout: post
 title: Our work has been accepted!
 tags: paper
+cover: /images/leapfrog/SCIcoverCNSNS1.png
+badges:
+  - "#News"
+  - "#3D"
+  - "#CNSNS"
 excerpt: 
 ---
 

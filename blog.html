@@ -85,25 +85,15 @@ permalink: /blog/
               {% endif %}
             </div>
             <div class="post-tags">
-              {% capture badges %}{% endcapture %}
-              {% if post.content contains 'text-lightblue' %}
-                {% assign parts = post.content | split: 'text-lightblue\'>' %}
-                {% for p in parts offset:1 %}
-                  {% assign val = p | split: '<' | first | strip %}
-                  {% capture badges %}{{ badges }}<span class="tag-badge">{{ val }}</span>{% endcapture %}
+              {% if post.badges %}
+                {% for badge in post.badges %}
+                  <span class="tag-badge">{{ badge }}</span>
+                {% endfor %}
+              {% else %}
+                {% for t in post.tags %}
+                  <span class="tag-badge">#{{ t }}</span>
                 {% endfor %}
               {% endif %}
-              {% if post.content contains 'text-red' %}
-                {% assign partsr = post.content | split: 'text-red\'>' %}
-                {% for p in partsr offset:1 %}
-                  {% assign val = p | split: '<' | first | strip %}
-                  {% capture badges %}{{ badges }}<span class="tag-badge">{{ val }}</span>{% endcapture %}
-                {% endfor %}
-              {% endif %}
-              {% for t in post.tags %}
-                {% capture badges %}{{ badges }}<span class="tag-badge">#{{ t }}</span>{% endcapture %}
-              {% endfor %}
-              {{ badges }}
             </div>
           </div>
 
