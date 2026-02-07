@@ -169,6 +169,9 @@ blockquote {
 
 .profile-biography {
   text-align: justify;
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .profile-biography p {
