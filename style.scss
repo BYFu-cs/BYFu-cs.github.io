@@ -969,23 +969,22 @@ nav a:last-child::after {
 @import "highlights";
 @import "svg-icons";
 
-/* Google Scholar button used on Research page (framed style) */
+/* Google Scholar button used on Research page (colorful style) */
 .scholar-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #ffffff;
-  color: #0366d6;
+  background: linear-gradient(135deg, #EA4335 0%, #4285F4 25%, #FBBC04 50%, #34A853 75%, #EA4335 100%);
+  color: #ffffff;
   padding: 8px 14px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 6px 16px rgba(15,23,42,0.06);
-  border: 1px solid rgba(3,102,214,0.12);
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  box-shadow: 0 6px 16px rgba(15,23,42,0.12);
+  border: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 .scholar-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 26px rgba(15,23,42,0.12);
-  background: linear-gradient(135deg,#e6f5ff,#d9eeff);
+  box-shadow: 0 12px 26px rgba(15,23,42,0.18);
 }
