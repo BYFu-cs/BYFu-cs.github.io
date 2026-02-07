@@ -59,14 +59,6 @@ permalink: /blog/
         {% endif %}
 
         {% comment %} capture any tooltip-container divs from post.content and render them below the cover {% endcomment %}
-        {% capture tooltip_html %}{% endcapture %}
-        {% for chunk in post.content | split: '<div' %}
-          {% if chunk contains 'tooltip-container' %}
-            {% capture snippet %}<div{{ chunk | split: '</div>' | first }}</div>{% endcapture %}
-            {% capture tooltip_html %}{{ tooltip_html }}{{ snippet }}{% endcapture %}
-          {% endif %}
-        {% endfor %}
-
         <div class="post-list-flex">
           <div class="post-left">
             <div class="post-cover">
@@ -77,12 +69,14 @@ permalink: /blog/
               {% endif %}
             </div>
             <div class="post-tags">
-              {{ tooltip_html }}
+              {% for t in post.tags %}
+                <span class="tag-badge">#{{ t }}</span>
+              {% endfor %}
             </div>
           </div>
 
           <div class="post-summary">
-            <p>{{ post.content | strip_html | strip_newlines | truncatewords: 55 }}</p>
+            <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 55 }}</p>
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
           </div>
         </div>
