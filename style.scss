@@ -981,6 +981,7 @@ nav a:last-child::after {
   text-decoration: none;
   box-shadow: 0 6px 16px rgba(15,23,42,0.12);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
+  color: inherit;
 }
 
 .scholar-button:hover {
