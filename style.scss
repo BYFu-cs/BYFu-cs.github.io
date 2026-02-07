@@ -195,12 +195,17 @@ nav a:hover {
   gap: 6px;
 }
 .tag-badge {
-  display: inline-block;
-  background: #e6f2ff;
-  color: #0366d6;
-  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #1f2937;
+  padding: 6px 12px;
   border-radius: 999px;
   font-size: 13px;
+  border: 1px solid #e6eef9;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  margin: 4px 6px 0 0;
 }
 
 /* Restore original tooltip button styles used inside posts */
@@ -210,20 +215,22 @@ nav a:hover {
 }
 .text-lightblue {
   display: inline-block;
-  background: #e6f5ff;
+  background: linear-gradient(180deg,#e6f5ff,#d9eeff);
   color: #0366d6;
   padding: 6px 10px;
-  border-radius: 6px;
-  font-weight: 600;
+  border-radius: 8px;
+  font-weight: 700;
+  border: 1px solid rgba(3,102,214,0.12);
 }
 .tooltip-container-red .text-red {
   display: inline-block;
-  background: #ffecec;
-  color: #c92a2a;
+  background: linear-gradient(180deg,#fff0f0,#ffecec);
+  color: #b91c1c;
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-left: 6px;
-  font-weight: 600;
+  font-weight: 700;
+  border: 1px solid rgba(185,28,28,0.08);
 }
 
 @media (max-width: 860px) {
