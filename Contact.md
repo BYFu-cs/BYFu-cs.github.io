@@ -13,8 +13,7 @@ If you are interested in establishing academic collaboration with Boyi Fu, have 
 
 ## <span class="title-underline">Contact information</span> 
 
-Mainland e-mail box: [fboyoffice@qq.com](mailto:fboyoffice@qq.com)<br/>
-E-mail box abroad: [boyifu101@gmail.com](mailto:boyifu101@gmail.com)<br/>
+E-mail box: [boyifu101@gmail.com](mailto:boyifu101@gmail.com)<br/>
 <br/>
 Phone number 1: (+853) 68590830<br/>
 Phone number 2: (+86) 19358590830<br/>

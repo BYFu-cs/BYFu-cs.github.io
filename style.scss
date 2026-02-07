@@ -178,6 +178,54 @@ blockquote {
   }
 }
 
+/* Education section: two items side by side */
+.education-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.education-item {
+  flex: 1;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.education-item h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: $blue;
+}
+
+.education-item img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.education-item p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.education-item p strong {
+  color: $darkerGray;
+}
+
+@media (max-width: 900px) {
+  .education-row {
+    flex-direction: column;
+  }
+}
+
 /* 搜索框（index.html / blog.html 共用） */
 .search-container {
   display: flex;
