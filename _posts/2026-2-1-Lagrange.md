@@ -2,6 +2,7 @@
 layout: post
 title: Our work has been accepted!
 tags: paper
+cover: /images/lagrange/SCIcoverLagrange.png
 excerpt: 
 ---
 

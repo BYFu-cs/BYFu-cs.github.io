@@ -203,6 +203,29 @@ nav a:hover {
   font-size: 13px;
 }
 
+/* Restore original tooltip button styles used inside posts */
+.tooltip-container-lightblue, .tooltip-container-red {
+  display: inline-block;
+  margin-top: 8px;
+}
+.text-lightblue {
+  display: inline-block;
+  background: #e6f5ff;
+  color: #0366d6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.tooltip-container-red .text-red {
+  display: inline-block;
+  background: #ffecec;
+  color: #c92a2a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
 @media (max-width: 860px) {
   .post-list-flex {
     flex-direction: column;

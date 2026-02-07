@@ -256,8 +256,11 @@ layout: default
       <article class="post post-list-item">
         <h2 class="post-card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
+        {% comment %} Prefer explicit cover in front matter, otherwise extract first image src {% endcomment %}
         {% assign img_src = nil %}
-        {% if post.content contains 'src="' %}
+        {% if post.cover %}
+          {% assign img_src = post.cover %}
+        {% elsif post.content contains 'src="' %}
           {% assign parts = post.content | split: 'src="' %}
           {% assign after_src = parts[1] %}
           {% assign img_src = after_src | split: '"' | first %}
