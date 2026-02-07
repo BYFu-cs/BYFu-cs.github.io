@@ -5,10 +5,12 @@ permalink: /research/
 ---
 
 <p>
-Boyi Fu is currently advised by Professor Junxiang Yang. If you're interested in his research work, please feel free to explore the research group via the link provided below:
-<br/>
-<br/>
-<a href="https://cfdyang521.github.io/year-archive/">Prof.Yang's Group.</a>
+    You can click the botton below to visit my Google Scholar Page:
+    <p>
+    <a href="https://scholar.google.com/citations?user=YOUR_ID" class="scholar-button" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+    </a>
+    </p>
 </p>
 
 ---
