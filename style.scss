@@ -66,6 +66,10 @@ h4 {
 
 p {
   margin: 15px 0;
+  text-align: justify;
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -165,17 +169,6 @@ blockquote {
   max-width: 320px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
-}
-
-.profile-biography {
-  text-align: justify;
-  hyphens: auto;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-.profile-biography p {
-  margin: 16px 0;
 }
 
 @media (max-width: 800px) {
