@@ -8,7 +8,7 @@ badges:
   - "#3D"
   - "#CMA"
   - "#BDF2"
-excerpt: 
+excerpt: Our latest work Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method has been published to Comput. Math. Appl. recently. 
 ---
 
 <div align="center">

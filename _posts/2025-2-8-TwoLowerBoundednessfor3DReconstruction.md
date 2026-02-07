@@ -7,7 +7,7 @@ badges:
   - "#News"
   - "#3D"
   - "#CNSNS"
-excerpt: 
+excerpt: Our latest work Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction has been published to CNSNS recently. 
 ---
 
 <div align="center">
