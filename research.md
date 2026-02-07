@@ -127,6 +127,11 @@ permalink: /research/
 <hr class="divider">
 
 <h2><span class="title-underline">Publications</span> </h2>
+<h2><span class="title-underline">2026</span> </h2>
+[1] R. Gao, X. Kong, D. Cai, <b>B. Fu</b>, & J. Yang (2026). Three-dimensional narrow volume reconstruction method
+with unconditional stability based on a phase-field Lagrange multiplier approach. Computers & Mathematics with
+Applications, 202, 88-112.<br/> 
+<h2><span class="title-underline">2025</span> </h2>
 [1] <b>B. Fu</b>, D. Cai, X. Kong, R. Gao, & J. Yang (2025). On the numerical approximation of a phase-field volume reconstruction model: Linear and energy-stable leap-frog finite difference scheme. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 151, 109104. <br/> 
 [2] D. Cai, <b>B. Fu</b>, R. Gao, X. Kong, & J. Yang (2025). Phase-field computation for 3D shell reconstruction with an energy-stable and uniquely solvable BDF2 method. Computers & Mathematics with Applications, 189, 1–23.<br/> 
 [3] X. Kong, R. Gao, <b>B. Fu</b>, D. Cai, & J. Yang (2025). Two lower boundedness-preservity auxiliary variable methods for a phase-field model of 3D narrow volume reconstruction. Communications in Nonlinear Science and Numerical Simulation (CNSNS), 143, 108649.<br/> 
