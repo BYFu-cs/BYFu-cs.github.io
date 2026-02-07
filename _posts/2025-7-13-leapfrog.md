@@ -7,7 +7,7 @@ badges:
   - "#News"
   - "#3D"
   - "#CNSNS"
-excerpt: Our latest work On the numerical approximation of a phase-field volume reconstruction model: Linear and energy-stable leap-frog finite difference scheme has been published to CNSNS recently. 
+excerpt: Our latest work on a linear and energy-stable leap-frog finite difference scheme for phase-field volume reconstruction has been published to CNSNS recently.
 ---
 
 <div align="center">

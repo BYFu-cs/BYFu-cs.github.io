@@ -7,7 +7,7 @@ badges:
   - "#News"
   - "#3D"
   - "#CMA"
-excerpt: Our latest work Three-dimensional narrow volume reconstruction method with unconditional stability based on a phase-field lagrange multiplier approach has been published to Comput. Math. Appl. recently. 
+excerpt: Our latest work on 3D narrow volume reconstruction method with unconditional stability has been published to Comput. Math. Appl. recently.
 ---
 
 <div align="center">
