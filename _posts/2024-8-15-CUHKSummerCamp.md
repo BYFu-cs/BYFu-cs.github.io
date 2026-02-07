@@ -11,7 +11,7 @@ excerpt:
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
 </div><div class="tooltip-container-red"><span class="text-red">#CUHK</span> <span class="text-red">#Summer Camp</span> </div>
-Lately, Boyi Fu has Finished the study in CUHK 2024 Summer Camp. The specific track is <i>**Big Data Analysis and Application**</i>. The supervisor is Lixian Su. <br/>
+Lately, Boyi Fu has Finished the study in CUHK 2024 Summer Camp. The specific track is <i>**Big Data Analysis and Application**</i>. The supervisor is Zihan Kan. <br/>
 <br/>
 
 ---
@@ -28,7 +28,7 @@ Boyi Fu and the CUHK logo:
   <img src="{{ site.baseurl }}/images/FunBlog/singleCUHK.jpg" alt="logo" height="405"/>
 </div>
 
-Boyi Fu and his supervisor Su:
+Boyi Fu and his supervisor Zihan Kan:
 <div align="center">
   <img src="{{ site.baseurl }}/images/FunBlog/Supervisor.jpg" alt="supervisor" height="405"/>
 </div>
