@@ -43,23 +43,26 @@ permalink: /blog/
       <article class="post post-list-item">
         <h2 class="post-card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-        {% comment %} extract image from post.content first, fallback to excerpt {% endcomment %}
+        {% comment %} extract first image src from post.content (first occurrence) or fallback to excerpt {% endcomment %}
         {% assign img_src = nil %}
         {% if post.content contains 'src="' %}
-          {% assign after_src = post.content | split: 'src="' | last %}
+          {% assign parts = post.content | split: 'src="' %}
+          {% assign after_src = parts[1] %}
           {% assign img_src = after_src | split: '"' | first %}
         {% elsif post.excerpt contains 'src="' %}
-          {% assign after_src = post.excerpt | split: 'src="' | last %}
+          {% assign parts = post.excerpt | split: 'src="' %}
+          {% assign after_src = parts[1] %}
           {% assign img_src = after_src | split: '"' | first %}
         {% endif %}
 
-        {% comment %} try to extract the first tooltip-container block from content (tags like #News) {% endcomment %}
-        {% assign tool_html = nil %}
-        {% if post.content contains 'tooltip-container' %}
-          {% assign after_tool = post.content | split: '<div class="tooltip-container' | last %}
-          {% assign part = after_tool | split: '</div>' | first %}
-          {% assign tool_html = '<div class="tooltip-container' | append: part | append: '</div>' %}
-        {% endif %}
+        {% comment %} capture any tooltip-container divs from post.content and render them below the cover {% endcomment %}
+        {% capture tooltip_html %}{% endcapture %}
+        {% for chunk in post.content | split: '<div' %}
+          {% if chunk contains 'tooltip-container' %}
+            {% capture snippet %}<div{{ chunk | split: '</div>' | first }}</div>{% endcapture %}
+            {% capture tooltip_html %}{{ tooltip_html }}{{ snippet }}{% endcapture %}
+          {% endif %}
+        {% endfor %}
 
         <div class="post-list-flex">
           <div class="post-left">
@@ -71,12 +74,7 @@ permalink: /blog/
               {% endif %}
             </div>
             <div class="post-tags">
-              {% if tool_html %}
-                {{ tool_html }}
-              {% endif %}
-              {% for t in post.tags %}
-                <span class="tag-badge">#{{ t }}</span>
-              {% endfor %}
+              {{ tooltip_html }}
             </div>
           </div>
 

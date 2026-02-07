@@ -258,12 +258,22 @@ layout: default
 
         {% assign img_src = nil %}
         {% if post.content contains 'src="' %}
-          {% assign after_src = post.content | split: 'src="' | last %}
+          {% assign parts = post.content | split: 'src="' %}
+          {% assign after_src = parts[1] %}
           {% assign img_src = after_src | split: '"' | first %}
         {% elsif post.excerpt contains 'src="' %}
-          {% assign after_src = post.excerpt | split: 'src="' | last %}
+          {% assign parts = post.excerpt | split: 'src="' %}
+          {% assign after_src = parts[1] %}
           {% assign img_src = after_src | split: '"' | first %}
         {% endif %}
+
+        {% capture tooltip_html %}{% endcapture %}
+        {% for chunk in post.content | split: '<div' %}
+          {% if chunk contains 'tooltip-container' %}
+            {% capture snippet %}<div{{ chunk | split: '</div>' | first }}</div>{% endcapture %}
+            {% capture tooltip_html %}{{ tooltip_html }}{{ snippet }}{% endcapture %}
+          {% endif %}
+        {% endfor %}
 
         <div class="post-list-flex">
           <div class="post-left">
@@ -275,9 +285,7 @@ layout: default
               {% endif %}
             </div>
             <div class="post-tags">
-              {% for t in post.tags %}
-                <span class="tag-badge">#{{ t }}</span>
-              {% endfor %}
+              {{ tooltip_html }}
             </div>
           </div>
 
