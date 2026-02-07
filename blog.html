@@ -41,28 +41,47 @@ permalink: /blog/
   {% for post in site.blog %}
     {% if post.title == "Our work has been accepted!" %}
       <article class="post post-list-item">
-        {% comment %} Try to extract first image src from the post excerpt/content {% endcomment %}
+        <h2 class="post-card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+
+        {% comment %} extract image from post.content first, fallback to excerpt {% endcomment %}
         {% assign img_src = nil %}
-        {% if post.excerpt contains 'src="' %}
-          {% assign after_src = post.excerpt | split: 'src="' | last %}
-          {% assign img_src = after_src | split: '"' | first %}
-        {% elsif post.content contains 'src="' %}
+        {% if post.content contains 'src="' %}
           {% assign after_src = post.content | split: 'src="' | last %}
+          {% assign img_src = after_src | split: '"' | first %}
+        {% elsif post.excerpt contains 'src="' %}
+          {% assign after_src = post.excerpt | split: 'src="' | last %}
           {% assign img_src = after_src | split: '"' | first %}
         {% endif %}
 
+        {% comment %} try to extract the first tooltip-container block from content (tags like #News) {% endcomment %}
+        {% assign tool_html = nil %}
+        {% if post.content contains 'tooltip-container' %}
+          {% assign after_tool = post.content | split: '<div class="tooltip-container' | last %}
+          {% assign part = after_tool | split: '</div>' | first %}
+          {% assign tool_html = '<div class="tooltip-container' | append: part | append: '</div>' %}
+        {% endif %}
+
         <div class="post-list-flex">
-          <div class="post-cover">
-            {% if img_src %}
-              <img src="{{ img_src }}" alt="{{ post.title }}"/>
-            {% else %}
-              <div class="post-cover-placeholder"></div>
-            {% endif %}
+          <div class="post-left">
+            <div class="post-cover">
+              {% if img_src %}
+                <img src="{{ img_src }}" alt="{{ post.title }}"/>
+              {% else %}
+                <div class="post-cover-placeholder"></div>
+              {% endif %}
+            </div>
+            <div class="post-tags">
+              {% if tool_html %}
+                {{ tool_html }}
+              {% endif %}
+              {% for t in post.tags %}
+                <span class="tag-badge">#{{ t }}</span>
+              {% endfor %}
+            </div>
           </div>
 
           <div class="post-summary">
-            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 60 }}</p>
+            <p>{{ post.content | strip_html | strip_newlines | truncatewords: 55 }}</p>
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
           </div>
         </div>
