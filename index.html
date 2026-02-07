@@ -313,7 +313,13 @@ layout: default
           </div>
 
           <div class="post-summary">
-            <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 55 }}</p>
+            {% capture clean_content %}{% endcapture %}
+            {% for chunk in post.content | split: '<div' %}
+              {% unless chunk contains 'tooltip-container' or chunk contains 'align="center"' %}
+                {% capture clean_content %}{{ clean_content }}{{ chunk }}{% endcapture %}
+              {% endunless %}
+            {% endfor %}
+            <p>{{ clean_content | strip_html | strip_newlines | truncatewords: 55 }}</p>
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
           </div>
         </div>
