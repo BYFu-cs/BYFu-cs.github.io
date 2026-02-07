@@ -36,16 +36,46 @@ permalink: /blog/
   });
 </script>
 
-<!-- 帖子列表 -->
+<!-- 帖子列表：仅对标题为 "Our work has been accepted!" 的文章使用图片左侧、摘要右侧布局 -->
 <div class="posts">
   {% for post in site.blog %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    {% if post.title == "Our work has been accepted!" %}
+      <article class="post post-list-item">
+        {% comment %} Try to extract first image src from the post excerpt/content {% endcomment %}
+        {% assign img_src = nil %}
+        {% if post.excerpt contains 'src="' %}
+          {% assign after_src = post.excerpt | split: 'src="' | last %}
+          {% assign img_src = after_src | split: '"' | first %}
+        {% elsif post.content contains 'src="' %}
+          {% assign after_src = post.content | split: 'src="' | last %}
+          {% assign img_src = after_src | split: '"' | first %}
+        {% endif %}
+
+        <div class="post-list-flex">
+          <div class="post-cover">
+            {% if img_src %}
+              <img src="{{ img_src }}" alt="{{ post.title }}"/>
+            {% else %}
+              <div class="post-cover-placeholder"></div>
+            {% endif %}
+          </div>
+
+          <div class="post-summary">
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 60 }}</p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </div>
+        </div>
+      </article>
+    {% else %}
+      <article class="post">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endif %}
   {% endfor %}
 </div>
 

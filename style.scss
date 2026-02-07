@@ -138,6 +138,56 @@ nav a:hover {
   color: #374151;
 }
 
+/* 列表样式：封面左侧，摘要右侧 */
+.post-list-item {
+  padding: 18px 20px;
+}
+.post-list-flex {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.post-cover {
+  flex: 0 0 220px;
+  max-width: 220px;
+}
+.post-cover img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.post-cover-placeholder {
+  width: 100%;
+  padding-top: 56%;
+  background: #f3f4f6;
+  border-radius: 12px;
+}
+.post-summary {
+  flex: 1;
+}
+.post-summary h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+.post-summary p {
+  margin: 0 0 12px 0;
+  color: #374151;
+}
+
+@media (max-width: 860px) {
+  .post-list-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post-cover {
+    width: 60%;
+    max-width: 320px;
+  }
+  .post-summary { text-align: center; }
+}
+
 blockquote {
   border-left: 4px solid rgba(65, 131, 196, 0.35);
   background: #f8fafc;
