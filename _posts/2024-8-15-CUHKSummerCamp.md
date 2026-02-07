@@ -2,6 +2,10 @@
 layout: post
 title: Graduation From CUHK Summer Camp
 tags: News
+badges:
+  - "#News"
+  - "#CUHK"
+  - "#Summer Camp"
 excerpt: 
 ---
 

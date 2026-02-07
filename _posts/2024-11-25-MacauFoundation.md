@@ -2,6 +2,10 @@
 layout: post
 title: Boyi Fu was awarded Fundação Macau Special Award for Outstanding Students in Higher Education Institutions
 tags: News
+badges:
+  - "#News"
+  - "#Fundação Macau"
+  - "#Scholarship"
 excerpt: 
 ---
 

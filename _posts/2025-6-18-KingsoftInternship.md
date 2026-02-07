@@ -2,6 +2,10 @@
 layout: post
 title: Kingsoft Internship Post
 tags: News
+badges:
+  - "#News"
+  - "#Kingsoft"
+  - "#Backend Developer"
 excerpt: 
 ---
 

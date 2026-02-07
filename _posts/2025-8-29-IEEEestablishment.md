@@ -2,6 +2,10 @@
 layout: post
 title: Boyi Fu was invited to attend the IEEE Computer Society Macau Chapter Establishment Ceremony.
 tags: News
+badges:
+  - "#News"
+  - "#IEEE Macau"
+  - "#Establishment Ceremony"
 excerpt: 
 ---
 
