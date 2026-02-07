@@ -956,9 +956,10 @@ footer {
   text-align: center;
 }
 
-footer p {
+.footer p {
   text-align: center !important;
   margin: 8px 0;
+  display: block;
 }
 
 nav {
