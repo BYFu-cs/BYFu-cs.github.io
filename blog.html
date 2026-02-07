@@ -47,6 +47,12 @@ permalink: /blog/
     .tag-badge{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#1f2937;padding:6px 12px;border-radius:999px;border:1px solid #e6eef9;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin:4px 6px 0 0}
     .text-lightblue{background:linear-gradient(180deg,#e6f5ff,#d9eeff);color:#0366d6;padding:6px 10px;border-radius:8px;font-weight:700;border:1px solid rgba(3,102,214,0.12)}
     .text-red{background:linear-gradient(180deg,#fff0f0,#ffecec);color:#b91c1c;padding:6px 10px;border-radius:8px;font-weight:700;border:1px solid rgba(185,28,28,0.08);margin-left:6px}
+    /* Hide inline tooltip containers when rendering the posts listing
+       (we render badges under the cover instead). */
+    .posts .tooltip-container-lightblue,
+    .posts .tooltip-container-red {
+      display: none !important;
+    }
   </style>
   {% for post in site.blog %}
     {% if post.title == "Our work has been accepted!" %}
