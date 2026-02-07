@@ -167,6 +167,14 @@ blockquote {
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
 }
 
+.profile-biography {
+  text-align: justify;
+}
+
+.profile-biography p {
+  margin: 16px 0;
+}
+
 @media (max-width: 800px) {
   .profile-row {
     flex-direction: column;
