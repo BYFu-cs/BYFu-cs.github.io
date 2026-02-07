@@ -5,9 +5,9 @@ permalink: /research/
 ---
 
 <p>
-    You can click the botton below to visit my Google Scholar Page:
+    You can feel free to click the botton below to visit my Google Scholar Page:
     <p>
-    <a href="https://scholar.google.com/citations?user=YOUR_ID" class="scholar-button" target="_blank" rel="noopener noreferrer">
+    <a href="https://scholar.google.com/citations?user=dLNZiBAAAAAJ&hl=zh-TW&oi=sra" class="scholar-button" target="_blank" rel="noopener noreferrer">
         <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
     </a>
     </p>
