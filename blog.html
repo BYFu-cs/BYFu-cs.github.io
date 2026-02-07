@@ -108,6 +108,32 @@ permalink: /blog/
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
         <div class="entry">
           {{ post.excerpt }}
+          <div class="post-tags">
+            {% if post.badges %}
+              {% for badge in post.badges %}
+                {% if badge == "#News" %}
+                  <span class="text-lightblue">{{ badge }}</span>
+                {% else %}
+                  <span class="text-red">{{ badge }}</span>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              {% if post.content contains 'text-lightblue' %}
+                {% assign parts = post.content | split: 'text-lightblue\'>' %}
+                {% for p in parts offset:1 %}
+                  {% assign val = p | split: '<' | first | strip %}
+                  <span class="text-lightblue">{{ val }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if post.content contains 'text-red' %}
+                {% assign parts = post.content | split: 'text-red\'>' %}
+                {% for p in parts offset:1 %}
+                  {% assign val = p | split: '<' | first | strip %}
+                  <span class="text-red">{{ val }}</span>
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+          </div>
         </div>
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </article>
