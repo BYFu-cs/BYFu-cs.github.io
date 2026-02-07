@@ -6,11 +6,21 @@ permalink: /research/
 
 <p>
     You can feel free to click the botton below to visit my Google Scholar Page:
-    <p>
-    <a href="https://scholar.google.com/citations?user=dLNZiBAAAAAJ&hl=zh-TW&oi=sra" class="scholar-button" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+<p>
+  <a href="https://scholar.google.com/citations?user=dLNZiBAAAAAJ&hl=zh-TW&oi=sra"
+     class="scholar-button"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+
+    <span class="scholar-text">
+      <span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span>
+      <span class="space"></span>
+      <span class="b">S</span><span class="r">c</span><span class="y">h</span><span class="b">o</span><span class="g">l</span><span class="r">a</span><span class="b">r</span>
+    </span>
     </a>
-    </p>
+</p>
 </p>
 
 ---
