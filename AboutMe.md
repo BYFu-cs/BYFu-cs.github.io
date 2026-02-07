@@ -27,21 +27,25 @@ permalink: /AboutMe/
 
 ## <span class="title-underline">Education 教育</span>
 
-<div class="education-row">
-  <div class="education-item">
-    <h3>B.Sc</h3>
+<div class="education-item">
+  <div class="education-logo">
     <img src="{{ site.baseurl }}/images/FunBlog/MUST.png" alt="MUST">
-    <p><strong><a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a></strong></p>
-    <p><em>(THE ranking Top 300)</em></p>
+  </div>
+  <div class="education-content">
+    <h3>B.Sc</h3>
+    <p><strong><a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a></strong> (THE ranking Top 300)</p>
     <p><strong>Duration:</strong> 2022 Sept - 2026 July</p>
     <p><strong>Course Work:</strong> Linear Algebra, Calculus I-III, Numerical Computing, Discrete Mathematics, Probability Theory, OOP in C++, Algorithm Implementation and Design, Data Structures, Digital Logic, Database Systems, Principles of Computer Composition, Computer Networks, Operating Systems, Software Engineering.</p>
   </div>
+</div>
 
-  <div class="education-item">
-    <h3>Summer Program</h3>
+<div class="education-item">
+  <div class="education-logo">
     <img src="{{ site.baseurl }}/images/FunBlog/CUHK.jpg" alt="CUHK">
-    <p><strong><a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong</a></strong></p>
-    <p><em>(THE ranking Top 50)</em></p>
+  </div>
+  <div class="education-content">
+    <h3>Summer Program</h3>
+    <p><strong><a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong</a></strong> (THE ranking Top 50)</p>
     <p><strong>Track:</strong> Big Data Analysis and Application</p>
     <p><strong>Duration:</strong> 2024 July - 2024 Aug</p>
     <p><strong>Supervisor:</strong> <a href="https://www.zihankan.com/">Professor Zihan Kan</a></p>
