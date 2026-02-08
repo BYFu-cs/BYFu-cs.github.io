@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 <p>
-    You can feel free to click the botton below to visit my Google Scholar Page:
+    If you are interested in Boyi Fu's research. You can feel free to click the botton below to visit his Google Scholar Page:
 <p>
   <a href="https://scholar.google.com/citations?user=dLNZiBAAAAAJ&hl=zh-TW&oi=sra"
      class="scholar-button"
