@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Graduation From CUHK Summer Camp
+title: Graduation From CUHK Summer Research Camp
 tags: News
 badges:
   - "#News"
   - "#CUHK"
-  - "#Summer Camp"
+  - "#Research Camp"
 excerpt: 
 ---
 
@@ -14,8 +14,8 @@ excerpt:
 </div>
 <div class="tooltip-container-lightblue">
   <span class="text-lightblue">#News</span>
-</div><div class="tooltip-container-red"><span class="text-red">#CUHK</span> <span class="text-red">#Summer Camp</span> </div>
-Lately, Boyi Fu has Finished the study in CUHK 2024 Summer Camp. The specific track is <i>**Big Data Analysis and Application**</i>. The supervisor is Zihan Kan. <br/>
+</div><div class="tooltip-container-red"><span class="text-red">#CUHK</span> <span class="text-red">#Research Camp</span> </div>
+Lately, Boyi Fu has Finished the research in CUHK 2024 Summer Camp. The specific track is <i>**Big Data Analysis and Application**</i>. The supervisor is Zihan Kan. <br/>
 <br/>
 
 ---
