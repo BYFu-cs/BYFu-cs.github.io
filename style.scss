@@ -129,10 +129,17 @@ hr {
 .site-avatar img {
   width: 64px;
   height: 64px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 16px;
   box-shadow: none;
   border: 0;
+}
+
+.site-avatar {
+  width: auto;
+  height: auto;
+  float: none;
+  flex-shrink: 0;
 }
 
 .site-info {
@@ -1287,10 +1294,4 @@ nav a:last-child::after {
     box-shadow: none;
     border: 0;
   }
-}
-
-.site-avatar,
-.site-avatar img {
-  width: 72px;
-  height: 72px;
 }
