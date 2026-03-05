@@ -131,8 +131,8 @@ hr {
   height: 64px;
   object-fit: cover;
   border-radius: 16px;
-  border: 1px solid var(--academic-line);
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+  box-shadow: none;
+  border: 0;
 }
 
 .site-info {
@@ -268,8 +268,10 @@ hr {
   }
 
   .site-avatar img {
-    width: 52px;
-    height: 52px;
+    width: 70px;
+    height: 70px;
+  box-shadow: none;
+  border: 0;
   }
 
   .site-name {
@@ -1273,4 +1275,22 @@ nav a:last-child::after {
     width: max-content;
     min-width: 180px;
   }
+
+  .site-avatar {
+    width: 78px;
+    height: 78px;
+  }
+
+  .site-avatar img {
+    width: 78px;
+    height: 78px;
+    box-shadow: none;
+    border: 0;
+  }
+}
+
+.site-avatar,
+.site-avatar img {
+  width: 72px;
+  height: 72px;
 }
