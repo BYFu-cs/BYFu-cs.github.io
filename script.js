@@ -1,8 +1,7 @@
 // script.js
-// 目標：全站通用、在缺少對應 DOM 元素時也不報錯。
-
+// 全站共用行為：無對應 DOM 時仍可安全運行
 document.addEventListener('DOMContentLoaded', function () {
-  // for pagination-container（只有存在 .posts + #pagination-container 才啟用）
+  // 分頁（僅當 .posts + #pagination-container 同時存在時啟用）
   const postsContainer = document.querySelector('.posts');
   const paginationContainer = document.getElementById('pagination-container');
 
@@ -11,123 +10,141 @@ document.addEventListener('DOMContentLoaded', function () {
     const posts = Array.from(postsContainer.getElementsByClassName('post'));
     const totalPages = Math.ceil(posts.length / postsPerPage);
 
-    function showPage(page) {
-      posts.forEach((post, index) => {
-        post.style.display =
-          index >= (page - 1) * postsPerPage && index < page * postsPerPage
-            ? 'block'
-            : 'none';
-      });
-    }
+    if (posts.length > 0) {
+      function showPage(page) {
+        posts.forEach((post, index) => {
+          post.style.display =
+            index >= (page - 1) * postsPerPage && index < page * postsPerPage
+              ? 'block'
+              : 'none';
+        });
+      }
 
-    function createPagination() {
-      paginationContainer.innerHTML = '';
-      const currentActive = document.querySelector('.pagination-link.active');
-      const currentPage = parseInt(currentActive ? currentActive.textContent : '1', 10) || 1;
+      function createPagination(currentPage = 1) {
+        paginationContainer.innerHTML = '';
 
-      for (let i = 1; i <= totalPages; i++) {
-        if (
-          i === 1 ||
-          i === totalPages ||
-          (i >= currentPage - 2 && i <= currentPage + 2)
-        ) {
-          const link = document.createElement('a');
-          link.href = '#';
-          link.textContent = String(i);
-          link.className = 'pagination-link';
-          link.addEventListener('click', function (e) {
-            e.preventDefault();
-            document
-              .querySelectorAll('.pagination-link')
-              .forEach((link) => link.classList.remove('active'));
-            this.classList.add('active');
-            showPage(i);
-            createPagination();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          });
-          paginationContainer.appendChild(link);
-        } else if (i === currentPage - 3 || i === currentPage + 3) {
-          const ellipsis = document.createElement('span');
-          ellipsis.textContent = '...';
-          paginationContainer.appendChild(ellipsis);
+        for (let i = 1; i <= totalPages; i++) {
+          if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = String(i);
+            link.className = 'pagination-link';
+            if (i === currentPage) {
+              link.classList.add('active');
+            }
+            link.addEventListener('click', function (e) {
+              e.preventDefault();
+              createPagination(i);
+              showPage(i);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            paginationContainer.appendChild(link);
+          } else if (i === currentPage - 3 || i === currentPage + 3) {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            paginationContainer.appendChild(ellipsis);
+          }
         }
       }
-    }
 
-    if (posts.length > 0) {
-      createPagination();
-      showPage(1); // show the first page by default
-      const first = document.querySelector('.pagination-link');
-      if (first) first.classList.add('active');
+      createPagination(1);
+      showPage(1);
     }
   }
 
-  // Cookie popup（只有存在 popupBox + buttons 才啟用）
+  // Cookie 同意彈窗（僅當元素都存在才啟用）
   const popupBox = document.getElementById('popupBox');
   const agreeBtn = document.getElementById('agreeBtn');
   const disagreeBtn = document.getElementById('disagreeBtn');
 
   if (popupBox && agreeBtn && disagreeBtn) {
-    // 检查是否已显示过弹窗
-    const hasShownPopup = sessionStorage.getItem('hasShownPopup');
-    if (!hasShownPopup) {
+    if (!sessionStorage.getItem('hasShownPopup')) {
       popupBox.style.display = 'block';
       popupBox.classList.add('active');
     }
 
-    // 处理“同意”按钮点击
-    agreeBtn.addEventListener('click', function () {
-      sessionStorage.setItem('hasShownPopup', 'true');
+    function hidePopup() {
       popupBox.style.display = 'none';
       popupBox.classList.remove('active');
+      sessionStorage.setItem('hasShownPopup', 'true');
+    }
+
+    agreeBtn.addEventListener('click', hidePopup);
+    disagreeBtn.addEventListener('click', hidePopup);
+  }
+
+  // 行動版導覽選單：按鈕下方自然展開、背景不突兀
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  if (menuToggle && menu) {
+    const BREAKPOINT = 860;
+    let isOpen = false;
+
+    function syncMenuState(nextState) {
+      isOpen = nextState;
+      menu.hidden = !nextState;
+      menu.classList.toggle('is-open', nextState);
+      menuToggle.classList.toggle('is-active', nextState);
+      menuToggle.setAttribute('aria-expanded', String(nextState));
+      menuToggle.setAttribute('aria-label', nextState ? 'Close main menu' : 'Open main menu');
+    }
+
+    function closeMenu() {
+      syncMenuState(false);
+    }
+
+    function openMenu() {
+      syncMenuState(true);
+    }
+
+    function toggleMenu() {
+      isOpen ? closeMenu() : openMenu();
+    }
+
+    function closeOnResize() {
+      if (window.innerWidth > BREAKPOINT && isOpen) {
+        closeMenu();
+      }
+    }
+
+    menu.hidden = true;
+    menu.setAttribute('aria-hidden', 'true');
+    syncMenuState(false);
+
+    menuToggle.addEventListener('click', function () {
+      toggleMenu();
     });
 
-    // 处理“不同意”按钮点击
-    disagreeBtn.addEventListener('click', function () {
-      sessionStorage.setItem('hasShownPopup', 'true');
-      popupBox.style.display = 'none';
-      popupBox.classList.remove('active');
+    menu.addEventListener('click', function (event) {
+      if (event.target.tagName === 'A') {
+        closeMenu();
+      }
     });
+
+    document.addEventListener('click', function (event) {
+      if (!isOpen) return;
+      if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && isOpen) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', closeOnResize);
+    closeOnResize();
+
+    window.toggleMenu = toggleMenu;
   }
 });
-/*
-function toggleMenu() {
-    var menu = document.getElementById('menu');
-    var menuIcon = document.querySelector('.menu-icon');
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-        window.removeEventListener('scroll', updateMenuPosition);
-    } else {
-        var rect = menuIcon.getBoundingClientRect();
-        menu.style.top = rect.bottom + 'px';
-        menu.style.left = rect.left + 'px';
-        menu.style.display = 'block';
-        window.addEventListener('scroll', updateMenuPosition);
-    }
-}
 
-function updateMenuPosition() {
-    var menu = document.getElementById('menu');
-    var menuIcon = document.querySelector('.menu-icon');
-    var rect = menuIcon.getBoundingClientRect();
-    menu.style.top = rect.bottom + 'px';
-    menu.style.left = rect.left + 'px';
-}
-*/
-
-function toggleMenu() {
-            var menu = document.getElementById('menu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
-
-// script.js
-window.onscroll = function() {
+window.addEventListener('scroll', function () {
   scrollFunction();
-};
+});
 
 function scrollFunction() {
   var btn = document.getElementById('backToTop');

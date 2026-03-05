@@ -42,19 +42,30 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/"><b><i>News</i></b></a>
-            <a href="{{ site.baseurl }}/blog"><b><i>Blogs</i></b></a>
-            <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
-            <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
-            <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
-            <div class="menu-icon" onclick="toggleMenu()">Nav-Bar ☰</div>
-            <div class="menu" id="menu">
-              <a href="{{ site.baseurl }}/"><b><i>News</i></b></a>
-              <a href="{{ site.baseurl }}/blog"><b><i>Blogs</i></b></a>
-              <a href="{{ site.baseurl }}/AboutMe"><b><i>Regarding Me</i></b></a>
-              <a href="{{ site.baseurl }}/research"><b><i>Research</i></b></a>
-              <a href="{{ site.baseurl }}/Contact"><b><i>Contact Me</i></b></a>
+          <nav class="site-nav" aria-label="Primary">
+            <a class="site-nav-link" href="{{ site.baseurl }}/">News</a>
+            <a class="site-nav-link" href="{{ site.baseurl }}/blog">Blogs</a>
+            <a class="site-nav-link" href="{{ site.baseurl }}/AboutMe">About Me</a>
+            <a class="site-nav-link" href="{{ site.baseurl }}/research">Research</a>
+            <a class="site-nav-link" href="{{ site.baseurl }}/Contact">Contact</a>
+            <button
+              id="menu-toggle"
+              class="menu-icon"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu"
+              aria-label="Open main menu"
+            >
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+            </button>
+            <div class="menu" id="menu" aria-label="Mobile navigation">
+              <a class="menu-link" href="{{ site.baseurl }}/">News</a>
+              <a class="menu-link" href="{{ site.baseurl }}/blog">Blogs</a>
+              <a class="menu-link" href="{{ site.baseurl }}/AboutMe">About Me</a>
+              <a class="menu-link" href="{{ site.baseurl }}/research">Research</a>
+              <a class="menu-link" href="{{ site.baseurl }}/Contact">Contact</a>
             </div>
           </nav>
         </header>
@@ -75,13 +86,13 @@
           {% include svg-icons.html %}
           <hr>
           <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-          <div align="center">
+          <div class="site-footer-links">
             <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=ZYjYZ0RsWvk6YIDH324LfcbQdw__BR_fi-ZPGPzBCgQ&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
-            <p style="font-size: 14px; color: #999; text-align: center;">
-              <a href="{{ site.baseurl }}/FTC" style="color: #87CEEB;">FTC 免責聲明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-              <a href="{{ site.baseurl }}/privacy" style="color: #87CEEB;">Privacy-Policy 隱私權政策</a>
+            <p>
+              <a href="{{ site.baseurl }}/FTC">FTC 免責聲明</a>
+              <a href="{{ site.baseurl }}/privacy">Privacy-Policy 隱私權政策</a>
             </p>
-            <p style="font-size: 14px; color: #999; text-align: center;">©Copyright 2024-2030 Boyi-Fu. All Rights Reserved.</p>
+            <p>©Copyright 2024-2030 Boyi-Fu. All Rights Reserved.</p>
           </div>
         </footer>
       </div>

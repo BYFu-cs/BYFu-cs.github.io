@@ -7,7 +7,19 @@
 
 @import "reset";
 @import "variables";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 // Syntax highlighting @import is at the bottom of this file
+
+:root {
+  --academic-bg: #f6f8fd;
+  --academic-surface: #ffffff;
+  --academic-text: #1f2937;
+  --academic-subtext: #64748b;
+  --academic-line: #dce3ee;
+  --academic-blue: #1e3a8a;
+  --academic-accent: #3b82f6;
+  --academic-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+}
 
 /**************/
 /* BASE RULES */
@@ -18,15 +30,21 @@ html {
 }
 
 body {
-  background: #f6f8fb;
-  font: 18px/1.65 $helvetica;
-  color: $darkGray;
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 0%, #edf2ff 0%, rgba(237, 242, 255, 0.2) 38%, transparent 70%),
+    radial-gradient(circle at 90% -20%, #e8f0ff 0%, rgba(232, 240, 255, 0.22) 45%, transparent 72%),
+    var(--academic-bg);
+  color: var(--academic-text);
+  font: 17px/1.75 "IBM Plex Sans", "Noto Sans TC", "PingFang TC", "Hiragino Sans GB", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1040px;
-  padding: 0 10px;
+  max-width: 1120px;
+  padding: 0 18px;
   width: 100%;
 }
 
@@ -90,11 +108,185 @@ hr {
 
 /* Header / Nav 整體更乾淨 */
 .wrapper-masthead {
-  margin-bottom: 28px;
+  margin-bottom: 34px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--academic-line);
 }
 
+// ===== Premium academic header and navigation =====
 .masthead {
-  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  padding: 18px 0;
+  border-bottom: 1px solid transparent;
+  animation: academicFadeIn 0.45s ease;
+}
+
+.site-avatar img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--academic-line);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+}
+
+.site-info {
+  min-width: 0;
+}
+
+.site-name {
+  margin: 0;
+  font-family: "IBM Plex Serif", serif;
+  color: var(--academic-text);
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  text-wrap: nowrap;
+}
+
+.site-description {
+  margin: 4px 0 0;
+  color: var(--academic-subtext);
+  font-size: 15px;
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.site-nav-link,
+.menu-link {
+  display: inline-flex;
+  align-items: center;
+  text-wrap: nowrap;
+  color: #334155;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 999px;
+  padding: 8px 14px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.site-nav-link:hover,
+.menu-link:hover {
+  color: var(--academic-blue);
+  background: #edf2ff;
+  transform: translateY(-1px);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 180px;
+  width: max-content;
+  background: var(--academic-surface);
+  border: 1px solid var(--academic-line);
+  border-radius: 12px;
+  box-shadow: var(--academic-shadow);
+  padding: 8px 0;
+  display: none;
+  z-index: 20;
+}
+
+.menu.is-open {
+  display: block;
+}
+
+.menu .menu-link {
+  width: 100%;
+  border-radius: 0;
+  border-bottom: 1px solid #edf2ff;
+}
+
+.menu .menu-link:last-child {
+  border-bottom: none;
+}
+
+.menu-icon {
+  all: unset;
+  width: 42px;
+  height: 42px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border-radius: 12px;
+  border: 1px solid var(--academic-line);
+  background: var(--academic-surface);
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-icon:hover {
+  border-color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+.menu-icon:focus-visible,
+.menu-icon.is-active {
+  outline: 2px solid var(--academic-accent);
+  outline-offset: 2px;
+}
+
+.menu-icon-bar {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #1e293b;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  position: relative;
+}
+
+.menu-icon.is-active .menu-icon-bar:first-child {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.menu-icon.is-active .menu-icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.is-active .menu-icon-bar:last-child {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+@media (max-width: 860px) {
+  .masthead {
+    padding: 14px 0;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .site-avatar img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .site-name {
+    font-size: 25px;
+  }
+
+  .site-description {
+    font-size: 14px;
+  }
+
+  .site-nav-link {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-flex;
+  }
 }
 
 .site-avatar img {
@@ -1009,4 +1201,76 @@ nav a:last-child::after {
 .scholar-button .scholar-text span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+}
+
+/* Premium layout overrides and cleanups */
+.site-nav {
+  float: none;
+  margin-top: 0;
+  font-family: "IBM Plex Sans", "Noto Sans TC", sans-serif;
+}
+
+.menu {
+  box-sizing: border-box;
+}
+
+.menu::before,
+.menu::after {
+  content: none !important;
+}
+
+.menu-link {
+  white-space: nowrap;
+}
+
+#main.container {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--academic-line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--academic-shadow);
+}
+
+.site-footer-links {
+  text-align: center;
+}
+
+.site-footer-links p {
+  margin: 8px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.site-footer-links a {
+  display: inline-block;
+  color: #1d4ed8;
+  text-decoration: none;
+  margin: 0 12px 0 0;
+  transition: color 0.2s ease;
+}
+
+.site-footer-links a:hover {
+  color: #2563eb;
+}
+
+.wrapper-footer {
+  margin-top: 44px;
+  border-top: 1px solid var(--academic-line);
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  #main.container {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .menu-icon {
+    margin-left: 8px;
+  }
+
+  .site-nav .menu {
+    width: max-content;
+    min-width: 180px;
+  }
 }
