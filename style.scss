@@ -169,6 +169,7 @@ hr {
   align-items: center;
   gap: 10px;
   position: relative;
+  text-align: left;
   z-index: 2600;
 }
 
@@ -1215,6 +1216,7 @@ nav a:last-child::after {
   max-width: calc(100vw - 24px);
   min-width: 0;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .site-nav .menu::before,
@@ -1224,10 +1226,13 @@ nav a:last-child::after {
 
 .site-nav .menu .menu-link {
   width: 100%;
+  justify-content: flex-start;
+  text-align: left;
   text-wrap: normal;
   white-space: normal;
   word-break: break-word;
   padding-right: 12px;
+  padding-left: 14px;
 }
 
 #main.container {
@@ -1329,11 +1334,14 @@ nav a:last-child::after {
 
   .site-nav .menu-link {
     width: 100% !important;
+    text-align: left !important;
     white-space: normal !important;
     text-wrap: pretty !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
     padding-right: 14px !important;
+    padding-left: 14px !important;
+    justify-content: flex-start !important;
     display: block !important;
   }
 
