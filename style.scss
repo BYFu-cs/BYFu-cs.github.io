@@ -112,6 +112,8 @@ hr {
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--academic-line);
+  position: relative;
+  z-index: 3600;
 }
 
 // ===== Premium academic header and navigation =====
@@ -546,7 +548,7 @@ blockquote {
   border-radius: 999px;
   border: 1px solid #e2e8f0;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  z-index: 10;
+  z-index: 1;
 }
 
 #search-input {
@@ -611,7 +613,7 @@ blockquote {
   border: 1px solid #e5e7eb;
   max-height: 320px;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #results-container:empty {
@@ -1206,7 +1208,13 @@ nav a:last-child::after {
 .site-nav .menu {
   inset: auto 0 auto auto;
   top: calc(100% + 8px);
-  z-index: 2800 !important;
+  z-index: 3800 !important;
+  left: auto;
+  right: 0;
+  width: min(88vw, 240px);
+  max-width: calc(100vw - 24px);
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .site-nav .menu::before,
@@ -1214,8 +1222,18 @@ nav a:last-child::after {
   content: none !important;
 }
 
+.site-nav .menu .menu-link {
+  width: 100%;
+  text-wrap: normal;
+  white-space: normal;
+  word-break: break-word;
+  padding-right: 12px;
+}
+
 #main.container {
   background: rgba(255, 255, 255, 0.82);
+  position: relative;
+  z-index: 1;
   border: 1px solid var(--academic-line);
   border-radius: 18px;
   padding: 24px;
@@ -1262,8 +1280,9 @@ nav a:last-child::after {
   }
 
   .site-nav .menu {
-    width: max-content;
-    min-width: 180px;
+    width: min(88vw, 220px);
+    min-width: 0;
+    max-width: calc(100vw - 24px);
   }
 
   .site-avatar {
@@ -1288,5 +1307,38 @@ nav a:last-child::after {
     display: inline-flex !important;
     visibility: visible !important;
     opacity: 1 !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .wrapper-masthead,
+  .masthead,
+  .site-nav {
+    overflow: visible !important;
+  }
+
+  .site-nav .menu {
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    left: auto !important;
+    right: 12px !important;
+    width: min(88vw, 220px) !important;
+    max-width: calc(100vw - 24px) !important;
+    z-index: 9999 !important;
+  }
+
+  .site-nav .menu-link {
+    width: 100% !important;
+    white-space: normal !important;
+    text-wrap: pretty !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    padding-right: 14px !important;
+    display: block !important;
+  }
+
+  .search-container,
+  #results-container {
+    z-index: 1 !important;
   }
 }
