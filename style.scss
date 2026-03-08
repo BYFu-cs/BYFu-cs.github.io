@@ -294,8 +294,8 @@ hr {
     display: none;
   }
 
-  .menu-icon {
-    display: inline-flex;
+  .site-nav .menu-icon {
+    display: inline-flex !important;
   }
 }
 
@@ -1256,7 +1256,8 @@ nav a:last-child::after {
     border-radius: 14px;
   }
 
-  .menu-icon {
+  .site-nav .menu-icon {
+    display: inline-flex;
     margin-left: 8px;
   }
 
@@ -1275,5 +1276,17 @@ nav a:last-child::after {
     height: 78px;
     box-shadow: none;
     border: 0;
+  }
+}
+
+#menu-toggle.menu-icon {
+  display: none !important;
+}
+
+@media (max-width: 860px) {
+  #menu-toggle.menu-icon {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
