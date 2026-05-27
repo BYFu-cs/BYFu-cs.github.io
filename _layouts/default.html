@@ -36,7 +36,7 @@
 
     <!-- Site scripts (defer: avoid blocking render) -->
     <script src="{{ site.baseurl }}/script.js" defer></script>
-    <script src="{{ site.baseurl }}/visitor-map.js" defer></script>
+    <script src="{{ site.baseurl }}/visitor-map.js?v={{ site.time | date: '%s' }}" defer></script>
   </head>
 
   <body>
@@ -103,7 +103,13 @@
               <div class="visitor-map-head">
                 <h2 id="visitor-map-title">Global Visitor Map</h2>
               </div>
-              <div class="visitor-map-canvas" id="visitor-map-canvas" role="img" aria-label="World map of aggregated visitor cities">
+              <div
+                class="visitor-map-canvas"
+                id="visitor-map-canvas"
+                role="img"
+                aria-label="World map of aggregated visitor cities"
+                style="height: 170px; min-height: 170px;"
+              >
                 <div class="visitor-map-empty">Connect the telemetry endpoint to render live city markers.</div>
               </div>
               <div class="visitor-map-stats">

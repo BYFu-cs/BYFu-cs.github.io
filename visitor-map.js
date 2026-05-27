@@ -48,6 +48,11 @@
     var canvas = document.getElementById("visitor-map-canvas");
     if (!canvas) return;
 
+    var worldView = {
+      center: [20, 0],
+      zoom: 1
+    };
+
     canvas.innerHTML = "";
     if (!locations.length) {
       canvas.innerHTML = '<div class="visitor-map-empty">No city-level records yet.</div>';
@@ -63,7 +68,7 @@
           dragging: window.innerWidth > 640,
           tap: false,
           zoomControl: true
-        }).setView([22, 0], 1);
+        }).setView(worldView.center, worldView.zoom);
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           minZoom: 1,
@@ -71,7 +76,6 @@
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        var bounds = [];
         locations.forEach(function (item) {
           var lat = Number(item.latitude);
           var lon = Number(item.longitude);
@@ -91,12 +95,9 @@
             direction: "top",
             opacity: 0.92
           });
-          bounds.push([lat, lon]);
         });
 
-        if (bounds.length > 1) {
-          map.fitBounds(bounds, { padding: [22, 22], maxZoom: 4 });
-        }
+        map.setView(worldView.center, worldView.zoom);
       })
       .catch(function () {
         canvas.innerHTML = '<div class="visitor-map-empty">Map library unavailable. City statistics remain listed below.</div>';
