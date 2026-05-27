@@ -46,7 +46,8 @@
 
   function markerRadius(visits) {
     var count = Math.max(1, Number(visits) || 1);
-    return Math.max(4.5, Math.min(15, 4 + Math.sqrt(count) * 0.9));
+    // Log scaling keeps low-count cities from swelling on a world-scale map.
+    return Math.max(3.2, Math.min(10, 3.1 + Math.log10(count + 1) * 1.15));
   }
 
   function renderMap(locations) {
