@@ -1355,9 +1355,9 @@ nav a:last-child::after {
 
 /* Self-hosted visitor map */
 .visitor-map {
-  margin: 18px auto 20px;
+  margin: 12px auto 14px;
   max-width: 520px;
-  padding: 14px;
+  padding: 10px 12px 12px;
   border: 1px solid #d8e1ed;
   border-radius: 10px;
   background: #ffffff;
@@ -1366,14 +1366,14 @@ nav a:last-child::after {
 }
 
 .visitor-map-head {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .visitor-map h2 {
   margin: 0;
   font-family: "Source Serif 4", "Times New Roman", serif;
   font-size: 18px;
-  line-height: 1.25;
+  line-height: 1.15;
   color: #1f2937;
   text-align: center;
 }
@@ -1381,7 +1381,7 @@ nav a:last-child::after {
 .visitor-map-canvas {
   position: relative;
   width: 100%;
-  height: 170px;
+  height: 210px;
   overflow: hidden;
   border: 1px solid #dbe4ef;
   border-radius: 8px;
@@ -1403,7 +1403,7 @@ nav a:last-child::after {
 }
 
 .visitor-map-stats {
-  margin-top: 10px;
+  margin-top: 7px;
   color: #475569;
 }
 
@@ -1415,17 +1415,18 @@ nav a:last-child::after {
 #visitor-map-total {
   color: #8f2435;
   font-family: "Source Serif 4", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
 }
 
 @media (max-width: 680px) {
   .visitor-map {
-    padding: 14px;
+    margin-top: 10px;
+    padding: 10px;
   }
 
   .visitor-map-canvas {
-    height: 150px;
+    height: 180px;
   }
 }
 

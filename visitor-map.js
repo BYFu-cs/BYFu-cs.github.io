@@ -44,13 +44,18 @@
     });
   }
 
+  function markerRadius(visits) {
+    var count = Math.max(1, Number(visits) || 1);
+    return Math.max(4.5, Math.min(15, 4 + Math.sqrt(count) * 0.9));
+  }
+
   function renderMap(locations) {
     var canvas = document.getElementById("visitor-map-canvas");
     if (!canvas) return;
 
     var worldView = {
-      center: [20, 0],
-      zoom: 1
+      center: [12, 0],
+      zoom: 0.5
     };
 
     canvas.innerHTML = "";
@@ -67,11 +72,14 @@
           scrollWheelZoom: false,
           dragging: window.innerWidth > 640,
           tap: false,
-          zoomControl: true
+          zoomControl: true,
+          zoomSnap: 0.25,
+          zoomDelta: 0.5,
+          minZoom: 0
         }).setView(worldView.center, worldView.zoom);
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          minZoom: 1,
+          minZoom: 0,
           maxZoom: 6,
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
@@ -81,13 +89,13 @@
           var lon = Number(item.longitude);
           if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
 
-          var radius = Math.max(5, Math.min(22, 4 + Math.sqrt(Number(item.visits) || 1)));
+          var radius = markerRadius(item.visits);
           var marker = L.circleMarker([lat, lon], {
             radius: radius,
             color: "#27496d",
-            weight: 1.5,
+            weight: 1.25,
             fillColor: "#9b2f3f",
-            fillOpacity: 0.68
+            fillOpacity: 0.62
           }).addTo(map);
 
           var place = [item.city, item.region, item.country].filter(Boolean).join(", ");
