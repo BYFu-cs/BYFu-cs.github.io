@@ -11,6 +11,7 @@ description: "A Dedicated Researcher Specializing in AI and 3D Geometrics"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "/images/BoyiFu.jpg"
+search_image: "/images/BoyiFu-lifes.jpg"
 
 visitor_map:
   api_url: "https://boyifu-visitor-map.boyifu101.workers.dev"
