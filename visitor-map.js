@@ -15,6 +15,32 @@
     return (endpoint || "").replace(/\/+$/, "");
   }
 
+  function endpointCandidates(root) {
+    var seen = {};
+    return [
+      root.getAttribute("data-endpoint"),
+      root.getAttribute("data-fallback-endpoint")
+    ]
+      .map(normalizeEndpoint)
+      .filter(function (endpoint) {
+        if (!endpoint || seen[endpoint]) return false;
+        seen[endpoint] = true;
+        return true;
+      });
+  }
+
+  function fetchWithTimeout(url, options, timeoutMs) {
+    var controller = new AbortController();
+    var timer = setTimeout(function () {
+      controller.abort();
+    }, timeoutMs || 6000);
+    var settings = Object.assign({}, options, { signal: controller.signal });
+
+    return fetch(url, settings).finally(function () {
+      clearTimeout(timer);
+    });
+  }
+
   function loadStylesheet(href) {
     if (document.querySelector('link[href="' + href + '"]')) return;
     var link = document.createElement("link");
@@ -50,7 +76,7 @@
     return Math.max(3.2, Math.min(10, 3.1 + Math.log10(count + 1) * 1.15));
   }
 
-  function renderMap(locations) {
+  function renderMap(locations, unavailable) {
     var canvas = document.getElementById("visitor-map-canvas");
     if (!canvas) return;
 
@@ -61,7 +87,9 @@
 
     canvas.innerHTML = "";
     if (!locations.length) {
-      canvas.innerHTML = '<div class="visitor-map-empty">No city-level records yet.</div>';
+      canvas.innerHTML = '<div class="visitor-map-empty">' +
+        (unavailable ? "Visitor data is temporarily unavailable." : "No city-level records yet.") +
+        '</div>';
       return;
     }
 
@@ -123,48 +151,61 @@
     }
 
     if (totalEl) totalEl.textContent = formatCount(total);
-    renderMap(locations);
+    renderMap(locations, Boolean(summary.unavailable));
+  }
+
+  function collectAndLoadSummary(endpoint, path) {
+    fetchWithTimeout(endpoint + "/collect?path=" + path, {
+      method: "GET",
+      mode: "cors",
+      credentials: "omit",
+      keepalive: true
+    }, 5000)
+      .catch(function () {
+        return null;
+      });
+
+    return fetchWithTimeout(endpoint + "/summary", {
+      method: "GET",
+      mode: "cors",
+      credentials: "omit"
+    }, 6000)
+      .then(function (response) {
+        if (!response || !response.ok) throw new Error("Visitor summary unavailable");
+        return response.json();
+      });
+  }
+
+  function loadFromEndpoints(endpoints, path, index) {
+    if (index >= endpoints.length) {
+      return Promise.reject(new Error("All visitor endpoints unavailable"));
+    }
+
+    return collectAndLoadSummary(endpoints[index], path).catch(function () {
+      return loadFromEndpoints(endpoints, path, index + 1);
+    });
   }
 
   function initVisitorMap() {
     var root = document.getElementById("visitor-map");
     if (!root) return;
 
-    var endpoint = normalizeEndpoint(root.getAttribute("data-endpoint"));
+    var endpoints = endpointCandidates(root);
     var baseline = Number(root.getAttribute("data-baseline")) || 1000000;
     var totalEl = document.getElementById("visitor-map-total");
     if (totalEl) totalEl.textContent = formatCount(baseline);
 
-    if (!endpoint) {
+    if (!endpoints.length) {
       return;
     }
 
     var path = encodeURIComponent(window.location.pathname || "/");
-    fetch(endpoint + "/collect?path=" + path, {
-      method: "GET",
-      mode: "cors",
-      credentials: "omit",
-      keepalive: true
-    })
-      .catch(function () {
-        return null;
-      })
-      .then(function () {
-        return fetch(endpoint + "/summary", {
-          method: "GET",
-          mode: "cors",
-          credentials: "omit"
-        });
-      })
-      .then(function (response) {
-        if (!response || !response.ok) throw new Error("Visitor summary unavailable");
-        return response.json();
-      })
+    loadFromEndpoints(endpoints, path, 0)
       .then(function (summary) {
         updateWidget(summary, baseline);
       })
       .catch(function () {
-        renderMap([]);
+        updateWidget({ totalVisits: baseline, locations: [], unavailable: true }, baseline);
       });
   }
 

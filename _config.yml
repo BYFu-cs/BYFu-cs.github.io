@@ -15,6 +15,7 @@ search_image: "/images/BoyiFu-lifes.jpg"
 
 visitor_map:
   api_url: "https://boyifu-visitor-map.boyifu101.workers.dev"
+  fallback_api_url: ""
   baseline_visits: 1000000
 
 #
