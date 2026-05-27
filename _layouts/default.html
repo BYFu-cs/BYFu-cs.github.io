@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
-    {% if page.url == "/" %}
+    {% if page.url == "/" or page.path == "index.html" %}
       {% assign seo_title = site.seo_title %}
     {% elsif page.title %}
       {% assign seo_title = page.title | append: " | " | append: site.seo_title %}
@@ -36,6 +36,7 @@
 
     <!-- Site scripts (defer: avoid blocking render) -->
     <script src="{{ site.baseurl }}/script.js" defer></script>
+    <script src="{{ site.baseurl }}/visitor-map.js" defer></script>
   </head>
 
   <body>
@@ -92,7 +93,23 @@
           <hr>
           <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
           <div class="site-footer-links">
-            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=ZYjYZ0RsWvk6YIDH324LfcbQdw__BR_fi-ZPGPzBCgQ&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+            <section
+              class="visitor-map"
+              id="visitor-map"
+              data-endpoint="{{ site.visitor_map.api_url }}"
+              data-baseline="{{ site.visitor_map.baseline_visits }}"
+              aria-labelledby="visitor-map-title"
+            >
+              <div class="visitor-map-head">
+                <h2 id="visitor-map-title">Global Visitor Map</h2>
+              </div>
+              <div class="visitor-map-canvas" id="visitor-map-canvas" role="img" aria-label="World map of aggregated visitor cities">
+                <div class="visitor-map-empty">Connect the telemetry endpoint to render live city markers.</div>
+              </div>
+              <div class="visitor-map-stats">
+                <p><span id="visitor-map-total">1M+</span><span> cumulative visits since 2023</span></p>
+              </div>
+            </section>
             <p>
               <a href="{{ site.baseurl }}/FTC">FTC 免責聲明</a>
               <a href="{{ site.baseurl }}/privacy">Privacy-Policy 隱私權政策</a>

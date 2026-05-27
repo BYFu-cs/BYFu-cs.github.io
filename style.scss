@@ -1353,6 +1353,82 @@ nav a:last-child::after {
   }
 }
 
+/* Self-hosted visitor map */
+.visitor-map {
+  margin: 18px auto 20px;
+  max-width: 520px;
+  padding: 14px;
+  border: 1px solid #d8e1ed;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  text-align: left;
+}
+
+.visitor-map-head {
+  margin-bottom: 10px;
+}
+
+.visitor-map h2 {
+  margin: 0;
+  font-family: "Source Serif 4", "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #1f2937;
+  text-align: center;
+}
+
+.visitor-map-canvas {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border: 1px solid #dbe4ef;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(248, 250, 252, 0.9), rgba(241, 245, 249, 0.9)),
+    #f8fafc;
+}
+
+.visitor-map-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.visitor-map-stats {
+  margin-top: 10px;
+  color: #475569;
+}
+
+.visitor-map-stats p {
+  margin: 0;
+  text-align: center !important;
+}
+
+#visitor-map-total {
+  color: #8f2435;
+  font-family: "Source Serif 4", "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 680px) {
+  .visitor-map {
+    padding: 14px;
+  }
+
+  .visitor-map-canvas {
+    height: 150px;
+  }
+}
+
 /* Academic typography refinement: visual-only font update. */
 body {
   font-family: "Source Serif 4", "Times New Roman", "Noto Serif TC", "Songti TC", "SimSun", serif;
