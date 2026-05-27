@@ -2,7 +2,7 @@
 
 This folder contains the optional Cloudflare Worker backend for the website footer's self-hosted visitor map.
 
-The public site keeps a historical baseline of `1M+ cumulative visits since 2023`. The Worker records new visits after installation and adds them on top of that baseline. It is designed for city-level academic-style visualization rather than individual tracking.
+The public site keeps a historical baseline of `1M+ cumulative visits since 2024`. The Worker records new visits after installation and adds them on top of that baseline. It is designed for city-level academic-style visualization rather than individual tracking.
 
 ## What It Records
 
