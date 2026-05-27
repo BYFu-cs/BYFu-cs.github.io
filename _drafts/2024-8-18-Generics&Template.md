@@ -2,6 +2,9 @@
 layout: post
 title: 淺談Java泛型與C++模板之異同（附大量代碼）
 tags: tech
+published: false
+sitemap: false
+noindex: true
 excerpt: 
 ---
 

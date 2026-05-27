@@ -8,6 +8,7 @@
 @import "reset";
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&display=swap");
 // Syntax highlighting @import is at the bottom of this file
 
 :root {
@@ -1350,4 +1351,39 @@ nav a:last-child::after {
   #results-container {
     z-index: 1 !important;
   }
+}
+
+/* Academic typography refinement: visual-only font update. */
+body {
+  font-family: "Source Serif 4", "Times New Roman", "Noto Serif TC", "Songti TC", "SimSun", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-name,
+.post-card-title {
+  font-family: "Source Serif 4", "Times New Roman", "Noto Serif TC", "Songti TC", "SimSun", serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.site-description,
+.site-nav,
+.menu,
+.read-more,
+.pagination-link,
+#search-input,
+#agreeBtn,
+#disagreeBtn,
+.text-orange,
+.text-lightblue,
+.text-red,
+.tag-badge,
+.date,
+.code-language {
+  font-family: "Source Sans 3", "Noto Sans TC", "PingFang TC", "Hiragino Sans GB", Arial, sans-serif;
 }

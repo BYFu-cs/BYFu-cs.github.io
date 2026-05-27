@@ -1,52 +1,25 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://byfu-cs.github.io/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/AboutMe/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/research/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/Contact/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/ConfidenceLevel/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/CountTraffic/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/privacy/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://byfu-cs.github.io/FTC/</loc>
-  <lastmod>2024-07-24T08:36:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in site.html_pages %}
+{% unless page.published == false or page.sitemap == false %}
+  <url>
+    <loc>{{ page.url | absolute_url | xml_escape }}</loc>
+    {% if page.last_modified_at %}
+    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    {% endif %}
+  </url>
+{% endunless %}
+{% endfor %}
+{% for post in site.posts %}
+{% unless post.published == false or post.sitemap == false %}
+  <url>
+    <loc>{{ post.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+{% endunless %}
+{% endfor %}
 </urlset>

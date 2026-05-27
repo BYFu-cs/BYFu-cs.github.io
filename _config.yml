@@ -4,9 +4,10 @@
 
 # Name of your site (displayed in the header)
 name: Boyi Fu
+seo_title: BOYI FU
 
 # Short bio or description (displayed in the header)
-description: "A Dedicated Researcher Specializing in AI and 3D Geometrics "
+description: "A Dedicated Researcher Specializing in AI and 3D Geometrics"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "/images/BoyiFu.jpg"
@@ -17,7 +18,7 @@ avatar: "/images/BoyiFu.jpg"
 
 collections:
   blog:
-    output: true
+    output: false
     permalink: /_blog/:name/
 
 # Includes an icon in the footer for each username you enter
@@ -26,27 +27,23 @@ footer-links:
   email: boyifu101@gmail.com
   facebook: FU Fready
   flickr:
-  github: BYFu-cs
+  github: boyifu-ai
   instagram: FU Fready
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss:
   twitter: FU Fready
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: FU Fready
   googleplus: FU Fready
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://github.com/BYFu-cs/BYFu-cs.github.io
+url: https://boyifu-ai.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -82,16 +79,6 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
-# Gitalk settings
-comment_gitalk_clientId: Ov23ctryzdChSl8iq4Pj
-comment_gitalk_clientSecret: 78c901647fefe12e412e2283c7d7e6516cffd976
-comment_gitalk_repo: BYFu-cs.github.io
-github_username: 'BYFu-cs'
-labels: ['Gitalk'] #GitHub issues的标签
-perPage: 10 #每页多少个评论
-pagerDirection: last #排序方式是从旧到新（first），还是从新到旧（last）
-createIssueManually: true #是否自动创建isssue，自动创建需要当前登录的用户为adminuser
-
 # Exclude these files from your production _site
 exclude:
   - Gemfile
@@ -99,3 +86,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - blog.html

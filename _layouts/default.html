@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% if page.url == "/" %}
+      {% assign seo_title = site.seo_title %}
+    {% elsif page.title %}
+      {% assign seo_title = page.title | append: " | " | append: site.seo_title %}
+    {% else %}
+      {% assign seo_title = site.seo_title %}
+    {% endif %}
+    <title>{{ seo_title }}</title>
     {% include meta.html %}
 
     <!-- MathJax (LaTeX) -->
@@ -13,7 +20,7 @@
 
     <!-- Site styles -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.seo_title }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Icons for Back-to-top button -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -44,7 +51,6 @@
 
           <nav class="site-nav" aria-label="Primary">
             <a class="site-nav-link" href="{{ site.baseurl }}/">News</a>
-            <a class="site-nav-link" href="{{ site.baseurl }}/blog">Blogs</a>
             <a class="site-nav-link" href="{{ site.baseurl }}/AboutMe">About Me</a>
             <a class="site-nav-link" href="{{ site.baseurl }}/research">Research</a>
             <a class="site-nav-link" href="{{ site.baseurl }}/Contact">Contact</a>
@@ -62,7 +68,6 @@
             </button>
             <div class="menu" id="menu" aria-label="Mobile navigation">
               <a class="menu-link" href="{{ site.baseurl }}/">News</a>
-              <a class="menu-link" href="{{ site.baseurl }}/blog">Blogs</a>
               <a class="menu-link" href="{{ site.baseurl }}/AboutMe">About Me</a>
               <a class="menu-link" href="{{ site.baseurl }}/research">Research</a>
               <a class="menu-link" href="{{ site.baseurl }}/Contact">Contact</a>

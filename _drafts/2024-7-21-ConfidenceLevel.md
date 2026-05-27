@@ -2,6 +2,9 @@
 layout: post
 title: Machine Learning：Confidence Interval and Confidence Level based on T-test.
 tags: learn
+published: false
+sitemap: false
+noindex: true
 excerpt:
 ---
 

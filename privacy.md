@@ -11,9 +11,9 @@ permalink: /privacy/
 </h1>
 
 <div>
-Welcome to https://byfu-cs.github.io/ (hereinafter referred to as 'the Website'). To ensure that you can comfortably utilize our services and access information on our platform with confidence, we would like to elucidate our privacy protection policy aimed at safeguarding your rights and interests.Kindly review the content below.<br/>
+Welcome to https://boyifu-ai.github.io/ (hereinafter referred to as 'the Website'). To ensure that you can comfortably utilize our services and access information on our platform with confidence, we would like to elucidate our privacy protection policy aimed at safeguarding your rights and interests.Kindly review the content below.<br/>
 <br/>
-歡迎您訪問「https://byfu-cs.github.io/」，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障閣下之權益，請您詳閱下列內容。<br/>
+歡迎您訪問「https://boyifu-ai.github.io/」，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障閣下之權益，請您詳閱下列內容。<br/>
 <br/>
 </div>
 

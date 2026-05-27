@@ -2,6 +2,9 @@
 layout: post
 title: How to count traffic on your own website?
 tags: tech
+published: false
+sitemap: false
+noindex: true
 excerpt: 
 ---
 
