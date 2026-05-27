@@ -41,104 +41,110 @@
     });
   }
 
-  function loadStylesheet(href) {
-    if (document.querySelector('link[href="' + href + '"]')) return;
-    var link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = href;
-    document.head.appendChild(link);
-  }
-
-  function loadScript(src) {
-    return new Promise(function (resolve, reject) {
-      if (window.L) {
-        resolve();
-        return;
-      }
-      var existing = document.querySelector('script[src="' + src + '"]');
-      if (existing) {
-        existing.addEventListener("load", resolve);
-        existing.addEventListener("error", reject);
-        return;
-      }
-      var script = document.createElement("script");
-      script.src = src;
-      script.async = true;
-      script.onload = resolve;
-      script.onerror = reject;
-      document.head.appendChild(script);
-    });
-  }
-
   function markerRadius(visits) {
     var count = Math.max(1, Number(visits) || 1);
     // Log scaling keeps low-count cities from swelling on a world-scale map.
     return Math.max(3.2, Math.min(10, 3.1 + Math.log10(count + 1) * 1.15));
   }
 
-  function renderMap(locations, unavailable) {
-    var canvas = document.getElementById("visitor-map-canvas");
-    if (!canvas) return;
+  function svgElement(name, attrs) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", name);
+    Object.keys(attrs || {}).forEach(function (key) {
+      el.setAttribute(key, attrs[key]);
+    });
+    return el;
+  }
 
-    var worldView = {
-      center: [12, 0],
-      zoom: 0.5
+  function projectPoint(lat, lon) {
+    return {
+      x: ((Number(lon) + 180) / 360) * 720,
+      y: ((90 - Number(lat)) / 180) * 300
     };
+  }
 
-    canvas.innerHTML = "";
-    if (!locations.length) {
-      canvas.innerHTML = '<div class="visitor-map-empty">' +
-        (unavailable ? "Visitor data is temporarily unavailable." : "No city-level records yet.") +
-        '</div>';
-      return;
+  function renderStaticMap(canvas, locations) {
+    var landPaths = [
+      "M70 75C96 42 162 36 214 58C246 72 265 103 242 130C218 158 190 151 171 184C153 217 117 190 104 151C94 122 45 108 70 75Z",
+      "M205 178C231 195 238 229 224 261C211 292 182 285 171 250C160 218 176 190 205 178Z",
+      "M315 71C350 52 408 55 441 78C473 100 477 135 446 150C414 166 389 146 354 161C322 174 292 151 290 118C288 95 298 80 315 71Z",
+      "M360 150C390 140 430 153 451 181C474 212 458 257 423 264C390 270 368 235 356 204C346 177 342 158 360 150Z",
+      "M452 89C497 58 585 63 641 94C682 117 678 152 630 158C592 163 565 143 526 154C486 164 443 139 452 89Z",
+      "M498 171C540 156 596 171 620 204C641 233 617 260 576 251C532 241 503 213 498 171Z",
+      "M612 228C633 218 663 226 674 245C684 263 667 277 641 271C617 266 600 243 612 228Z",
+      "M0 286C91 278 165 286 246 279C342 270 417 284 516 276C599 270 664 280 720 274V300H0Z"
+    ];
+    var svg = svgElement("svg", {
+      class: "visitor-static-map",
+      viewBox: "0 0 720 300",
+      role: "img",
+      "aria-label": "World map of aggregated visitor cities",
+      preserveAspectRatio: "xMidYMid meet"
+    });
+
+    svg.appendChild(svgElement("rect", {
+      x: 0,
+      y: 0,
+      width: 720,
+      height: 300,
+      fill: "#dceff5"
+    }));
+
+    for (var lon = -120; lon <= 120; lon += 60) {
+      var x = projectPoint(0, lon).x;
+      svg.appendChild(svgElement("line", {
+        x1: x,
+        y1: 0,
+        x2: x,
+        y2: 300,
+        class: "visitor-map-grid"
+      }));
     }
 
-    loadStylesheet("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
-    loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js")
-      .then(function () {
-        var map = L.map(canvas, {
-          attributionControl: true,
-          scrollWheelZoom: false,
-          dragging: window.innerWidth > 640,
-          tap: false,
-          zoomControl: true,
-          zoomSnap: 0.25,
-          zoomDelta: 0.5,
-          minZoom: 0
-        }).setView(worldView.center, worldView.zoom);
+    for (var lat = -60; lat <= 60; lat += 30) {
+      var y = projectPoint(lat, 0).y;
+      svg.appendChild(svgElement("line", {
+        x1: 0,
+        y1: y,
+        x2: 720,
+        y2: y,
+        class: lat === 0 ? "visitor-map-equator" : "visitor-map-grid"
+      }));
+    }
 
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          minZoom: 0,
-          maxZoom: 6,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+    landPaths.forEach(function (path) {
+      svg.appendChild(svgElement("path", {
+        d: path,
+        class: "visitor-map-land"
+      }));
+    });
 
-        locations.forEach(function (item) {
-          var lat = Number(item.latitude);
-          var lon = Number(item.longitude);
-          if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+    locations.forEach(function (item) {
+      var lat = Number(item.latitude);
+      var lon = Number(item.longitude);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
 
-          var radius = markerRadius(item.visits);
-          var marker = L.circleMarker([lat, lon], {
-            radius: radius,
-            color: "#27496d",
-            weight: 1.25,
-            fillColor: "#9b2f3f",
-            fillOpacity: 0.62
-          }).addTo(map);
-
-          var place = [item.city, item.region, item.country].filter(Boolean).join(", ");
-          marker.bindTooltip(place + " - " + formatCount(item.visits) + " visits", {
-            direction: "top",
-            opacity: 0.92
-          });
-        });
-
-        map.setView(worldView.center, worldView.zoom);
-      })
-      .catch(function () {
-        canvas.innerHTML = '<div class="visitor-map-empty">Map library unavailable. City statistics remain listed below.</div>';
+      var point = projectPoint(lat, lon);
+      var marker = svgElement("circle", {
+        cx: point.x,
+        cy: point.y,
+        r: markerRadius(item.visits),
+        class: "visitor-map-marker"
       });
+      var title = svgElement("title");
+      var place = [item.city, item.region, item.country].filter(Boolean).join(", ");
+      title.textContent = place + " - " + formatCount(item.visits) + " visits";
+      marker.appendChild(title);
+      svg.appendChild(marker);
+    });
+
+    canvas.innerHTML = "";
+    canvas.appendChild(svg);
+  }
+
+  function renderMap(locations) {
+    var canvas = document.getElementById("visitor-map-canvas");
+    if (!canvas) return;
+    renderStaticMap(canvas, locations);
   }
 
   function updateWidget(summary, baseline) {
@@ -151,7 +157,7 @@
     }
 
     if (totalEl) totalEl.textContent = formatCount(total);
-    renderMap(locations, Boolean(summary.unavailable));
+    renderMap(locations);
   }
 
   function collectAndLoadSummary(endpoint, path) {
@@ -194,6 +200,7 @@
     var baseline = Number(root.getAttribute("data-baseline")) || 1000000;
     var totalEl = document.getElementById("visitor-map-total");
     if (totalEl) totalEl.textContent = formatCount(baseline);
+    renderMap([]);
 
     if (!endpoints.length) {
       return;
