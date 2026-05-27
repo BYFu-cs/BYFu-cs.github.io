@@ -93,12 +93,29 @@
 
   function hideWidget() {
     var root = document.getElementById("visitor-map");
-    if (root) root.hidden = true;
+    if (!root) return;
+    root.hidden = true;
+    root.setAttribute("aria-hidden", "true");
+    root.style.display = "none";
+    root.style.visibility = "";
+  }
+
+  function prepareWidgetForMap() {
+    var root = document.getElementById("visitor-map");
+    if (!root) return;
+    root.hidden = false;
+    root.setAttribute("aria-hidden", "true");
+    root.style.display = "";
+    root.style.visibility = "hidden";
   }
 
   function showWidget() {
     var root = document.getElementById("visitor-map");
-    if (root) root.hidden = false;
+    if (!root) return;
+    root.hidden = false;
+    root.removeAttribute("aria-hidden");
+    root.style.display = "";
+    root.style.visibility = "";
   }
 
   function renderMap(locations) {
@@ -119,7 +136,7 @@
     loadStylesheet("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
     return loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js")
       .then(function () {
-        showWidget();
+        prepareWidgetForMap();
         var map = L.map(canvas, {
           attributionControl: true,
           scrollWheelZoom: false,
@@ -131,11 +148,32 @@
           minZoom: 0
         }).setView(worldView.center, worldView.zoom);
 
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        var revealTimer = setTimeout(function () {
+          map.remove();
+          hideWidget();
+        }, 7000);
+        var tileFailed = false;
+        var tileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           minZoom: 0,
           maxZoom: 6,
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+        });
+
+        tileLayer.on("tileerror", function () {
+          tileFailed = true;
+        });
+
+        tileLayer.once("load", function () {
+          clearTimeout(revealTimer);
+          if (tileFailed) {
+            map.remove();
+            hideWidget();
+            return;
+          }
+          showWidget();
+          map.invalidateSize();
+        });
+        tileLayer.addTo(map);
 
         locations.forEach(function (item) {
           var lat = Number(item.latitude);

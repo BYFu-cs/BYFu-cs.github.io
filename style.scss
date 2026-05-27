@@ -1365,6 +1365,10 @@ nav a:last-child::after {
   text-align: left;
 }
 
+.visitor-map[hidden] {
+  display: none !important;
+}
+
 .visitor-map-head {
   margin-bottom: 8px;
 }
