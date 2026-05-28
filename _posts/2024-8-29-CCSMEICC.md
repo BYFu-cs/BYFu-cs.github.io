@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boyi Fu and his team won the Provincial Prize in China College Students Mechanical Engineering Innovation and Creativity Competition Intelligent Precision Assembly Competition (Guangdong-HK-Macao)!
+title: Boyi Fu and his team won the Provincial Prize in China College Students Mechanical Engineering Innovation and Creativity Competition Intelligent Precision Assembly Competition(Guangdong-HK-Macao)!
 tags: News
 badges:
   - "#News"

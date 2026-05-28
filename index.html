@@ -263,7 +263,7 @@ layout: default
   {% for post in site.posts %}
     {% if post.title == "Our work has been accepted!" %}
       <article class="post post-list-item">
-        <h2 class="post-card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="post-card-title news-title"><a class="news-title-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
         {% comment %} Prefer explicit cover in front matter, otherwise extract first image src {% endcomment %}
         {% assign img_src = nil %}
@@ -314,7 +314,7 @@ layout: default
     {% else %}
       <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1 class="news-title"><a class="news-title-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
         {{ post.excerpt }}
