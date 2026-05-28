@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boyi Fu and his team won the National Prize in China College Students Mechanical Engineering Innovation and Creativity Competition“AUBO” Intelligent Precision Assembly Competition!
+title: Boyi Fu and his team won the National Prize in China College Students Mechanical Engineering Innovation and Creativity Competition “AUBO” Intelligent Precision Assembly Competition!
 tags: News
 badges:
   - "#News"

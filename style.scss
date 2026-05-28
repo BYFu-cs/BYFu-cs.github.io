@@ -1496,3 +1496,26 @@ h6,
 .code-language {
   font-family: "Source Sans 3", "Noto Sans TC", "PingFang TC", "Hiragino Sans GB", Arial, sans-serif;
 }
+
+/* Long news titles: avoid stretched justification; allow natural hyphenation. */
+.posts > .post > h1,
+.post-card-title,
+.post > h1 {
+  text-align: left !important;
+  text-align-last: auto !important;
+  text-justify: auto !important;
+  word-spacing: normal !important;
+  letter-spacing: 0 !important;
+  line-height: 1.25;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-character: "-";
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.posts > .post > h1 a,
+.post-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
