@@ -413,7 +413,7 @@ nav a:hover {
   hyphens: auto;
   overflow-wrap: normal;
   word-break: normal;
-  text-wrap: balance;
+  text-wrap: normal;
 }
 
 .posts > .post > h1 a,
@@ -1517,7 +1517,7 @@ h6,
   hyphenate-character: "-";
   overflow-wrap: normal;
   word-break: normal;
-  text-wrap: balance;
+  text-wrap: normal !important;
 }
 
 .news-title-link {
