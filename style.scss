@@ -391,7 +391,18 @@ nav a:hover {
 
 .post-card-title {
   margin: 0 0 12px 0;
-  font-size: 22px;
+  font-size: 30px;
+  line-height: 1.2;
+  color: $darkerGray;
+}
+
+.post-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-card-title a:hover {
+  color: inherit;
 }
 
 .post-tags {
