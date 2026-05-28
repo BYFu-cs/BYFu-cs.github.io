@@ -409,11 +409,9 @@ nav a:hover {
 .post-card-title,
 .post > h1 {
   max-width: 100%;
-  text-align: justify;
-  text-align-last: left;
-  text-justify: inter-word;
+  text-align: left;
   hyphens: auto;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
   word-break: normal;
   text-wrap: pretty;
 }
