@@ -24,4 +24,4 @@ Lately, Boyi Fu is honored to participate in the establishment of the inaugural 
             <img src="{{ site.baseurl }}/images/IEEE/logo.png" alt="logo" width="600"><br/>
             Fig. The organization we established.
             </p>
-Currently, Bo Fu serves as a cabinet member of IEEE MUST and an advisory ambassador for Hong Kong Engineers (HKIE) at Macau University of Science and Technology.
+Currently, Boyi Fu serves as a cabinet member of IEEE MUST and an advisory ambassador for Hong Kong Engineers (HKIE) at Macau University of Science and Technology.
