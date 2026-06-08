@@ -1538,3 +1538,31 @@ h6,
     line-height: 1.32 !important;
   }
 }
+
+/* Keep images in every post visually consistent without cropping them. */
+.post .entry img {
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: min(100%, 760px) !important;
+  max-height: 560px;
+  object-fit: contain;
+  margin: 22px auto 8px;
+}
+
+/* News-list previews should stay compact while preserving image proportions. */
+.posts > .post .entry img {
+  max-height: 420px;
+}
+
+@media (max-width: 680px) {
+  .post .entry img {
+    max-width: 100% !important;
+    max-height: 460px;
+    margin: 16px auto 6px;
+  }
+
+  .posts > .post .entry img {
+    max-height: 360px;
+  }
+}
