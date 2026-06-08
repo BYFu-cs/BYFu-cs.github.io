@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boyi Fu graduated from Macau University of Science and Technology!
+title: Boyi Fu graduated from Macau University of Science and Technology.
 tags: News
 badges:
   - "#News"
