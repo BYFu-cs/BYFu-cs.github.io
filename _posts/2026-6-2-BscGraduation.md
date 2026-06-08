@@ -21,7 +21,7 @@ On June 1, 2026, Boyi Fu graduated from Macau University of Science and Technolo
 
 ---
 
-For a more detailed News Report, you can visit the official news from the website of Macau University of Science and Technology via the link below:<br/>
+For a more detailed News Report, you can visit the official news from the website of Macau University of Science and Technology via the link:
 <a href="https://fie.must.edu.mo/news/article/view/id-41242.html?locale=en_US">https://fie.must.edu.mo/news/article/view/id-41242.html?locale=en_US</a><br>
 
 <p style="text-align: center;">
