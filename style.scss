@@ -1547,7 +1547,16 @@ h6,
   max-width: min(100%, 760px) !important;
   max-height: 560px;
   object-fit: contain;
-  margin: 22px auto 8px;
+  margin: 22px auto 2px;
+}
+
+/* Remove the extra blank line between post images and Fig. captions. */
+.post .entry img + br {
+  display: none;
+}
+
+.post .entry div[align="center"] + p[style*="text-align: center"] {
+  margin-top: 4px;
 }
 
 /* News-list previews should stay compact while preserving image proportions. */
@@ -1559,7 +1568,7 @@ h6,
   .post .entry img {
     max-width: 100% !important;
     max-height: 460px;
-    margin: 16px auto 6px;
+    margin: 16px auto 2px;
   }
 
   .posts > .post .entry img {
