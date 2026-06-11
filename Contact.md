@@ -26,7 +26,7 @@ Phone number 2: (+86) 19358590830<br/>
 
 <div class="contact-address">
   <div class="contact-address-text">
-    Office Room: E1-5F-310, <br/>
+    Office Room: E1-5F-310. <br/>
     Office Time: 9:00 - 22:00, Monday - Sunday.<br/>
     Artificial Intelligence Thrust, Information Hub.<br/>
     The Hong Kong University of Science and Technology (GZ).<br/>
@@ -37,5 +37,5 @@ Phone number 2: (+86) 19358590830<br/>
   </figure>
 </div>
 
-<em>Last Modified: June 9, 2026.</em><br/>
+<em>Last Modified: June 11, 2026.</em><br/>
 <br/>
