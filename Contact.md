@@ -26,11 +26,11 @@ Phone number 2: (+86) 19358590830<br/>
 
 <div class="contact-address">
   <div class="contact-address-text">
-    No. 1 Duxue Road, Nansha District.<br/>
-    Guangzhou, Guangdong, People Republic of China.<br/>
-    <br/>
+    Office Room: E1-5F-310, <br/>
+    Office Time: 9:00 - 22:00, Monday - Sunday.<br/>
     Artificial Intelligence Thrust, Information Hub.<br/>
     The Hong Kong University of Science and Technology (GZ).<br/>
+    No. 1 Duxue Road, Nansha District, Guangzhou City, Guangdong Province, People Republic of China.
   </div>
   <figure class="contact-address-map">
     <img src="{{ site.baseurl }}/images/FunBlog/Map%20of%20HKUST.png" alt="Map of HKUST(GZ) campus">
