@@ -50,6 +50,7 @@ permalink: /AboutMe/
   <div class="education-content">
     <h3>B.Sc in Computer Science</h3>
     <p><strong><a href="https://www.must.edu.mo/index.html?locale=en_US">Macau University of Science and Technology</a></strong> <strong>(THE ranking Top 300)</strong></p>
+    <p><strong>Cumulative Grade Point Average (cGPA):</strong> 3.81 / 4.00 (Ranked Top 1%)</p>
     <p><strong>Duration:</strong> September 2022 - July 2026</p>
     <p><strong>Supervisor:</strong> <a href="https://cfdyang521.github.io/">Prof. Junxiang Yang</a></p>
     <p class="education-honors-title"><strong>Selected Honors and Awards:</strong></p>
