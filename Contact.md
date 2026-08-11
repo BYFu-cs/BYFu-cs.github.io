@@ -14,7 +14,7 @@ Boyi Fu is now looking for a Ph.D position. If you are interested in establishin
 ## <span class="title-underline">Contact Information</span>
 
 E-mail box1: [boyifu101@gmail.com](mailto:boyifu101@gmail.com)<br/>
-E-mail box2: [boyifu@hkust-gz.edu.cn](mailto:boyifu@hkust-gz.edu.cn)<br/>
+E-mail box2: [boyi.fu@connect.hkust-gz.edu.cn](mailto:boyi.fu@connect.hkust-gz.edu.cn)<br/>
 <br/>
 Phone number 1: (+853) 68590830<br/>
 Phone number 2: (+86) 19358590830<br/>
@@ -37,5 +37,5 @@ Phone number 2: (+86) 19358590830<br/>
   </figure>
 </div>
 
-<em>Last Modified: June 11, 2026.</em><br/>
+<em>Last Modified: August 11, 2026.</em><br/>
 <br/>
